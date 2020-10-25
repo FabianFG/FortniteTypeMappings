@@ -1,0 +1,114 @@
+{
+	"Texture2D": {
+		"3": {
+			"name": "AddressX",
+			"type": "ByteProperty"
+		},
+		"4": {
+			"name": "AddressY",
+			"type": "ByteProperty"
+		},
+		"5": {
+			"name": "ImportedSize",
+			"type": "StructProperty",
+			"structType": "IntPoint"
+		},
+		"6": {
+			"name": "LightingGuid",
+			"type": "StructProperty",
+			"structType": "Guid"
+		},
+		"7": {
+			"name": "LODBias",
+			"type": "IntProperty"
+		},
+		"8": {
+			"name": "CompressionSettings",
+			"type": "ByteProperty",
+		},
+		"10": {
+			"name": "MipLoadOptions",
+			"type": "ByteProperty",
+		},
+		"11": {
+			"name": "LODGroup",
+			"type": "ByteProperty"
+		},
+		"14": {
+			"name": "SRGB",
+			"type": "BoolProperty",
+			"bool": true
+		},
+		"27": {
+			"name": "NeverStream",
+			"type": "BoolProperty",
+			"bool": true
+		}
+	},
+	"AthenaCharacterItemDefinition": {
+		"2": {
+			"name": "HeroDefinition",
+			"type": "ObjectProperty"
+		},
+		"53": {
+			"name": "Rarity",
+			"type": "ByteProperty"
+		},
+		"67": {
+			"name": "Name",
+			"type": "TextProperty"
+		},
+		"68": {
+			"name": "ShortDescription",
+			"type": "TextProperty"
+		},
+		"69": {
+			"name": "Description",
+			"type": "TextProperty"
+		},
+		"72": {
+			"name": "GameplayTags",
+			"type": "StructProperty",
+			"structType": "GameplayTagContainer"
+		}
+	},
+	"FortHeroType": {
+		"2": {
+			"name": "Specializations",
+			"type": "ArrayProperty",
+			"innerType": "SoftObjectProperty"
+		},
+		"3": {
+			"name": "DefaultMontageLookupTable",
+			"type": "SoftObjectProperty"
+		},
+		"6": {
+			"name": "RequiredGPTags",
+			"type": "StructProperty",
+			"structType": "GameplayTagContainer"
+		},
+		"9": {
+			"name": "OverridePawnClass",
+			"type": "SoftObjectProperty"
+		},
+		"13": {
+			"name": "FrontEndAnimClass",
+			"type": "SoftObjectProperty"
+		},
+		"18": {
+			"name": "AttributeInitKey",
+			"type": "StructProperty",
+			"structType": "FortAttributeInitializationKey"
+		}
+	},
+	"FortAttributeInitializationKey": {
+		"0": {
+			"name": "AttributeInitCategory",
+			"type": "NameProperty"
+		},
+		"1": {
+			"name": "AttributeInitSubCategory",
+			"type": "NameProperty"
+		},
+	}
+}
