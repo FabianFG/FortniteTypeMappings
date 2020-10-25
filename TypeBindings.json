@@ -1,29 +1,30 @@
 {
-  "AthenaCharacterItemDefinition": {
-    "2": {
-      "name": "HeroDefinition",
-      "type": "ObjectProperty"
-    },
-    "53": {
-      "name": "Rarity",
-      "type": "ByteProperty"
-    },
-    "67": {
-      "name": "Name",
-      "type": "TextProperty"
-    },
-    "68": {
-      "name": "ShortDescription",
-      "type": "TextProperty"
-    },
-    "69": {
-      "name": "Description",
-      "type": "TextProperty"
-    },
-    "72": {
-      "name": "GameplayTags",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
-    }
-  }
+	"AthenaCharacterItemDefinition": {
+		"2": {
+			"name": "HeroDefinition",
+			"type": "ObjectProperty"
+		},
+		"53": {
+			"name": "Rarity",
+			"type": "ByteProperty"
+		},
+		"67": {
+			"name": "Name",
+			"type": "TextProperty"
+		},
+		"68": {
+			"name": "ShortDescription",
+			"type": "TextProperty"
+		},
+		"69": {
+			"name": "Description",
+			"type": "TextProperty"
+		},
+		"72": {
+			"name": "GameplayTags",
+			"type": "StructProperty",
+			"structType": "GameplayTagContainer"
+		}
+	},
+	"FortHeroType": {}
 }
