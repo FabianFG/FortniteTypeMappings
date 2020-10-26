@@ -24,6 +24,544 @@
       "type": "StrProperty"
     }
   },
+  "FortRangedWeaponStats": {
+    "0": {
+      "name": "Spread",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "SpreadDownsights",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "StandingStillSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "AthenaCrouchingSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "AthenaJumpingFallingSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "AthenaSprintingSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "MinSpeedForSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "MaxSpeedForSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "SpreadDownsightsAdditionalCooldownTime",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "HeatX1",
+      "type": "FloatProperty"
+    },
+    "10": {
+      "name": "HeatY1",
+      "type": "FloatProperty"
+    },
+    "11": {
+      "name": "HeatX2",
+      "type": "FloatProperty"
+    },
+    "12": {
+      "name": "HeatY2",
+      "type": "FloatProperty"
+    },
+    "13": {
+      "name": "HeatX3",
+      "type": "FloatProperty"
+    },
+    "14": {
+      "name": "HeatY3",
+      "type": "FloatProperty"
+    },
+    "15": {
+      "name": "HeatXScale",
+      "type": "FloatProperty"
+    },
+    "16": {
+      "name": "HeatYScale",
+      "type": "FloatProperty"
+    },
+    "17": {
+      "name": "CoolX1",
+      "type": "FloatProperty"
+    },
+    "18": {
+      "name": "CoolY1",
+      "type": "FloatProperty"
+    },
+    "19": {
+      "name": "CoolX2",
+      "type": "FloatProperty"
+    },
+    "20": {
+      "name": "CoolY2",
+      "type": "FloatProperty"
+    },
+    "21": {
+      "name": "CoolX3",
+      "type": "FloatProperty"
+    },
+    "22": {
+      "name": "CoolY3",
+      "type": "FloatProperty"
+    },
+    "23": {
+      "name": "CoolXScale",
+      "type": "FloatProperty"
+    },
+    "24": {
+      "name": "CoolYScale",
+      "type": "FloatProperty"
+    },
+    "25": {
+      "name": "PerfectAimCooldown",
+      "type": "FloatProperty"
+    },
+    "26": {
+      "name": "BulletsPerCartridge",
+      "type": "IntProperty"
+    },
+    "27": {
+      "name": "FiringRate",
+      "type": "FloatProperty"
+    },
+    "28": {
+      "name": "ROFScale",
+      "type": "FloatProperty"
+    },
+    "29": {
+      "name": "BurstFiringRate",
+      "type": "FloatProperty"
+    },
+    "30": {
+      "name": "FiringRateDownsightsMultiplier",
+      "type": "FloatProperty"
+    },
+    "31": {
+      "name": "AutofireRange",
+      "type": "FloatProperty"
+    },
+    "32": {
+      "name": "AutofireAcquisitionDelay",
+      "type": "FloatProperty"
+    },
+    "33": {
+      "name": "AutofireDBNOAcquisitionDelay",
+      "type": "FloatProperty"
+    },
+    "34": {
+      "name": "AutofireAcquisitionRechargeTime",
+      "type": "FloatProperty"
+    },
+    "35": {
+      "name": "AutofireReleaseTime",
+      "type": "FloatProperty"
+    },
+    "36": {
+      "name": "AutofireCooldown",
+      "type": "FloatProperty"
+    },
+    "37": {
+      "name": "RecoilVert",
+      "type": "FloatProperty"
+    },
+    "38": {
+      "name": "RecoilVertScale",
+      "type": "FloatProperty"
+    },
+    "39": {
+      "name": "RecoilVertScaleGamepad",
+      "type": "FloatProperty"
+    },
+    "40": {
+      "name": "VertRecoilDownChance",
+      "type": "FloatProperty"
+    },
+    "41": {
+      "name": "RecoilHoriz",
+      "type": "FloatProperty"
+    },
+    "42": {
+      "name": "RecoilHorizScale",
+      "type": "FloatProperty"
+    },
+    "43": {
+      "name": "RecoilHorizScaleGamepad",
+      "type": "FloatProperty"
+    },
+    "44": {
+      "name": "RecoilInterpSpeed",
+      "type": "FloatProperty"
+    },
+    "45": {
+      "name": "RecoilRecoveryInterpSpeed",
+      "type": "FloatProperty"
+    },
+    "46": {
+      "name": "RecoilRecoveryDelay",
+      "type": "FloatProperty"
+    },
+    "47": {
+      "name": "RecoilRecoveryFraction",
+      "type": "FloatProperty"
+    },
+    "48": {
+      "name": "RecoilDownsightsMultiplier",
+      "type": "FloatProperty"
+    },
+    "49": {
+      "name": "AthenaRecoilMagnitudeMin",
+      "type": "FloatProperty"
+    },
+    "50": {
+      "name": "AthenaRecoilMagnitudeMax",
+      "type": "FloatProperty"
+    },
+    "51": {
+      "name": "AthenaRecoilMagnitudeScale",
+      "type": "FloatProperty"
+    },
+    "52": {
+      "name": "AthenaRecoilAngleMin",
+      "type": "FloatProperty"
+    },
+    "53": {
+      "name": "AthenaRecoilAngleMax",
+      "type": "FloatProperty"
+    },
+    "54": {
+      "name": "AthenaRecoilRollMagnitudeMin",
+      "type": "FloatProperty"
+    },
+    "55": {
+      "name": "AthenaRecoilRollMagnitudeMax",
+      "type": "FloatProperty"
+    },
+    "56": {
+      "name": "AthenaRecoilInterpSpeed",
+      "type": "FloatProperty"
+    },
+    "57": {
+      "name": "AthenaRecoilRecoveryInterpSpeed",
+      "type": "FloatProperty"
+    },
+    "58": {
+      "name": "AthenaRecoilDownsightsMultiplier",
+      "type": "FloatProperty"
+    },
+    "59": {
+      "name": "AthenaRecoilHipFireMultiplier",
+      "type": "FloatProperty"
+    },
+    "60": {
+      "name": "AthenaAimAssistRange",
+      "type": "FloatProperty"
+    },
+    "61": {
+      "name": "ADSTransitionInTime",
+      "type": "FloatProperty"
+    },
+    "62": {
+      "name": "ADSTransitionOutTime",
+      "type": "FloatProperty"
+    },
+    "63": {
+      "name": "MaxSpareAmmo",
+      "type": "IntProperty"
+    },
+    "64": {
+      "name": "BulletsPerTracer",
+      "type": "IntProperty"
+    },
+    "65": {
+      "name": "AIDelayBeforeFiringMin",
+      "type": "FloatProperty"
+    },
+    "66": {
+      "name": "AIDelayBeforeFiringMax",
+      "type": "FloatProperty"
+    },
+    "67": {
+      "name": "AIFireDurationMin",
+      "type": "FloatProperty"
+    },
+    "68": {
+      "name": "AIFireDurationMax",
+      "type": "FloatProperty"
+    },
+    "69": {
+      "name": "AIMinSpreadDuration",
+      "type": "FloatProperty"
+    },
+    "70": {
+      "name": "AIMaxSpreadDuration",
+      "type": "FloatProperty"
+    },
+    "71": {
+      "name": "AIDurationSpreadMultiplier",
+      "type": "FloatProperty"
+    },
+    "72": {
+      "name": "AIAdditionalSpreadForTargetMovingLaterally",
+      "type": "FloatProperty"
+    },
+    "73": {
+      "name": "AIAthenaHearFiringNoiseRange",
+      "type": "FloatProperty"
+    },
+    "74": {
+      "name": "EQSDensity",
+      "type": "FloatProperty"
+    },
+    "75": {
+      "name": "MinApproachRange",
+      "type": "FloatProperty"
+    },
+    "76": {
+      "name": "MinActualRange",
+      "type": "FloatProperty"
+    },
+    "77": {
+      "name": "MinPreferredRange",
+      "type": "FloatProperty"
+    },
+    "78": {
+      "name": "MinPreferredRangeEQS",
+      "type": "FloatProperty"
+    },
+    "79": {
+      "name": "MaxPreferredRangeEQS",
+      "type": "FloatProperty"
+    },
+    "80": {
+      "name": "MaxPreferredRange",
+      "type": "FloatProperty"
+    },
+    "81": {
+      "name": "MaxActualRange",
+      "type": "FloatProperty"
+    },
+    "82": {
+      "name": "MaxApproachRange",
+      "type": "FloatProperty"
+    },
+    "83": {
+      "name": "RangeToAutomaticallyAddEnemyPawnGoals",
+      "type": "FloatProperty"
+    },
+    "84": {
+      "name": "SweepRadius",
+      "type": "FloatProperty"
+    },
+    "85": {
+      "name": "AutoReloadDelayOverride",
+      "type": "FloatProperty"
+    },
+    "86": {
+      "name": "OverheatingMaxValue",
+      "type": "FloatProperty"
+    },
+    "87": {
+      "name": "OverheatHeatingValue",
+      "type": "FloatProperty"
+    },
+    "88": {
+      "name": "FullChargeOverheatHeatingValue",
+      "type": "FloatProperty"
+    },
+    "89": {
+      "name": "OverheatingCoolingValue",
+      "type": "FloatProperty"
+    },
+    "90": {
+      "name": "HeatingCooldownDelay",
+      "type": "FloatProperty"
+    },
+    "91": {
+      "name": "OverheatedCooldownDelay",
+      "type": "FloatProperty"
+    },
+    "92": {
+      "name": "bCoolOverheatWhileCharging",
+      "type": "BoolProperty"
+    },
+    "93": {
+      "name": "FortHomingTurnSpeedMin",
+      "type": "FloatProperty"
+    },
+    "94": {
+      "name": "FortHomingTurnSpeedMax",
+      "type": "FloatProperty"
+    },
+    "95": {
+      "name": "FortHomingTimeUntilMaxTurnSpeed",
+      "type": "FloatProperty"
+    }
+  },
+  "FortLootTierData": {
+    "0": {
+      "name": "TierGroup",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "Weight",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "Weight",
+      "type": "EnumProperty",
+      "enumName": "ELootQuotaLevel"
+    },
+    "3": {
+      "name": "LootTier",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "MinWorldLevel",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "MaxWorldLevel",
+      "type": "IntProperty"
+    },
+    "6": {
+      "name": "StreakBreakerCurrency",
+      "type": "StrProperty"
+    },
+    "7": {
+      "name": "StreakBreakerPointsMin",
+      "type": "IntProperty"
+    },
+    "8": {
+      "name": "StreakBreakerPointsMax",
+      "type": "IntProperty"
+    },
+    "9": {
+      "name": "StreakBreakerPointsSpend",
+      "type": "IntProperty"
+    },
+    "10": {
+      "name": "LootPackage",
+      "type": "NameProperty"
+    },
+    "11": {
+      "name": "LootPreviewPackage",
+      "type": "NameProperty"
+    },
+    "12": {
+      "name": "NumLootPackageDrops",
+      "type": "FloatProperty"
+    },
+    "13": {
+      "name": "LootPackageCategoryWeightArray",
+      "type": "ArrayProperty",
+      "innerType": "IntProperty"
+    },
+    "14": {
+      "name": "LootPackageCategoryMinArray",
+      "type": "ArrayProperty",
+      "innerType": "IntProperty"
+    },
+    "15": {
+      "name": "LootPackageCategoryMaxArray",
+      "type": "ArrayProperty",
+      "innerType": "IntProperty"
+    },
+    "16": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "17": {
+      "name": "RequiredGameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "18": {
+      "name": "bAllowBonusLootDrops",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "Annotation",
+      "type": "StrProperty"
+    }
+  },
+  "FortLootPackageData": {
+    "0": {
+      "name": "LootPackageID",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "Weight",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "NamedWeightMult",
+      "type": "NameProperty"
+    },
+    "3": {
+      "name": "PotentialNamedWeights",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "4": {
+      "name": "Count",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "LootPackageCategory",
+      "type": "IntProperty"
+    },
+    "6": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "7": {
+      "name": "RequiredTag",
+      "type": "NameProperty"
+    },
+    "8": {
+      "name": "LootPackageCall",
+      "type": "StrProperty"
+    },
+    "9": {
+      "name": "ItemDefinition",
+      "type": "SoftObjectProperty"
+    },
+    "10": {
+      "name": "PersistentLevel",
+      "type": "StrProperty"
+    },
+    "11": {
+      "name": "MinWorldLevel",
+      "type": "IntProperty"
+    },
+    "12": {
+      "name": "MaxWorldLevel",
+      "type": "IntProperty"
+    },
+    "13": {
+      "name": "bAllowBonusDrops",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "Annotation",
+      "type": "StrProperty"
+    }
+  },
   "CosmeticSetDataRow": {
     "0": {
       "name": "Tag",
