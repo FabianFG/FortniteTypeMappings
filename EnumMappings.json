@@ -215,5 +215,13 @@
         "1": "Medium",
         "2": "Large",
         "3": "EFortMtxOfferDisplaySize_MAX"
+    },
+    "ESoundwaveSampleRateSettings": {
+        "0": "Max",
+        "1": "High",
+        "2": "Medium",
+        "3": "Low",
+        "4": "Min",
+        "5": "MatchDevice"
     }
 }
