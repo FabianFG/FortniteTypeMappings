@@ -223,5 +223,18 @@
         "3": "Low",
         "4": "Min",
         "5": "MatchDevice"
+    },
+    "EVirtualizationMode": {
+        "0": "Disabled",
+        "1": "PlayWhenSilent",
+        "2": "Restart",
+        "3": "EVirtualizationMode_MAX"
+    },
+    "EFortCustomGender": {
+        "0": "Invalid",
+        "1": "Male",
+        "2": "Female",
+        "3": "Both",
+        "4": "EFortCustomGender_MAX"
     }
 }

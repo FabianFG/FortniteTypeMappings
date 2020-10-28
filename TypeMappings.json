@@ -857,6 +857,105 @@
             "name": "HeroDefinition",
             "type": "ObjectProperty"
         },
+        "3": {
+            "name": "DefaultBackpack",
+            "type": "ObjectProperty"
+        },
+        "4": {
+            "name": "RequiredCosmeticItems",
+            "type": "ArrayProperty",
+            "innerType": "ObjectProperty"
+        },
+        "5": {
+            "name": "Gender",
+            "type": "EnumProperty",
+            "enumName": "EFortCustomGender"
+        },
+        "6": {
+            "name": "FeedbackBank",
+            "type": "SoftObjectProperty"
+        },
+        "8": {
+            "name": "bIsShuffleTile",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "9": {
+            "name": "bIsOwnedByCampaignHero",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "10": {
+            "name": "bHasMoreThanOneCharacterPartVariant",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "11": {
+            "name": "bHideIfNotOwned",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "12": {
+            "name": "bInitializedConfiguredDynamicInstallBundles",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "13": {
+            "name": "bDynamicInstallBundlesError",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "14": {
+            "name": "bDynamicInstallBundlesComplete",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "15": {
+            "name": "DynamicInstallBundlesUpdateStartTime",
+            "type": "DoubleProperty"
+        },
+        "16": {
+            "name": "VariantUnlockType",
+            "type": "EnumProperty",
+            "enumName": "EVariantUnlockType"
+        },
+        "17": {
+            "name": "PreviewPawnRotationOffset",
+            "type": "StructProperty",
+            "structType": "Rotator"
+        },
+        "18": {
+            "name": "FoleyLibraries",
+            "type": "ArrayProperty",
+            "innerType": "ObjectProperty"
+        },
+        "19": {
+            "name": "DisallowedCosmeticTags",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
+        "20": {
+            "name": "MetaTags",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
+        "21": {
+            "name": "VariantChannelsToNeverSendToMCP",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "GameplayTag"
+        },
+        "22": {
+            "name": "MaterialOverrides",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "AthenaCosmeticMaterialOverride"
+        },
+        "23": {
+            "name": "ObservedPlayerStats",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
         "24": {
             "name": "BuiltInEmotes",
             "type": "ArrayProperty",
@@ -895,6 +994,18 @@
             "type": "StructProperty",
             "structType": "GameplayTagContainer"
         },
+        "82": {
+            "name": "WidePreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "83": {
+            "name": "SmallPreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "84": {
+            "name": "LargePreviewImage",
+            "type": "SoftObjectProperty"
+        },
         "85": {
             "name": "DisplayAssetPath",
             "type": "SoftObjectProperty"
@@ -902,6 +1013,20 @@
         "86": {
             "name": "Series",
             "type": "ObjectProperty"
+        }
+    },
+    "AthenaCosmeticMaterialOverride": {
+        "0": {
+            "name": "ComponentName",
+            "type": "NameProperty"
+        },
+        "1": {
+            "name": "MaterialOverrideIndex",
+            "type": "IntProperty"
+        },
+        "2": {
+            "name": "OverrideMaterial",
+            "type": "SoftObjectProperty"
         }
     },
     "FortRarityData": {
