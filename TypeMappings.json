@@ -2387,5 +2387,124 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "AthenaEmojiItemDefinition": {
+    "1": {
+      "name": "PreviewAnimation",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "SpriteSheet",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "SheetDimensions",
+      "type": "StructProperty",
+      "structType": "IntPoint"
+    },
+    "4": {
+      "name": "FrameIndex",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "FrameCount",
+      "type": "IntProperty"
+    },
+    "6": {
+      "name": "BaseMaterial",
+      "type": "ObjectProperty"
+    },
+    "36": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "98": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "112": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "113": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "114": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "117": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "128": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "129": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortVariantTokenType": {
+    "1": {
+      "name": "cosmetic_item",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "VariantChanelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "3": {
+      "name": "VariantNameTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "5": {
+      "name": "bAutoEquipVariant",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bMarkItemUnseen",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bCreateGiftbox",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "33": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "34": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "35": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "49": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "50": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "54": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
   }
 }
