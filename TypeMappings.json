@@ -2208,5 +2208,184 @@
       "type": "StructProperty",
       "structType": "GameplayTag"
     }
+  },
+  "AthenaToyItemDefinition": {
+    "0": {
+      "name": "ToySpawnAbility",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ToyActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "FrontEndPreviewActor",
+      "type": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "25": {
+      "name": "AnimationFemaleOverride",
+      "type": "SoftObjectProperty"
+    },
+    "29": {
+      "name": "EmoteCooldownSecs",
+      "type": "FloatProperty"
+    },
+    "33": {
+      "name": "bSwitchToHarvestingToolOnUse",
+      "type": "BoolProperty"
+    },
+    "34": {
+      "name": "bHolsterWeapon",
+      "type": "BoolProperty"
+    },
+    "35": {
+      "name": "bHolsterWeaponIfDualWieldPickaxe",
+      "type": "BoolProperty"
+    },
+    "55": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
+    },
+    "86": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "100": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "101": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "102": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "105": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "116": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "117": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "121": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
+  },
+  "AthenaVictoryPoseItemDefinition": {
+    "0": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "77": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "92": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "AthenaBattleBusItemDefinition": {
+    "0": {
+      "name": "IgnitionSound",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "LobbyLoopingMusic",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "LobbyLoopingSound",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "FlightLoopingMusic",
+      "type": "SoftObjectProperty"
+    },
+    "4": {
+      "name": "FlightLoopingSound",
+      "type": "SoftObjectProperty"
+    },
+    "5": {
+      "name": "BusPrefabClass",
+      "type": "SoftObjectProperty"
+    },
+    "65": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "66": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "82": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "AthenaConsumableEmoteItemDefinition": {
+    "0": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "77": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "78": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "92": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
   }
 }
