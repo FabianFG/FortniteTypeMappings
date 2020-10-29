@@ -14,5 +14,5 @@ We have some basic guidelines before creating a [PR](https://github.com/FabianFG
 
 - EnumProperties should have the right `enumName` and their values added in the [EnumMappings](https://github.com/FabianFG/FortniteTypeMappings/blob/master/EnumMappings.json) file
 
-- engine/core structs such as `FVector` should not be added as a key in the [TypeMappings](https://github.com/FabianFG/FortniteTypeMappings/blob/master/TypeMappings.json) file as they are parsed sequential.
+- engine/core structs such as `FVector` should not be added as a key in the [TypeMappings](https://github.com/FabianFG/FortniteTypeMappings/blob/master/TypeMappings.json) file as they are parsed sequentially
     - if you are not sure if FModel already has support for them, you can check if its present in FModel's [UScriptStruct.cs](https://github.com/iAmAsval/FModel/blob/master/FModel/PakReader/Parsers/Objects/UScriptStruct.cs) file
