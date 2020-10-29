@@ -2208,5 +2208,312 @@
       "type": "StructProperty",
       "structType": "GameplayTag"
     }
+  },
+  "AthenaToyItemDefinition": {
+    "0": {
+      "name": "ToySpawnAbility",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ToyActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "FrontEndPreviewActor",
+      "type": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "25": {
+      "name": "AnimationFemaleOverride",
+      "type": "SoftObjectProperty"
+    },
+    "29": {
+      "name": "EmoteCooldownSecs",
+      "type": "FloatProperty"
+    },
+    "33": {
+      "name": "bSwitchToHarvestingToolOnUse",
+      "type": "BoolProperty"
+    },
+    "34": {
+      "name": "bHolsterWeapon",
+      "type": "BoolProperty"
+    },
+    "35": {
+      "name": "bHolsterWeaponIfDualWieldPickaxe",
+      "type": "BoolProperty"
+    },
+    "55": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
+    },
+    "86": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "100": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "101": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "102": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "105": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "116": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "117": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "121": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
+  },
+  "AthenaVictoryPoseItemDefinition": {
+    "0": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "77": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "92": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "AthenaBattleBusItemDefinition": {
+    "0": {
+      "name": "IgnitionSound",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "LobbyLoopingMusic",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "LobbyLoopingSound",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "FlightLoopingMusic",
+      "type": "SoftObjectProperty"
+    },
+    "4": {
+      "name": "FlightLoopingSound",
+      "type": "SoftObjectProperty"
+    },
+    "5": {
+      "name": "BusPrefabClass",
+      "type": "SoftObjectProperty"
+    },
+    "65": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "66": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "82": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "AthenaConsumableEmoteItemDefinition": {
+    "0": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "77": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "78": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "92": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "AthenaEmojiItemDefinition": {
+    "1": {
+      "name": "PreviewAnimation",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "SpriteSheet",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "SheetDimensions",
+      "type": "StructProperty",
+      "structType": "IntPoint"
+    },
+    "4": {
+      "name": "FrameIndex",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "FrameCount",
+      "type": "IntProperty"
+    },
+    "6": {
+      "name": "BaseMaterial",
+      "type": "ObjectProperty"
+    },
+    "36": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "98": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "112": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "113": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "114": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "117": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "128": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "129": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortVariantTokenType": {
+    "1": {
+      "name": "cosmetic_item",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "VariantChanelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "3": {
+      "name": "VariantNameTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "5": {
+      "name": "bAutoEquipVariant",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bMarkItemUnseen",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bCreateGiftbox",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "33": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "34": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "35": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "38": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "49": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "50": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "52": {
+      "name": "Series",
+      "type": "ObjectProperty"
+    },
+    "54": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
   }
 }
