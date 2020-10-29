@@ -1014,6 +1014,103 @@
       "type": "ObjectProperty"
     }
   },
+  "AthenaPickaxeItemDefinition": {
+    "0": {
+      "name": "WeaponDefinition",
+      "type": "ObjectProperty"
+    },
+    "5": {
+      "name": "PickaxeImpactFXPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "6": {
+      "name": "PickaxeDualWieldPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "7": {
+      "name": "PickaxeDualWieldPreviewRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "10": {
+      "name": "CameraFramingBounds",
+      "type": "StructProperty",
+      "structType": "FortUICameraFrameTargetBounds"
+    },
+    "57": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "65": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "71": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "72": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "73": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "76": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "82": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "87": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "88": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "89": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
+    "90": {
+      "name": "Series",
+      "type": "ObjectProperty"
+    },
+    "91": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "92": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
+  },
+  "FortUICameraFrameTargetBounds": {
+    "0": {
+      "name": "Origin",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "1": {
+      "name": "CylinderHalfHeight",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "CylinderRadius",
+      "type": "FloatProperty"
+    }
+  },
   "AthenaCosmeticMaterialOverride": {
     "0": {
       "name": "ComponentName",
