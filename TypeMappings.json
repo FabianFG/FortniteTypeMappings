@@ -1,221 +1,220 @@
 {
     "SoundWave": {
-		"0": {
-			"name": "CompressionQuality",
+        "0": {
+            "name": "CompressionQuality",
             "type": "IntProperty"
-		},
-		"1": {
-			"name": "StreamingPriority",
+        },
+        "1": {
+            "name": "StreamingPriority",
             "type": "IntProperty"
-		},
-		"2": {
-			"name": "SampleRateQuality",
-			"type": "EnumProperty",
-			"enumName": "ESoundwaveSampleRateSettings"
-		},
-		"3": {
-			"name": "SoundGroup",
-			"type": "EnumProperty",
-			"enumName": "ESoundGroup"
-		},
-		"4": {
-			"name": "bLooping",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"5": {
-			"name": "bStreaming",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"6": {
-			"name": "bSeekableStreaming",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"7": {
-			"name": "LoadingBehavior",
-			"type": "EnumProperty",
-			"enumName": "ESoundWaveLoadingBehavior"
-		},
-		"8": {
-			"name": "bMature",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"9": {
-			"name": "bManualWordWrap",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"10": {
-			"name": "bSingleLine",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"11": {
-			"name": "bIsAmbisonics",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"12": {
-			"name": "FrequenciesToAnalyze",
-			"type": "ArrayProperty",
-			"innerType": "FloatProperty"
-		},
-		"13": {
-			"name": "CookedSpectralTimeData",
-			"type": "ArrayProperty",
-			"innerType": "StructProperty",
-			"structType": "SoundWaveSpectralTimeData"
-		},
-		"14": {
-			"name": "CookedEnvelopeTimeData",
-			"type": "ArrayProperty",
-			"innerType": "StructProperty",
-			"structType": "SoundWaveEnvelopeTimeData"
-		},
-		"15": {
-			"name": "InitialChunkSize",
-			"type": "IntProperty"
-		},
-		"16": {
-			"name": "SpokenText",
-			"type": "StrProperty"
-		},
-		"17": {
-			"name": "SubtitlePriority",
-			"type": "FloatProperty"
-		},
-		"18": {
-			"name": "Volume",
-			"type": "FloatProperty"
-		},
-		"19": {
-			"name": "Pitch",
-			"type": "FloatProperty"
-		},
-		"20": {
-			"name": "NumChannels",
-			"type": "IntProperty"
-		},
-		"21": {
-			"name": "SampleRate",
-			"type": "IntProperty"
-		},
-		"22": {
-			"name": "Subtitles",
-			"type": "ArrayProperty",
-			"innerType": "StructProperty",
-			"structType": "SubtitleCue"
-		},
-		"23": {
-			"name": "Curves",
-			"type": "ObjectProperty"
-		},
-		"24": {
-			"name": "InternalCurves",
-			"type": "ObjectProperty"
-		},
-		"25": {
-			"name": "SoundClassObject",
-			"type": "ObjectProperty"
-		},
-		"26": {
-			"name": "bDebug",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"27": {
-			"name": "bOverrideConcurrency",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"28": {
-			"name": "bOutputToBusOnly",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"29": {
-			"name": "bHasDelayNode",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"30": {
-			"name": "bHasConcatenatorNode",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"31": {
-			"name": "bBypassVolumeScaleForPriority",
-			"type": "BoolProperty",
-			"bool": true
-		},
-		"32": {
-			"name": "VirtualizationMode",
-			"type": "EnumProperty",
-			"enumName": "EVirtualizationMode"
-		},
-		"35": {
-			"name": "Duration",
-			"type": "FloatProperty"
-		},
-		"36": {
-			"name": "MaxDistance",
-			"type": "FloatProperty"
-		},
-		"37": {
-			"name": "TotalSamples",
-			"type": "FloatProperty"
-		},
-		"38": {
-			"name": "Priority",
-			"type": "FloatProperty"
-		}
-
-	},
-	"SubtitleCue": {
-		"0": {
-			"name": "Text",
-			"type": "TextProperty"
-		},
-		"1": {
-			"name": "Time",
-			"type": "FloatProperty"
-		}
-	},
-	"SoundWaveEnvelopeTimeData": {
-		"0": {
-			"name": "Amplitude",
-			"type": "FloatProperty"
-		},
-		"1": {
-			"name": "TimeSec",
-			"type": "FloatProperty"
-		}
-	},
-	"SoundWaveSpectralTimeData": {
-		"0": {
-			"name": "Data",
-			"type": "ArrayProperty",
-			"innerType": "StructProperty",
-			"structType": "SoundWaveSpectralDataEntry"
-		},
-		"1": {
-			"name": "TimeSec",
-			"type": "FloatProperty"
-		}
-	},
-	"SoundWaveSpectralDataEntry": {
-		"0": {
-			"name": "Magnitude",
-			"type": "FloatProperty"
-		},
-		"1": {
-			"name": "NormalizedMagnitude",
-			"type": "FloatProperty"
-		}
-	},
+        },
+        "2": {
+            "name": "SampleRateQuality",
+            "type": "EnumProperty",
+            "enumName": "ESoundwaveSampleRateSettings"
+        },
+        "3": {
+            "name": "SoundGroup",
+            "type": "EnumProperty",
+            "enumName": "ESoundGroup"
+        },
+        "4": {
+            "name": "bLooping",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "5": {
+            "name": "bStreaming",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "6": {
+            "name": "bSeekableStreaming",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "7": {
+            "name": "LoadingBehavior",
+            "type": "EnumProperty",
+            "enumName": "ESoundWaveLoadingBehavior"
+        },
+        "8": {
+            "name": "bMature",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "9": {
+            "name": "bManualWordWrap",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "10": {
+            "name": "bSingleLine",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "11": {
+            "name": "bIsAmbisonics",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "12": {
+            "name": "FrequenciesToAnalyze",
+            "type": "ArrayProperty",
+            "innerType": "FloatProperty"
+        },
+        "13": {
+            "name": "CookedSpectralTimeData",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "SoundWaveSpectralTimeData"
+        },
+        "14": {
+            "name": "CookedEnvelopeTimeData",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "SoundWaveEnvelopeTimeData"
+        },
+        "15": {
+            "name": "InitialChunkSize",
+            "type": "IntProperty"
+        },
+        "16": {
+            "name": "SpokenText",
+            "type": "StrProperty"
+        },
+        "17": {
+            "name": "SubtitlePriority",
+            "type": "FloatProperty"
+        },
+        "18": {
+            "name": "Volume",
+            "type": "FloatProperty"
+        },
+        "19": {
+            "name": "Pitch",
+            "type": "FloatProperty"
+        },
+        "20": {
+            "name": "NumChannels",
+            "type": "IntProperty"
+        },
+        "21": {
+            "name": "SampleRate",
+            "type": "IntProperty"
+        },
+        "22": {
+            "name": "Subtitles",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "SubtitleCue"
+        },
+        "23": {
+            "name": "Curves",
+            "type": "ObjectProperty"
+        },
+        "24": {
+            "name": "InternalCurves",
+            "type": "ObjectProperty"
+        },
+        "25": {
+            "name": "SoundClassObject",
+            "type": "ObjectProperty"
+        },
+        "26": {
+            "name": "bDebug",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "27": {
+            "name": "bOverrideConcurrency",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "28": {
+            "name": "bOutputToBusOnly",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "29": {
+            "name": "bHasDelayNode",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "30": {
+            "name": "bHasConcatenatorNode",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "31": {
+            "name": "bBypassVolumeScaleForPriority",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "32": {
+            "name": "VirtualizationMode",
+            "type": "EnumProperty",
+            "enumName": "EVirtualizationMode"
+        },
+        "35": {
+            "name": "Duration",
+            "type": "FloatProperty"
+        },
+        "36": {
+            "name": "MaxDistance",
+            "type": "FloatProperty"
+        },
+        "37": {
+            "name": "TotalSamples",
+            "type": "FloatProperty"
+        },
+        "38": {
+            "name": "Priority",
+            "type": "FloatProperty"
+        }
+    },
+    "SubtitleCue": {
+        "0": {
+            "name": "Text",
+            "type": "TextProperty"
+        },
+        "1": {
+            "name": "Time",
+            "type": "FloatProperty"
+        }
+    },
+    "SoundWaveEnvelopeTimeData": {
+        "0": {
+            "name": "Amplitude",
+            "type": "FloatProperty"
+        },
+        "1": {
+            "name": "TimeSec",
+            "type": "FloatProperty"
+        }
+    },
+    "SoundWaveSpectralTimeData": {
+        "0": {
+            "name": "Data",
+            "type": "ArrayProperty",
+            "innerType": "StructProperty",
+            "structType": "SoundWaveSpectralDataEntry"
+        },
+        "1": {
+            "name": "TimeSec",
+            "type": "FloatProperty"
+        }
+    },
+    "SoundWaveSpectralDataEntry": {
+        "0": {
+            "name": "Magnitude",
+            "type": "FloatProperty"
+        },
+        "1": {
+            "name": "NormalizedMagnitude",
+            "type": "FloatProperty"
+        }
+    },
     "DataTable": {
         "0": {
             "name": "RowStruct",
@@ -1796,6 +1795,34 @@
             "type": "NameProperty"
         }
     },
+    "Vector": {
+        "0": {
+            "name": "X",
+            "type": "FloatProperty"
+        },
+        "1": {
+            "name": "Y",
+            "type": "FloatProperty"
+        },
+        "2": {
+            "name": "Z",
+            "type": "FloatProperty"
+        }
+    },
+    "Rotator": {
+        "0": {
+            "name": "Pitch",
+            "type": "FloatProperty"
+        },
+        "1": {
+            "name": "Yaw",
+            "type": "FloatProperty"
+        },
+        "2": {
+            "name": "Roll",
+            "type": "FloatProperty"
+        }
+    },
     "DataTableRowHandle": {
         "0": {
             "name": "DataTable",
@@ -2208,6 +2235,192 @@
             "name": "ActiveVariantTag",
             "type": "StructProperty",
             "structType": "GameplayTag"
+        }
+    },
+    "AthenaLoadingScreenItemDefinition": {
+        "0": {
+            "name": "BackgroundImage",
+            "type": "SoftObjectProperty"
+        },
+        "1": {
+            "name": "BackgroundMaterialOrTexture",
+            "type": "SoftObjectProperty"
+        },
+        "2": {
+            "name": "BackgroundWidget",
+            "type": "SoftClassProperty"
+        },
+        "3": {
+            "name": "BackgroundDesiredSize",
+            "type": "StructProperty",
+            "structType": "Vector2D"
+        },
+        "4": {
+            "name": "BackgroundColor",
+            "type": "StructProperty",
+            "structType": "LinearColor"
+        },
+        "29": {
+            "name": "ItemPreviewActorClass",
+            "type": "SoftClassProperty"
+        },
+        "5": {
+            "name": "bIsShuffleTile",
+            "type": "BoolProperty",
+            "bool": true
+        },
+        "50": {
+            "name": "Rarity",
+            "type": "EnumProperty",
+            "enumName": "EFortRarity"
+        },
+        "64": {
+            "name": "DisplayName",
+            "type": "TextProperty"
+        },
+        "65": {
+            "name": "ShortDescription",
+            "type": "TextProperty"
+        },
+        "66": {
+            "name": "Description",
+            "type": "TextProperty"
+        },
+        "69": {
+            "name": "GameplayTags",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
+        "75": {
+            "name": "FrontendPreviewScale",
+            "type": "FloatProperty"
+        },
+        "79": {
+            "name": "WidePreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "80": {
+            "name": "SmallPreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "81": {
+            "name": "LargePreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "82": {
+            "name": "DisplayAssetPath",
+            "type": "StructProperty",
+            "structType": "SoftObjectPath"
+        },
+        "83": {
+            "name": "Series",
+            "type": "ObjectProperty"
+        },
+        "84": {
+            "name": "FrontendPreviewPivotOffset",
+            "type": "StructProperty",
+            "structType": "Vector"
+        },
+        "85": {
+            "name": "FrontendPreviewInitialRotation",
+            "type": "StructProperty",
+            "structType": "Rotator"
+        }
+    },
+    "AthenaMusicPackItemDefinition": {
+        "0": {
+            "name": "FrontEndLobbyMusic",
+            "type": "SoftObjectProperty"
+        },
+        "1": {
+            "name": "CoverArtImage",
+            "type": "SoftObjectProperty"
+        },
+        "2": {
+            "name": "bIsDefaultMusicPack",
+            "type": "BoolProperty"
+        },
+        "3": {
+            "name": "MusicPreviewStartTime",
+            "type": "FloatProperty"
+        },
+        "49": {
+            "name": "Rarity",
+            "type": "EnumProperty",
+            "enumName": "EFortRarity"
+        },
+        "63": {
+            "name": "DisplayName",
+            "type": "TextProperty"
+        },
+        "64": {
+            "name": "ShortDescription",
+            "type": "TextProperty"
+        },
+        "65": {
+            "name": "Description",
+            "type": "TextProperty"
+        },
+        "68": {
+            "name": "GameplayTags",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
+        "79": {
+            "name": "SmallPreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "80": {
+            "name": "LargePreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "82": {
+            "name": "Series",
+            "type": "ObjectProperty"
+        }
+    },
+    "AthenaSprayItemDefinition": {
+        "0": {
+            "name": "DecalMaterial",
+            "type": "SoftObjectProperty"
+        },
+        "3": {
+            "name": "DecalTexture",
+            "type": "SoftObjectProperty"
+        },
+        "87": {
+            "name": "Rarity",
+            "type": "EnumProperty",
+            "enumName": "EFortRarity"
+        },
+        "101": {
+            "name": "DisplayName",
+            "type": "TextProperty"
+        },
+        "102": {
+            "name": "ShortDescription",
+            "type": "TextProperty"
+        },
+        "103": {
+            "name": "Description",
+            "type": "TextProperty"
+        },
+        "106": {
+            "name": "GameplayTags",
+            "type": "StructProperty",
+            "structType": "GameplayTagContainer"
+        },
+        "117": {
+            "name": "SmallPreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "118": {
+            "name": "LargePreviewImage",
+            "type": "SoftObjectProperty"
+        },
+        "120": {
+            "name": "Series",
+            "type": "ObjectProperty"
         }
     }
 }
