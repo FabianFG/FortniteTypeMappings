@@ -2493,6 +2493,11 @@
       "name": "Description",
       "type": "TextProperty"
     },
+    "38": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "49": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
@@ -2500,6 +2505,10 @@
     "50": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
+    },
+    "52": {
+      "name": "Series",
+      "type": "ObjectProperty"
     },
     "54": {
       "name": "FrontendPreviewInitialRotation",
