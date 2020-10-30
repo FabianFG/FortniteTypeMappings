@@ -1039,6 +1039,63 @@
       "type": "StructProperty",
       "structType": "FortUICameraFrameTargetBounds"
     },
+    "11": {
+      "name": "CameraFramingBoundsCenterOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "24": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "26": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
+    },
+    "27": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "29": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "31": {
+      "name": "ItemVariantPreviews",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortCosmeticVariantPreview"
+    },
+    "34": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "40": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "ExclusiveRequiresOutfitTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "44": {
+      "name": "CustomExclusiveCallout",
+      "type": "TextProperty"
+    },
+    "45": {
+      "name": "ExclusiveDesciption",
+      "type": "TextProperty"
+    },
+    "46": {
+      "name": "ExclusiveIcon",
+      "type": "SoftObjectProperty"
+    },
     "57": {
       "name": "Rarity",
       "type": "EnumProperty",
