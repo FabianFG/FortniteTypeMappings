@@ -3760,6 +3760,17 @@
       "type": "StructProperty",
       "structType": "FortUICameraFrameTargetBounds"
     },
+    "26": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
+    },
+    "27": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "57": {
       "name": "Rarity",
       "type": "EnumProperty",
