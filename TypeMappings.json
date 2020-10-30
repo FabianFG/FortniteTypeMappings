@@ -1036,6 +1036,160 @@
       "type": "SoftObjectProperty"
     }
   },
+  "AthenaPickaxeItemDefinition": {
+    "0": {
+      "name": "WeaponDefinition",
+      "type": "ObjectProperty"
+    },
+    "5": {
+      "name": "PickaxeImpactFXPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "6": {
+      "name": "PickaxeDualWieldPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "7": {
+      "name": "PickaxeDualWieldPreviewRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "10": {
+      "name": "CameraFramingBounds",
+      "type": "StructProperty",
+      "structType": "FortUICameraFrameTargetBounds"
+    },
+    "11": {
+      "name": "CameraFramingBoundsCenterOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "24": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "26": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
+    },
+    "27": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "29": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "31": {
+      "name": "ItemVariantPreviews",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortCosmeticVariantPreview"
+    },
+    "34": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "40": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "ExclusiveRequiresOutfitTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "44": {
+      "name": "CustomExclusiveCallout",
+      "type": "TextProperty"
+    },
+    "45": {
+      "name": "ExclusiveDesciption",
+      "type": "TextProperty"
+    },
+    "46": {
+      "name": "ExclusiveIcon",
+      "type": "SoftObjectProperty"
+    },
+    "57": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "65": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "71": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "72": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "73": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "76": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "82": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "87": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "88": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "89": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
+    "90": {
+      "name": "Series",
+      "type": "ObjectProperty"
+    },
+    "91": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "92": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    }
+  },
+  "FortUICameraFrameTargetBounds": {
+    "0": {
+      "name": "Origin",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "1": {
+      "name": "CylinderHalfHeight",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "CylinderRadius",
+      "type": "FloatProperty"
+    }
+  },
   "AthenaCosmeticMaterialOverride": {
     "0": {
       "name": "ComponentName",
