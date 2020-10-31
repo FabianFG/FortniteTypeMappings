@@ -3809,6 +3809,33 @@
       "structType": "MarshalledVFXData"
     }
   },
+  "MarshalledVFX_AuthoredDataConfig": {
+    "0": {
+      "name": "Data",
+      "type": "StructProperty",
+      "structType": "MarshalledVFX_AuthoredDataConfigStruct"
+    }
+  },
+  "MarshalledVFX_AuthoredDataConfigStruct": {
+    "0": {
+      "name": "NiagaraVFX",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "NiagaraVFXMapping"
+    }
+  },
+  "NiagaraVFXMapping": {
+    "0": {
+      "name": "ParameterGroups",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "8": {
+      "name": "Type",
+      "type": "EnumProperty",
+      "enumName": "EFXType"
+    }
+  },
   "FortCodeTokenItemDefinition": {
     "0": {
       "name": "RedemptionCodeRule",
