@@ -476,5 +476,24 @@
     "22": "Invisible",
     "23": "Max_None",
     "24": "EFortFrontendInventoryFilter_MAX"
+  },
+  "ECurveTableMode": {
+    "0": "Empty",
+    "1": "SimpleCurves",
+    "2": "RichCurves"
+  },
+  "EWorldItemDropBehavior": {
+    "0": "DropAsPickup",
+    "1": "DestroyOnDrop",
+    "2": "DropAsPickupDestroyOnEmpty",
+    "3": "DropAsPickupEvenWhenEmpty",
+    "4": "EWorldItemDropBehavior_MAX"
+  },
+  "EFortWeaponReloadType": {
+    "0": "ReloadWholeClip",
+    "1": "ReloadIndividualBullets",
+    "2": "ReloadBasedOnAmmoCostPerFire",
+    "3": "ReloadBasedOnCartridgePerFire",
+    "4": "EFortWeaponReloadType_MAX"
   }
 }
