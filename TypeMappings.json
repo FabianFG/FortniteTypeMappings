@@ -5123,5 +5123,223 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "MaterialInstanceConstant": {
+    "1": {
+      "name": "PhysMaterial",
+      "type": "ObjectProperty"
+    },
+    "10": {
+      "name": "Parent",
+      "type": "ObjectProperty"
+    },
+    "11": {
+      "name": "bHasStaticPermutationResource",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bOverrideSubsurfaceProfile",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "ScalarParameterValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ScalarParameterValues"
+    },
+    "14": {
+      "name": "VectorParameterValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VectorParameterValues"
+    },
+    "15": {
+      "name": "TextureParameterValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "TextureParameterValues"
+    },
+    "18": {
+      "name": "BasePropertyOverrides",
+      "type": "StructProperty",
+      "structType": "BasePropertyOverrides"
+    },
+    "19": {
+      "name": "StaticParameters",
+      "type": "StructProperty",
+      "structType": "StaticParameters"
+    },
+    "22": {
+      "name": "SubsurfaceProfile",
+      "type": "ObjectProperty"
+    },
+    "24": {
+      "name": "bHasStaticPermutationResource",
+      "type": "BoolProperty"
+    },
+    "21": {
+      "name": "CachedReferencedTextures",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "ScalarParameterValues": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "ParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "TextureParameterValues": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "ParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "VectorParameterValues": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "ParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "BasePropertyOverrides": {
+    "2": {
+      "name": "bOverride_ShadingModel",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "bOverride_TwoSided",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "TwoSided",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "DitheredLODTransition",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "BlendMode",
+      "type": "ByteProperty"
+    },
+    "10": {
+      "name": "ShadingModel",
+      "type": "ByteProperty"
+    },
+    "11": {
+      "name": "OpacityMaskClipValue",
+      "type": "FloatProperty"
+    }
+  },
+  "ParameterInfo": {
+    "0": {
+      "name": "Name",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "Association",
+      "type": "ByteProperty"
+    },
+    "2": {
+      "name": "Index",
+      "type": "IntProperty"
+    }
+  },
+  "StaticParameters": {
+    "0": {
+      "name": "StaticSwitchParameters",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "StaticSwitchParameters"
+    },
+    "1": {
+      "name": "StaticComponentMaskParameters",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "StaticComponentMaskParameters"
+    }
+  },
+  "StaticComponentMaskParameters": {
+    "0": {
+      "name": "R",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "G",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "B",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "A",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "ParameterInfo"
+    },
+    "5": {
+      "name": "bOverride",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "StaticSwitchParameters": {
+    "0": {
+      "name": "Value",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "ParameterInfo"
+    },
+    "2": {
+      "name": "bOverride",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
   }
 }
