@@ -2116,6 +2116,33 @@
       "type": "NameProperty"
     }
   },
+  "CurveTable": {
+    "0": {
+      "name": "InterpMode",
+      "type": "EnumProperty",
+      "enumName": "ERichCurveInterpMode"
+    },
+    "1": {
+      "name": "Keys",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SimpleCurveKey"
+    },
+    "2": {
+      "name": "DefaultValue",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "PreInfinityExtrap",
+      "type": "EnumProperty",
+      "enumName": "ERichCurveExtrapolation"
+    },
+    "4": {
+      "name": "PostInfinityExtrap",
+      "type": "EnumProperty",
+      "enumName": "ERichCurveExtrapolation"
+    }
+  },
   "FortItemCategory": {
     "0": {
       "name": "PrimaryCategories",
@@ -2819,6 +2846,12 @@
       "innerType": "StructProperty",
       "structType": "MontageItemAccessData"
     },
+    "34": {
+      "name": "VisibilityData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MontageVisibilityData"
+    },
     "35": {
       "name": "EmoteWheelExclusiveTags",
       "type": "StructProperty",
@@ -2828,6 +2861,11 @@
       "name": "PreviewPawnRotationOffset",
       "type": "StructProperty",
       "structType": "Rotator"
+    },
+    "55": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
     },
     "66": {
       "name": "ItemPreviewHero",
@@ -2901,6 +2939,123 @@
       "name": "FrontendPreviewPivotOffset",
       "type": "StructProperty",
       "structType": "Vector"
+    }
+  },
+  "FortCosmeticProfileLoadoutVariant": {
+    "0": {
+      "name": "LoadoutAugmentations",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "LoadoutVariantDef"
+    }
+  },
+  "LoadoutVariantDef": {
+    "0": {
+      "name": "LoadoutItem",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "LocationToInsert",
+      "type": "EnumProperty",
+      "enumName": "ELoadoutVariantInsertType"
+    },
+    "2": {
+      "name": "bItemExpectedInLoadout",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bRequireItemToBeCurrent",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bIgnoreRequireItemToBeCurrentInFrontEnd",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "VariantEmoteMontages",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "EmoteMontageVariantDef"
+    },
+    "6": {
+      "name": "VariantParts",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "25": {
+      "name": "UnlockingItemDef",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "EmoteMontageVariantDef": {
+    "0": {
+      "name": "MontageSwaps",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "EmoteMontageSwap"
+    },
+    "1": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "CosmeticMetaTagContainer"
+    },
+    "2": {
+      "name": "bStartUnlocked",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bIsDefault",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bHideIfNotOwned",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "CustomizationVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "6": {
+      "name": "VariantName",
+      "type": "TextProperty"
+    },
+    "7": {
+      "name": "PreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "8": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "9": {
+      "name": "UnlockingItemDef",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "EmoteMontageSwap": {
+    "0": {
+      "name": "ToSwapFrom",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ToSwapTo",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "MontageVisibilityData": {
+    "0": {
+      "name": "Rule",
+      "type": "EnumProperty",
+      "enumName": "EMontageVisibilityRule"
+    },
+    "1": {
+      "name": "Item",
+      "type": "ObjectProperty"
     }
   },
   "FortEmoteMapping": {
@@ -3761,6 +3916,33 @@
       "structType": "MarshalledVFXAuthoredData"
     }
   },
+  "MarshalledVFX_AuthoredDataConfig": {
+    "0": {
+      "name": "Data",
+      "type": "StructProperty",
+      "structType": "MarshalledVFX_AuthoredDataConfigStruct"
+    }
+  },
+  "MarshalledVFX_AuthoredDataConfigStruct": {
+    "0": {
+      "name": "NiagaraVFX",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "NiagaraVFXMapping"
+    }
+  },
+  "NiagaraVFXMapping": {
+    "0": {
+      "name": "ParameterGroups",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "8": {
+      "name": "Type",
+      "type": "EnumProperty",
+      "enumName": "EFXType"
+    }
+  },
   "MarshalledVFXData": {
     "0": {
       "name": "ParameterGroups",
@@ -3809,33 +3991,6 @@
       "structType": "MarshalledVFXData"
     }
   },
-  "MarshalledVFX_AuthoredDataConfig": {
-    "0": {
-      "name": "Data",
-      "type": "StructProperty",
-      "structType": "MarshalledVFX_AuthoredDataConfigStruct"
-    }
-  },
-  "MarshalledVFX_AuthoredDataConfigStruct": {
-    "0": {
-      "name": "NiagaraVFX",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "NiagaraVFXMapping"
-    }
-  },
-  "NiagaraVFXMapping": {
-    "0": {
-      "name": "ParameterGroups",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
-    },
-    "8": {
-      "name": "Type",
-      "type": "EnumProperty",
-      "enumName": "EFXType"
-    }
-  },
   "FortCodeTokenItemDefinition": {
     "0": {
       "name": "RedemptionCodeRule",
@@ -3880,6 +4035,11 @@
     "0": {
       "name": "Value",
       "type": "FloatProperty"
+    },
+    "1": {
+      "name": "Curve",
+      "type": "StructProperty",
+      "structType": "CurveTableRowHandle"
     }
   },
   "LevelSaveRecordCollectionItem": {
@@ -3952,6 +4112,10 @@
   },
   "CustomPartMaterialOverrideData": {
     "0": {
+      "name": "ComponentName",
+      "type": "NameProperty"
+    },
+    "1": {
       "name": "MaterialOverrideIndex",
       "type": "IntProperty"
     },
@@ -4191,140 +4355,6 @@
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
-    }
-  },
-  "FortCosmeticMeshVariant": {
-    "0": {
-      "name": "MeshOptions",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "MeshVariantDef"
-    },
-    "1": {
-      "name": "VariantChannelTag",
-      "type": "StructProperty",
-      "structType": "GameplayTag"
-    },
-    "2": {
-      "name": "VariantChannelName",
-      "type": "TextProperty"
-    }
-  },
-  "MeshVariantDef": {
-    "0": {
-      "name": "VariantMeshes",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "VariantMeshes"
-    },
-    "1": {
-      "name": "VariantMaterials",
-      "type": "ArrayProperty"
-    },
-    "2": {
-      "name": "VariantMaterialParams",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "MaterialParamterDef"
-    },
-    "3": {
-      "name": "InitialParticleSystemData",
-      "type": "ArrayProperty"
-    },
-    "4": {
-      "name": "VariantParticles",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "ParticleVariant"
-    },
-    "5": {
-      "name": "VariantParticleParams",
-      "type": "ArrayProperty"
-    },
-    "6": {
-      "name": "SocketTransforms",
-      "type": "ArrayProperty"
-    },
-    "7": {
-      "name": "VariantSounds",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "SoundVariant"
-    },
-    "8": {
-      "name": "VariantFoley",
-      "type": "ArrayProperty"
-    },
-    "9": {
-      "name": "VariantActions",
-      "type": "ArrayProperty"
-    },
-    "10": {
-      "name": "MetaTags",
-      "type": "StructProperty",
-      "structType": "CosmeticMetaTagContainer"
-    },
-    "11": {
-      "name": "bStartUnlocked",
-      "type": "BoolProperty"
-    },
-    "12": {
-      "name": "bIsDefault",
-      "type": "BoolProperty"
-    },
-    "13": {
-      "name": "bHideIfNotOwned",
-      "type": "BoolProperty",
-      "bool": false
-    },
-    "14": {
-      "name": "CustomizationVariantTag",
-      "type": "StructProperty",
-      "structType": "GameplayTag"
-    },
-    "15": {
-      "name": "VariantName",
-      "type": "TextProperty"
-    },
-    "16": {
-      "name": "PreviewImage",
-      "type": "SoftObjectProperty"
-    },
-    "17": {
-      "name": "UnlockRequirements",
-      "type": "TextProperty"
-    },
-    "18": {
-      "name": "UnlockingItemDef",
-      "type": "SoftObjectProperty"
-    }
-  },
-  "VariantMeshes": {
-    "0": {
-      "name": "MeshToSwap",
-      "type": "SoftObjectProperty"
-    },
-    "1": {
-      "name": "ComponentToOverride",
-      "type": "NameProperty"
-    },
-    "2": {
-      "name": "OverrideMesh",
-      "type": "SoftObjectProperty"
-    }
-  },
-  "SoundVariant": {
-    "0": {
-      "name": "SoundToSwap",
-      "type": "SoftObjectProperty"
-    },
-    "1": {
-      "name": "ComponentToOverride",
-      "type": "NameProperty"
-    },
-    "2": {
-      "name": "OverrideSound",
-      "type": "SoftObjectProperty"
     }
   },
   "FortHardcoreModifierItemDefinition": {
@@ -5055,6 +5085,125 @@
       "type": "SoftObjectProperty"
     }
   },
+  "FortNeverPersistItemDefinition": {
+    "7": {
+      "name": "bSupportsQuickbarFocus",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "bShouldActivateWhenFocused",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "bCanBeDropped",
+      "type": "BoolProperty"
+    },
+    "17": {
+      "name": "bCanBeReplacedByPickup",
+      "type": "BoolProperty"
+    },
+    "18": {
+      "name": "bItemCanBeStolen",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "bCanBeDepositedInStorageVault",
+      "type": "BoolProperty"
+    },
+    "22": {
+      "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
+    "31": {
+      "name": "MiniMapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "34": {
+      "name": "PickupMeshTransform",
+      "type": "StructProperty",
+      "structType": "Transform"
+    },
+    "36": {
+      "name": "SpecialActorPickupTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "38": {
+      "name": "PickupSpecialActorUniqueID",
+      "type": "NameProperty"
+    },
+    "39": {
+      "name": "PickupMinimapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "40": {
+      "name": "PickupMinimapIconScale",
+      "type": "StructProperty",
+      "structType": "Vector2D"
+    },
+    "41": {
+      "name": "PickupCompassIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "42": {
+      "name": "PickupCompassIconScale",
+      "type": "StructProperty",
+      "structType": "Vector2D"
+    },
+    "43": {
+      "name": "PickupDespawnTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "44": {
+      "name": "InStormPickupDespawnTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "45": {
+      "name": "NetworkCullDistanceOverride",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "46": {
+      "name": "PickupStaticMesh",
+      "type": "SoftObjectProperty"
+    },
+    "48": {
+      "name": "PickupEffectOverride",
+      "type": "SoftObjectProperty"
+    },
+    "62": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "63": {
+      "name": "ItemType",
+      "type": "EnumProperty",
+      "enumName": "EFortItemType"
+    },
+    "76": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "81": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "92": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
   "DataTableCategoryHandle": {
     "0": {
       "name": "DataTable",
@@ -5067,6 +5216,460 @@
     "2": {
       "name": "RowContents",
       "type": "NameProperty"
+    }
+  },
+  "FortWeaponRangedItemDefinition": {
+    "0": {
+      "name": "ProjectileTemplate",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "BulletShellFXTemplate",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "bUseNativeWeaponTrace",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bTraceThroughPawns",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bTraceThroughWorld",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "bShouldSpawnBulletShellFX",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bShouldUsePerfectAimWhenTargetingMinSpread",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bDoNotAllowDoublePump",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "bUseOnTouch",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "bAllowADSInAir",
+      "type": "BoolProperty"
+    },
+    "10": {
+      "name": "bShowReticleHitNotifyAtImpactLocation",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bSecondaryFireRequiresAmmo",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "WeaponActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "14": {
+      "name": "WeaponMeshOverride",
+      "type": "SoftObjectProperty"
+    },
+    "16": {
+      "name": "WeaponStatHandle",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
+    "19": {
+      "name": "AbilitySet",
+      "type": "SoftObjectProperty"
+    },
+    "22": {
+      "name": "BaseAlteration",
+      "type": "SoftObjectProperty"
+    },
+    "23": {
+      "name": "BaseCosmeticAlteration",
+      "type": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "PrimaryFireAbility",
+      "type": "SoftObjectProperty"
+    },
+    "25": {
+      "name": "SecondaryFireAbility",
+      "type": "SoftObjectProperty"
+    },
+    "26": {
+      "name": "ReloadAbility",
+      "type": "SoftObjectProperty"
+    },
+    "28": {
+      "name": "EquippedAbilities",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "29": {
+      "name": "EquippedAbilitySet",
+      "type": "SoftObjectProperty"
+    },
+    "30": {
+      "name": "EquippedCharacterParts",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "31": {
+      "name": "AmmoData",
+      "type": "SoftObjectProperty"
+    },
+    "32": {
+      "name": "AdditionalData",
+      "type": "ObjectProperty"
+    },
+    "33": {
+      "name": "LowAmmoPercentage",
+      "type": "FloatProperty"
+    },
+    "34": {
+      "name": "TriggerType",
+      "type": "EnumProperty",
+      "enumName": "EFortWeaponTriggerType"
+    },
+    "35": {
+      "name": "SecondaryTriggerType",
+      "type": "EnumProperty",
+      "enumName": "EFortWeaponTriggerType"
+    },
+    "37": {
+      "name": "bUsesPhantomReserveAmmo",
+      "type": "BoolProperty"
+    },
+    "38": {
+      "name": "bUsesCustomAmmoType",
+      "type": "BoolProperty"
+    },
+    "40": {
+      "name": "bAllowTargetingDuringReload",
+      "type": "BoolProperty"
+    },
+    "41": {
+      "name": "bTargetingPreventsReload",
+      "type": "BoolProperty"
+    },
+    "44": {
+      "name": "bAlwaysChargeUpToMin",
+      "type": "BoolProperty"
+    },
+    "45": {
+      "name": "bReticleCornerOutsideSpreadRadius",
+      "type": "BoolProperty"
+    },
+    "47": {
+      "name": "bPreventDefaultPreload",
+      "type": "BoolProperty"
+    },
+    "48": {
+      "name": "bRequestClientPreload",
+      "type": "BoolProperty"
+    },
+    "49": {
+      "name": "HitNotifyDuration",
+      "type": "FloatProperty"
+    },
+    "50": {
+      "name": "ReticleImage",
+      "type": "SoftObjectProperty"
+    },
+    "51": {
+      "name": "ReticleCornerAngles",
+      "type": "ArrayProperty",
+      "innerType": "FloatProperty"
+    },
+    "52": {
+      "name": "ReticleCenterImage",
+      "type": "SoftObjectProperty"
+    },
+    "53": {
+      "name": "ReticleCenterPerfectAimImage",
+      "type": "SoftObjectProperty"
+    },
+    "54": {
+      "name": "ReticleCenterImageOffset",
+      "type": "StructProperty",
+      "structType": "Vector2D"
+    },
+    "55": {
+      "name": "ReticleInvalidTargetImage",
+      "type": "SoftObjectProperty"
+    },
+    "56": {
+      "name": "AnalyticTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "57": {
+      "name": "PlayerGrantedGameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "58": {
+      "name": "ActualAnalyticFNames",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "59": {
+      "name": "CreativeTagsHelper",
+      "type": "StructProperty",
+      "structType": "FortCreativeTagsHelper"
+    },
+    "62": {
+      "name": "DropBehavior",
+      "type": "EnumProperty",
+      "enumName": "EWorldItemDropBehavior"
+    },
+    "65": {
+      "name": "bPersistInInventoryWhenFinalStackEmpty",
+      "type": "BoolProperty"
+    },
+    "66": {
+      "name": "bSupportsQuickbarFocus",
+      "type": "BoolProperty"
+    },
+    "68": {
+      "name": "bShouldActivateWhenFocused",
+      "type": "BoolProperty"
+    },
+    "70": {
+      "name": "bForceIntoOverflow",
+      "type": "BoolProperty"
+    },
+    "71": {
+      "name": "bForceStayInOverflow",
+      "type": "BoolProperty"
+    },
+    "72": {
+      "name": "bDropCurrentItemOnOverflow",
+      "type": "BoolProperty"
+    },
+    "73": {
+      "name": "bShouldShowItemToast",
+      "type": "BoolProperty"
+    },
+    "74": {
+      "name": "bShowDirectionalArrowWhenFarOff",
+      "type": "BoolProperty"
+    },
+    "75": {
+      "name": "bCanBeDropped",
+      "type": "BoolProperty"
+    },
+    "76": {
+      "name": "bCanBeReplacedByPickup",
+      "type": "BoolProperty"
+    },
+    "77": {
+      "name": "bItemCanBeStolen",
+      "type": "BoolProperty"
+    },
+    "78": {
+      "name": "bCanBeDepositedInStorageVault",
+      "type": "BoolProperty"
+    },
+    "79": {
+      "name": "bItemHasDurability",
+      "type": "BoolProperty"
+    },
+    "80": {
+      "name": "bAllowedToBeLockedInInventory",
+      "type": "BoolProperty"
+    },
+    "81": {
+      "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
+    "82": {
+      "name": "bAlwaysCountForCollectionQuest",
+      "type": "BoolProperty"
+    },
+    "83": {
+      "name": "bDropOnDeath",
+      "type": "BoolProperty"
+    },
+    "89": {
+      "name": "MiniMapViewableDistance",
+      "type": "FloatProperty"
+    },
+    "90": {
+      "name": "MiniMapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "92": {
+      "name": "LootLevelData",
+      "type": "StructProperty",
+      "structType": "DataTableCategoryHandle"
+    },
+    "93": {
+      "name": "PickupMeshTransform",
+      "type": "StructProperty",
+      "structType": "Transform"
+    },
+    "105": {
+      "name": "PickupStaticMesh",
+      "type": "SoftObjectProperty"
+    },
+    "106": {
+      "name": "PickupSkeletalMesh",
+      "type": "SoftObjectProperty"
+    },
+    "108": {
+      "name": "PickupSound",
+      "type": "SoftObjectProperty"
+    },
+    "110": {
+      "name": "DropSound",
+      "type": "SoftObjectProperty"
+    },
+    "112": {
+      "name": "LandedSound",
+      "type": "SoftObjectProperty"
+    },
+    "113": {
+      "name": "DisassembleRecipe",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
+    "114": {
+      "name": "DisassembleDurabilityDegradeMinLootPercent",
+      "type": "FloatProperty"
+    },
+    "115": {
+      "name": "DisassembleDurabilityDegradeMaxLootPercent",
+      "type": "FloatProperty"
+    },
+    "116": {
+      "name": "PreferredQuickbarSlot",
+      "type": "IntProperty"
+    },
+    "117": {
+      "name": "MinLevel",
+      "type": "IntProperty"
+    },
+    "118": {
+      "name": "MaxLevel",
+      "type": "IntProperty"
+    },
+    "121": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "122": {
+      "name": "ItemType",
+      "type": "EnumProperty",
+      "enumName": "EFortItemType"
+    },
+    "124": {
+      "name": "FilterOverride",
+      "type": "EnumProperty",
+      "enumName": "EFortInventoryFilter"
+    },
+    "125": {
+      "name": "Tier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
+    "126": {
+      "name": "MaxTier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
+    "129": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "130": {
+      "name": "bAllowMultipleStacks",
+      "type": "BoolProperty"
+    },
+    "131": {
+      "name": "bAutoBalanceStacks",
+      "type": "BoolProperty"
+    },
+    "133": {
+      "name": "bInventorySizeLimited",
+      "type": "BoolProperty"
+    },
+    "134": {
+      "name": "ItemTypeNameOverride",
+      "type": "TextProperty"
+    },
+    "135": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "136": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "137": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "139": {
+      "name": "SearchTags",
+      "type": "TextProperty"
+    },
+    "140": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "141": {
+      "name": "AutomationTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "144": {
+      "name": "MaxStackSize",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "146": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "148": {
+      "name": "StatList",
+      "type": "SoftObjectProperty"
+    },
+    "151": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "152": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "155": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "156": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "158": {
+      "name": "FrontendPreviewSkeletalMeshOverride",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortWeaponAdditionalData_AudioVisualizerData": {
+    "0": {
+      "name": "AudioVisualizerIconOverride",
+      "type": "ObjectProperty"
     }
   },
   "FortAmmoItemDefinition": {
@@ -5299,11 +5902,1000 @@
       "type": "SoftObjectProperty"
     }
   },
-  "MaterialInstanceConstant": {
+  "FortChallengeBundleItemDefinition": {
+    "0": {
+      "name": "QuestInfos",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleQuestEntry"
+    },
+    "2": {
+      "name": "CalendarEventTag",
+      "type": "StrProperty"
+    },
+    "3": {
+      "name": "CalendarEventName",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "BundleCompletionRewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleRewards"
+    },
+    "5": {
+      "name": "BundleLevelRewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleLevel"
+    },
+    "6": {
+      "name": "SpecialOffers",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleSpecialOffer"
+    },
+    "7": {
+      "name": "CareerQuestBitShifts",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "8": {
+      "name": "DisplayStyle",
+      "type": "StructProperty",
+      "structType": "FortChallengeSetStyle"
+    },
+    "9": {
+      "name": "OverrideRewardItem",
+      "type": "StructProperty",
+      "structType": "AthenaRewardItemReference"
+    },
+    "26": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "40": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "41": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "42": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "51": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "56": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "57": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "60": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "61": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "62": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortChallengeSetStyle": {
+    "0": {
+      "name": "PrimaryColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
     "1": {
-      "name": "PhysMaterial",
+      "name": "SecondaryColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "2": {
+      "name": "AccentColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "3": {
+      "name": "Context_LimitedTimeColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "4": {
+      "name": "Context_BaseColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "5": {
+      "name": "DisplayImage",
+      "type": "SoftObjectProperty"
+    },
+    "6": {
+      "name": "CustomBackground",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortChallengeBundleSpecialOffer": {
+    "0": {
+      "name": "Storefront",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "RichText",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "OfferImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortChallengeBundleLevelReward": {
+    "0": {
+      "name": "CompletionCount",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "bBundlePrestige",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "Rewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaRewardItemReference"
+    }
+  },
+  "FortChallengeBundleLevel": {
+    "0": {
+      "name": "BundleLevelRewardEntries",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleLevelReward"
+    }
+  },
+  "FortChallengeBundleRewards": {
+    "0": {
+      "name": "CompletionCount",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "bBundlePrestige",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "Rewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaRewardItemReference"
+    }
+  },
+  "FortGiftBoxFortmatData": {
+    "0": {
+      "name": "StringAssetType",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "StringData",
+      "type": "StrProperty"
+    }
+  },
+  "ChallengeGiftBoxData": {
+    "0": {
+      "name": "GiftBoxToUse",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "GiftBoxFormatData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortGiftBoxFortmatData"
+    }
+  },
+  "AthenaRewardItemReference": {
+    "0": {
+      "name": "ItemDefinition",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "TemplateId",
+      "type": "StrProperty"
+    },
+    "2": {
+      "name": "Quantity",
+      "type": "IntProperty"
+    },
+    "3": {
+      "name": "RewardGiftBox",
+      "type": "StructProperty",
+      "structType": "ChallengeGiftBoxData"
+    },
+    "4": {
+      "name": "IsChaseReward",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "RewardType",
+      "type": "EnumProperty",
+      "enumName": "EAthenaRewardItemType"
+    },
+    "6": {
+      "name": "RewardVisualImportanceType",
+      "type": "EnumProperty",
+      "enumName": "EAthenaRewardVisualImportanceType"
+    }
+  },
+  "FortChallengeBundleQuestEntry": {
+    "0": {
+      "name": "QuestDefinition",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "QuestUnlockType",
+      "type": "EnumProperty",
+      "enumName": "EChallengeBundleQuestUnlockType"
+    },
+    "2": {
+      "name": "bStartActive",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bIsPrerequisite",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "UnlockValue",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "RewardGiftBox",
+      "type": "StructProperty",
+      "structType": "ChallengeGiftBoxData"
+    },
+    "6": {
+      "name": "MenuOverrideRewardPreview",
+      "type": "StructProperty",
+      "structType": "FortItemQuantityPair"
+    }
+  },
+  "FortPlaylistAthena": {
+    "0": {
+      "name": "bRewardsTrackPlacement",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bRewardsAllowXPProgression",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bRewardForRevivingTeammates",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "RewardPlacementBonusType",
+      "type": "EnumProperty",
+      "enumName": "ERewardPlacementBonusType"
+    },
+    "4": {
+      "name": "RewardsPlacementThreshold",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "RewardTimePlayedType",
+      "type": "EnumProperty",
+      "enumName": "ERewardTimePlayedType"
+    },
+    "6": {
+      "name": "RewardTimePlayedXPPerMinute",
+      "type": "IntProperty"
+    },
+    "7": {
+      "name": "RewardTimePlayedXPFlatValue",
+      "type": "IntProperty"
+    },
+    "8": {
+      "name": "InMatchXPRewardScalar",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "10": {
+      "name": "FirstWinRewards",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "12": {
+      "name": "bAllowSinglePartyMatches",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bRequeueAfterFailedSessionAssignment",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "bIsTournament",
+      "type": "BoolProperty"
+    },
+    "15": {
+      "name": "bUseMultidivisionQueues",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "CompetitivePointClamp",
+      "type": "IntProperty"
+    },
+    "17": {
+      "name": "Strategy",
+      "type": "StrProperty"
+    },
+    "18": {
+      "name": "BotVersionPlaylistName",
+      "type": "NameProperty"
+    },
+    "19": {
+      "name": "MaxBucketCapacity",
+      "type": "IntProperty"
+    },
+    "20": {
+      "name": "MaxPendingMatches",
+      "type": "IntProperty"
+    },
+    "21": {
+      "name": "PriorityRatingExpansion",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "RatingExpansion"
+    },
+    "22": {
+      "name": "bUseInputRules",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "bAllowBackfill",
+      "type": "BoolProperty"
+    },
+    "24": {
+      "name": "MinBackfillMatchPlayers",
+      "type": "IntProperty"
+    },
+    "25": {
+      "name": "MaxTeamScoreAllowedForBackfill",
+      "type": "IntProperty"
+    },
+    "27": {
+      "name": "bUsePlayerRating",
+      "type": "BoolProperty"
+    },
+    "28": {
+      "name": "bEnableDynamicBotBackfill",
+      "type": "BoolProperty"
+    },
+    "29": {
+      "name": "RatingType",
+      "type": "StrProperty"
+    },
+    "31": {
+      "name": "bLimitedPoolMatchmakingEnabled",
+      "type": "BoolProperty"
+    },
+    "32": {
+      "name": "bAllowedInLeto",
+      "type": "BoolProperty"
+    },
+    "33": {
+      "name": "bAllowInGameMatchMaking",
+      "type": "BoolProperty"
+    },
+    "35": {
+      "name": "bAllowBotsInHumanTeams",
+      "type": "BoolProperty"
+    },
+    "37": {
+      "name": "WinConditionType",
+      "type": "EnumProperty",
+      "enumName": "EAthenaWinCondition"
+    },
+    "38": {
+      "name": "TimedWinConditionTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "39": {
+      "name": "FinalWinConditionTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "42": {
+      "name": "WinConditionPlayersRemaining",
+      "type": "IntProperty"
+    },
+    "43": {
+      "name": "NumWinningTeamsCN",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "44": {
+      "name": "bIsLargeTeamGame",
+      "type": "BoolProperty"
+    },
+    "45": {
+      "name": "bShouldSpreadTeams",
+      "type": "BoolProperty"
+    },
+    "46": {
+      "name": "bIgnoreDefaultQuests",
+      "type": "BoolProperty"
+    },
+    "50": {
+      "name": "ForceKickAfterDeathTime",
+      "type": "FloatProperty"
+    },
+    "51": {
+      "name": "ForceKickAfterDeathMode",
+      "type": "EnumProperty",
+      "enumName": "EForceKickAfterDeathMode"
+    },
+    "54": {
+      "name": "PawnForcedCullDistance",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "57": {
+      "name": "bRequirePickaxeInStartingInventory",
+      "type": "BoolProperty"
+    },
+    "62": {
+      "name": "MaximumAspectRatio",
+      "type": "FloatProperty"
+    },
+    "64": {
+      "name": "VehicleBoundsXYSplineClass",
       "type": "ObjectProperty"
     },
+    "66": {
+      "name": "SoundMix",
+      "type": "ObjectProperty"
+    },
+    "67": {
+      "name": "bAllowHardcoreModifiers",
+      "type": "BoolProperty"
+    },
+    "68": {
+      "name": "bForceCameraFadeOnRespawn",
+      "type": "BoolProperty"
+    },
+    "69": {
+      "name": "MinTimeBeforeRespawnCameraFade",
+      "type": "FloatProperty"
+    },
+    "70": {
+      "name": "RespawnType",
+      "type": "EnumProperty",
+      "enumName": "EAthenaRespawnType"
+    },
+    "71": {
+      "name": "RespawnHeight",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "72": {
+      "name": "MaxRespawnHeight",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "73": {
+      "name": "RespawnTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "74": {
+      "name": "bRespawnInAir",
+      "type": "BoolProperty"
+    },
+    "75": {
+      "name": "RespawnLevelStreamDistanceToForceSceenFade",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "76": {
+      "name": "bSkipWarmup",
+      "type": "BoolProperty"
+    },
+    "77": {
+      "name": "bSkipAircraft",
+      "type": "BoolProperty"
+    },
+    "79": {
+      "name": "AirCraftBehavior",
+      "type": "EnumProperty",
+      "enumName": "EAirCraftBehavior"
+    },
+    "80": {
+      "name": "bUseCustomAircraftPathSelection",
+      "type": "BoolProperty"
+    },
+    "82": {
+      "name": "bAircraftDropOnlyWithinSafeZone",
+      "type": "BoolProperty"
+    },
+    "83": {
+      "name": "AircraftSafetyMarginPct",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "86": {
+      "name": "AircraftPathMidpointSelectionRadiusMin",
+      "type": "FloatProperty"
+    },
+    "87": {
+      "name": "AircraftPathMidpointSelectionRadiusMax",
+      "type": "FloatProperty"
+    },
+    "91": {
+      "name": "NonRenderedCharacterAnimationScale",
+      "type": "FloatProperty"
+    },
+    "92": {
+      "name": "PlaylistMissionGen",
+      "type": "ObjectProperty"
+    },
+    "93": {
+      "name": "bForceLTMLoadingScreenBackground",
+      "type": "BoolProperty"
+    },
+    "94": {
+      "name": "LoadingScreenWidget",
+      "type": "SoftObjectProperty"
+    },
+    "95": {
+      "name": "UIExtensions",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "UIExtension"
+    },
+    "96": {
+      "name": "PlaylistUIData",
+      "type": "SoftObjectProperty"
+    },
+    "97": {
+      "name": "MissionIcon",
+      "type": "ObjectProperty"
+    },
+    "98": {
+      "name": "UIDisplaySubName",
+      "type": "TextProperty"
+    },
+    "99": {
+      "name": "bLimitedTimeMode",
+      "type": "BoolProperty"
+    },
+    "100": {
+      "name": "bDisplayScoreInHUD",
+      "type": "BoolProperty"
+    },
+    "101": {
+      "name": "bDisplayRespawnWidget",
+      "type": "BoolProperty"
+    },
+    "102": {
+      "name": "bDisableMatchStatsDisplay",
+      "type": "BoolProperty"
+    },
+    "103": {
+      "name": "SpecialActorInputActionDataTableRow",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
+    "104": {
+      "name": "bEnforceFullSquadInUI",
+      "type": "BoolProperty"
+    },
+    "105": {
+      "name": "bShowEliminationIndicatorForSquadmates",
+      "type": "BoolProperty"
+    },
+    "106": {
+      "name": "bShowEliminationIndicatorForTeammates",
+      "type": "BoolProperty"
+    },
+    "108": {
+      "name": "bLeaderboardDisplaysIndividuals",
+      "type": "BoolProperty"
+    },
+    "110": {
+      "name": "TypeOfLeaderboard",
+      "type": "EnumProperty",
+      "enumName": "EFortLeaderboardMetric"
+    },
+    "111": {
+      "name": "OnlyRespectsGlobalSettingForReplayRecording",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "112": {
+      "name": "DisableReplays",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "116": {
+      "name": "ShouldRecommendCustomGameChannel",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "120": {
+      "name": "MapManagerClass",
+      "type": "SoftObjectProperty"
+    },
+    "122": {
+      "name": "bWarmUpInStorm",
+      "type": "BoolProperty"
+    },
+    "125": {
+      "name": "bDrawLineToStormCircleIfOutside",
+      "type": "BoolProperty"
+    },
+    "126": {
+      "name": "LastSafeZoneIndex",
+      "type": "IntProperty"
+    },
+    "127": {
+      "name": "SafeZoneLocationBlacklist",
+      "type": "SoftObjectProperty"
+    },
+    "121": {
+      "name": "SafeZoneStartUp",
+      "type": "EnumProperty",
+      "enumName": "ESafeZoneStartUp"
+    },
+    "123": {
+      "name": "StormEffectDelay",
+      "type": "FloatProperty"
+    },
+    "124": {
+      "name": "bDisplayFinalStormPosition",
+      "type": "BoolProperty"
+    },
+    "131": {
+      "name": "bUseDefaultSupplyDrops",
+      "type": "BoolProperty"
+    },
+    "132": {
+      "name": "SupplyDropModifierList",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SupplyDropModifierData"
+    },
+    "133": {
+      "name": "SupplyDropInfoList",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "136": {
+      "name": "ExitCraftInfo",
+      "type": "SoftObjectProperty"
+    },
+    "137": {
+      "name": "bPlaylistUsesCustomCharacterParts",
+      "type": "BoolProperty"
+    },
+    "138": {
+      "name": "CharactersToPreload",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "CharacterPreloadBlock"
+    },
+    "142": {
+      "name": "NetActorDiscoveryBudgetInKBytesPerSec",
+      "type": "IntProperty"
+    },
+    "143": {
+      "name": "bEnableCreativeMode",
+      "type": "BoolProperty"
+    },
+    "144": {
+      "name": "bEnableSpawningStartup",
+      "type": "BoolProperty"
+    },
+    "145": {
+      "name": "bAllowTeamSwitching",
+      "type": "BoolProperty"
+    },
+    "146": {
+      "name": "bShowTeamSelectButton",
+      "type": "BoolProperty"
+    },
+    "147": {
+      "name": "bAllowLayoutRequirementsFeature",
+      "type": "BoolProperty"
+    },
+    "148": {
+      "name": "bUseCreativeStarterIsland",
+      "type": "BoolProperty"
+    },
+    "150": {
+      "name": "bUsesAnimationSharing",
+      "type": "BoolProperty"
+    },
+    "151": {
+      "name": "AnimationSharingSetup",
+      "type": "SoftObjectProperty"
+    },
+    "153": {
+      "name": "bAllowSpectateAPartyMember",
+      "type": "BoolProperty"
+    },
+    "154": {
+      "name": "bActivateCurie",
+      "type": "BoolProperty"
+    },
+    "155": {
+      "name": "PlaylistStatId",
+      "type": "IntProperty"
+    },
+    "156": {
+      "name": "bAccumulateToProfileStats",
+      "type": "BoolProperty"
+    },
+    "157": {
+      "name": "bSaveToRecentGameList",
+      "type": "BoolProperty"
+    },
+    "158": {
+      "name": "bEnableStatsV2Stats",
+      "type": "BoolProperty"
+    },
+    "159": {
+      "name": "AISettings",
+      "type": "ObjectProperty"
+    },
+    "160": {
+      "name": "ServerBotManagerClass",
+      "type": "ObjectProperty"
+    },
+    "162": {
+      "name": "PlaylistId",
+      "type": "IntProperty"
+    },
+    "163": {
+      "name": "PlaylistName",
+      "type": "NameProperty"
+    },
+    "164": {
+      "name": "GameType",
+      "type": "EnumProperty",
+      "enumName": "EFortGameType",
+      "enumType": "IntProperty"
+    },
+    "165": {
+      "name": "MinPlayers",
+      "type": "IntProperty"
+    },
+    "166": {
+      "name": "MaxPlayers",
+      "type": "IntProperty"
+    },
+    "167": {
+      "name": "bUnderfillMatchmaking",
+      "type": "BoolProperty"
+    },
+    "168": {
+      "name": "UnderfilledMaxPlayers",
+      "type": "IntProperty"
+    },
+    "169": {
+      "name": "bOverrideMaxPlayers",
+      "type": "BoolProperty"
+    },
+    "170": {
+      "name": "MaxHumanAndBotParticipants",
+      "type": "IntProperty"
+    },
+    "171": {
+      "name": "MaxTeamCount",
+      "type": "IntProperty"
+    },
+    "172": {
+      "name": "MaxTeamSize",
+      "type": "IntProperty"
+    },
+    "173": {
+      "name": "MaxSocialPartySize",
+      "type": "IntProperty"
+    },
+    "174": {
+      "name": "MaxSquadSize",
+      "type": "IntProperty"
+    },
+    "175": {
+      "name": "MaxSquads",
+      "type": "IntProperty"
+    },
+    "176": {
+      "name": "EnforceSquadFill",
+      "type": "BoolProperty"
+    },
+    "177": {
+      "name": "bAllowSquadFillOption",
+      "type": "BoolProperty"
+    },
+    "178": {
+      "name": "bShouldFillWhenNoSquadFillOption",
+      "type": "BoolProperty"
+    },
+    "179": {
+      "name": "bAllowJoinInProgress",
+      "type": "BoolProperty"
+    },
+    "180": {
+      "name": "JoinInProgressMatchType",
+      "type": "TextProperty"
+    },
+    "182": {
+      "name": "EndOfMatchXpMultiplier",
+      "type": "IntProperty"
+    },
+    "183": {
+      "name": "UserOptions",
+      "type": "ObjectProperty"
+    },
+    "184": {
+      "name": "bEnableBackfillDuringWarmupPhase",
+      "type": "BoolProperty"
+    },
+    "186": {
+      "name": "RichPresenceAssetName",
+      "type": "NameProperty"
+    },
+    "188": {
+      "name": "AdditionalLevels",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "190": {
+      "name": "BuiltInGameFeaturePluginsToLoad",
+      "type": "ArrayProperty",
+      "innerType": "StrProperty"
+    },
+    "191": {
+      "name": "DownloadGameFeaturePluginToLoad",
+      "type": "StrProperty"
+    },
+    "193": {
+      "name": "DefaultLastTeam",
+      "type": "ByteProperty"
+    },
+    "194": {
+      "name": "GameplayTagContainer",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "196": {
+      "name": "bUseFriendlyFireAimAssist",
+      "type": "BoolProperty"
+    },
+    "197": {
+      "name": "LootLevel",
+      "type": "IntProperty"
+    },
+    "200": {
+      "name": "DBNOType",
+      "type": "EnumProperty",
+      "enumName": "EDBNOType"
+    },
+    "203": {
+      "name": "ModifierList",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "204": {
+      "name": "TimeOfDayManager",
+      "type": "SoftObjectProperty"
+    },
+    "205": {
+      "name": "bIgnoreWeatherEvents",
+      "type": "BoolProperty"
+    },
+    "206": {
+      "name": "ItemsToFullyLoad",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "207": {
+      "name": "SharedAssetGroup",
+      "type": "ObjectProperty"
+    },
+    "208": {
+      "name": "ConditionalAssetGroup",
+      "type": "ObjectProperty"
+    },
+    "209": {
+      "name": "bIsDefaultPlaylist",
+      "type": "BoolProperty"
+    },
+    "210": {
+      "name": "UIDisplayName",
+      "type": "TextProperty"
+    },
+    "211": {
+      "name": "UIDescription",
+      "type": "TextProperty"
+    },
+    "212": {
+      "name": "HUDElementsToHide",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "213": {
+      "name": "LootTierData",
+      "type": "SoftObjectProperty"
+    },
+    "214": {
+      "name": "LootPackages",
+      "type": "SoftObjectProperty"
+    },
+    "215": {
+      "name": "RangedWeapons",
+      "type": "SoftObjectProperty"
+    },
+    "216": {
+      "name": "GameData",
+      "type": "SoftObjectProperty"
+    },
+    "217": {
+      "name": "ResourceRates",
+      "type": "SoftObjectProperty"
+    },
+    "218": {
+      "name": "SkydiveMusic",
+      "type": "SoftObjectProperty"
+    },
+    "219": {
+      "name": "SkydiveMusicOutroStinger",
+      "type": "SoftObjectProperty"
+    },
+    "221": {
+      "name": "GarbageCollectionFrequency",
+      "type": "FloatProperty"
+    },
+    "222": {
+      "name": "ServerPerformanceEventFrequency",
+      "type": "FloatProperty"
+    }
+  },
+  "UIExtension": {
+    "0": {
+      "name": "Slot",
+      "type": "EnumProperty",
+      "enumName": "EUIExtensionSlot"
+    },
+    "1": {
+      "name": "WidgetClass",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "CharacterPreloadBlock": {
+    "0": {
+      "name": "bShouldGoInNPCBudget",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "CID",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "MaterialInstanceConstant": {
     "10": {
       "name": "Parent",
       "type": "ObjectProperty"
@@ -5312,45 +6904,33 @@
       "name": "bHasStaticPermutationResource",
       "type": "BoolProperty"
     },
-    "12": {
-      "name": "bOverrideSubsurfaceProfile",
-      "type": "BoolProperty"
-    },
     "13": {
       "name": "ScalarParameterValues",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "ScalarParameterValues"
+      "structType": "ScalarParameterValue"
     },
     "14": {
       "name": "VectorParameterValues",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "VectorParameterValues"
+      "structType": "VectorParameterValue"
     },
     "15": {
       "name": "TextureParameterValues",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "TextureParameterValues"
+      "structType": "TextureParameterValue"
     },
     "18": {
       "name": "BasePropertyOverrides",
       "type": "StructProperty",
-      "structType": "BasePropertyOverrides"
+      "structType": "MaterialInstanceBasePropertyOverrides"
     },
     "19": {
       "name": "StaticParameters",
       "type": "StructProperty",
-      "structType": "StaticParameters"
-    },
-    "22": {
-      "name": "SubsurfaceProfile",
-      "type": "ObjectProperty"
-    },
-    "24": {
-      "name": "bHasStaticPermutationResource",
-      "type": "BoolProperty"
+      "structType": "StaticParameterSet"
     },
     "21": {
       "name": "CachedReferencedTextures",
@@ -5358,72 +6938,7 @@
       "innerType": "ObjectProperty"
     }
   },
-  "ScalarParameterValues": {
-    "0": {
-      "name": "ParameterInfo",
-      "type": "StructProperty",
-      "structType": "ParameterInfo"
-    },
-    "1": {
-      "name": "ParameterValue",
-      "type": "FloatProperty"
-    },
-    "2": {
-      "name": "ExpressionGUID",
-      "type": "StructProperty",
-      "structType": "Guid"
-    }
-  },
-  "TextureParameterValues": {
-    "0": {
-      "name": "ParameterInfo",
-      "type": "StructProperty",
-      "structType": "ParameterInfo"
-    },
-    "1": {
-      "name": "ParameterValue",
-      "type": "ObjectProperty"
-    },
-    "2": {
-      "name": "ExpressionGUID",
-      "type": "StructProperty",
-      "structType": "Guid"
-    }
-  },
-  "VectorParameterValues": {
-    "0": {
-      "name": "ParameterInfo",
-      "type": "StructProperty",
-      "structType": "ParameterInfo"
-    },
-    "1": {
-      "name": "ParameterValue",
-      "type": "StructProperty",
-      "structType": "LinearColor"
-    },
-    "2": {
-      "name": "ExpressionGUID",
-      "type": "StructProperty",
-      "structType": "Guid"
-    }
-  },
-  "BasePropertyOverrides": {
-    "2": {
-      "name": "bOverride_ShadingModel",
-      "type": "BoolProperty"
-    },
-    "5": {
-      "name": "bOverride_TwoSided",
-      "type": "BoolProperty"
-    },
-    "6": {
-      "name": "TwoSided",
-      "type": "BoolProperty"
-    },
-    "7": {
-      "name": "DitheredLODTransition",
-      "type": "BoolProperty"
-    },
+  "MaterialInstanceBasePropertyOverrides": {
     "9": {
       "name": "BlendMode",
       "type": "ByteProperty"
@@ -5437,7 +6952,92 @@
       "type": "FloatProperty"
     }
   },
-  "ParameterInfo": {
+  "ScalarParameterValue": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "VectorParameterValue": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "TextureParameterValue": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "RuntimeVirtualTextureParameterValue": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "1": {
+      "name": "ParameterValue",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "FontParameterValue": {
+    "0": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "1": {
+      "name": "FontValue",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "FontPage",
+      "type": "IntProperty"
+    },
+    "3": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "MaterialParameterInfo": {
     "0": {
       "name": "Name",
       "type": "NameProperty"
@@ -5451,21 +7051,35 @@
       "type": "IntProperty"
     }
   },
-  "StaticParameters": {
+  "StaticParameterSet": {
     "0": {
       "name": "StaticSwitchParameters",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "StaticSwitchParameters"
-    },
-    "1": {
-      "name": "StaticComponentMaskParameters",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "StaticComponentMaskParameters"
+      "structType": "StaticSwitchParameter"
     }
   },
-  "StaticComponentMaskParameters": {
+  "StaticSwitchParameter": {
+    "0": {
+      "name": "Value",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "2": {
+      "name": "bOverride",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "StaticComponentMaskParameter": {
     "0": {
       "name": "R",
       "type": "BoolProperty"
@@ -5485,7 +7099,7 @@
     "4": {
       "name": "ParameterInfo",
       "type": "StructProperty",
-      "structType": "ParameterInfo"
+      "structType": "MaterialParameterInfo"
     },
     "5": {
       "name": "bOverride",
@@ -5497,15 +7111,40 @@
       "structType": "Guid"
     }
   },
-  "StaticSwitchParameters": {
+  "StaticTerrainLayerWeightParameter": {
+    "0": {
+      "name": "WeightmapIndex",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "bWeightBasedBlend",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "ParameterInfo",
+      "type": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "3": {
+      "name": "bOverride",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "ExpressionGUID",
+      "type": "StructProperty",
+      "structType": "Guid"
+    }
+  },
+  "StaticMaterialLayersParameter": {
     "0": {
       "name": "Value",
-      "type": "BoolProperty"
+      "type": "StructProperty",
+      "structType": "MaterialLayersFunctions"
     },
     "1": {
       "name": "ParameterInfo",
       "type": "StructProperty",
-      "structType": "ParameterInfo"
+      "structType": "MaterialParameterInfo"
     },
     "2": {
       "name": "bOverride",
@@ -5515,6 +7154,422 @@
       "name": "ExpressionGUID",
       "type": "StructProperty",
       "structType": "Guid"
+    }
+  },
+  "MaterialLayersFunctions": {
+    "0": {
+      "name": "Layers",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "1": {
+      "name": "Blends",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "2": {
+      "name": "LayerStates",
+      "type": "ArrayProperty",
+      "innerType": "BoolProperty"
+    },
+    "3": {
+      "name": "KeyString",
+      "type": "StrProperty"
+    }
+  },
+  "MaterialCachedParameters": {
+    "0": {
+      "name": "Entries",
+      "type": "StructProperty",
+      "structType": "MaterialCachedParameterEntry"
+    },
+    "1": {
+      "name": "ScalarValues",
+      "type": "ArrayProperty",
+      "innerType": "FloatProperty"
+    },
+    "2": {
+      "name": "VectorValues",
+      "type": "ArrayProperty",
+      "innerType": "LinearColor"
+    },
+    "3": {
+      "name": "TextureValues",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "4": {
+      "name": "FontValues",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "5": {
+      "name": "FontPageValues",
+      "type": "ArrayProperty",
+      "innerType": "IntProperty"
+    },
+    "6": {
+      "name": "RuntimeVirtualTextureValues",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "MaterialCachedParameterEntry": {
+    "0": {
+      "name": "NameHashes",
+      "type": "ArrayProperty",
+      "innerType": "IntProperty"
+    },
+    "1": {
+      "name": "ScalarValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialParameterInfo"
+    },
+    "2": {
+      "name": "ExpressionGuids",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "Guid"
+    },
+    "3": {
+      "name": "Overrides",
+      "type": "ArrayProperty",
+      "innerType": "BoolProperty"
+    }
+  },
+  "LightmassMaterialInterfaceSettings": {
+    "0": {
+      "name": "EmissiveBoost",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "DiffuseBoost",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "ExportResolutionScale",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "bCastShadowAsMasked",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bOverrideCastShadowAsMasked",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "bOverrideEmissiveBoost",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bOverrideDiffuseBoost",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bOverrideExportResolutionScale",
+      "type": "BoolProperty"
+    }
+  },
+  "MaterialTextureInfo": {
+    "0": {
+      "name": "SamplingScale",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "UVChannelIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "TextureName",
+      "type": "NameProperty"
+    }
+  },
+  "RatingExpansion": {
+    "0": {
+      "name": "Priority",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "RatingDelta",
+      "type": "IntProperty"
+    }
+  },
+  "SupplyDropModifierData": {
+    "0": {
+      "name": "SupplyDropID",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "ModifierList",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SupplyDropSubPhaseModifier"
+    }
+  },
+  "SupplyDropSubPhaseModifier": {
+    "0": {
+      "name": "GamePhase",
+      "type": "EnumProperty",
+      "enumName": "EAthenaGamePhase"
+    },
+    "1": {
+      "name": "SubPhaseIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "SpawnInPreviousZonePercentChance",
+      "type": "FloatProperty"
+    }
+  },
+  "FortCosmeticMeshVariant": {
+    "0": {
+      "name": "MeshOptions",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MeshVariantDef"
+    },
+    "1": {
+      "name": "VariantChannelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "2": {
+      "name": "VariantChannelName",
+      "type": "TextProperty"
+    }
+  },
+  "MeshVariantDef": {
+    "0": {
+      "name": "VariantMeshes",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VariantMeshes"
+    },
+    "1": {
+      "name": "VariantMaterials",
+      "type": "ArrayProperty"
+    },
+    "2": {
+      "name": "VariantMaterialParams",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialParamterDef"
+    },
+    "3": {
+      "name": "InitialParticleSystemData",
+      "type": "ArrayProperty"
+    },
+    "4": {
+      "name": "VariantParticles",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ParticleVariant"
+    },
+    "5": {
+      "name": "VariantParticleParams",
+      "type": "ArrayProperty"
+    },
+    "6": {
+      "name": "SocketTransforms",
+      "type": "ArrayProperty"
+    },
+    "7": {
+      "name": "VariantSounds",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundVariant"
+    },
+    "8": {
+      "name": "VariantFoley",
+      "type": "ArrayProperty"
+    },
+    "9": {
+      "name": "VariantActions",
+      "type": "ArrayProperty"
+    },
+    "10": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "CosmeticMetaTagContainer"
+    },
+    "11": {
+      "name": "bStartUnlocked",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bIsDefault",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bHideIfNotOwned",
+      "type": "BoolProperty",
+      "bool": false
+    },
+    "14": {
+      "name": "CustomizationVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "15": {
+      "name": "VariantName",
+      "type": "TextProperty"
+    },
+    "16": {
+      "name": "PreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "17": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "18": {
+      "name": "UnlockingItemDef",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "VariantMeshes": {
+    "0": {
+      "name": "MeshToSwap",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ComponentToOverride",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "OverrideMesh",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "SoundVariant": {
+    "0": {
+      "name": "SoundToSwap",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ComponentToOverride",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "OverrideSound",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "TextureCube": {
+    "0": {
+      "name": "LightingGuid",
+      "type": "StructProperty",
+      "structType": "Guid"
+    },
+    "1": {
+      "name": "LODBias",
+      "type": "IntProperty"
+    },
+    "8": {
+      "name": "SRGB",
+      "type": "BoolProperty"
+    }
+  },
+  "AthenaGadgetItemDefinition": {
+    "15": {
+      "name": "ContextOverrideWidget",
+      "type": "ObjectProperty"
+    },
+    "28": {
+      "name": "AbilitySet",
+      "type": "SoftObjectProperty"
+    },
+    "53": {
+      "name": "bForceIntoOverflow",
+      "type": "BoolProperty"
+    },
+    "58": {
+      "name": "bCanBeDropped",
+      "type": "BoolProperty"
+    },
+    "73": {
+      "name": "MiniMapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "78": {
+      "name": "SpecialActorPickupTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "81": {
+      "name": "PickupMinimapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "83": {
+      "name": "PickupCompassIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "85": {
+      "name": "PickupDespawnTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "86": {
+      "name": "InStormPickupDespawnTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "88": {
+      "name": "PickupStaticMesh",
+      "type": "SoftObjectProperty"
+    },
+    "90": {
+      "name": "PickupEffectOverride",
+      "type": "SoftObjectProperty"
+    },
+    "91": {
+      "name": "PickupSound",
+      "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "DropSound",
+      "type": "SoftObjectProperty"
+    },
+    "104": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "108": {
+      "name": "Tier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
+    "109": {
+      "name": "MaxTier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
+    "115": {
+      "name": "bForceAutoPickup",
+      "type": "BoolProperty"
+    },
+    "118": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "123": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "134": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "135": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
     }
   }
 }
