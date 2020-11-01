@@ -7571,5 +7571,163 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "FortAbilitySet": {
+    "0": {
+      "name": "GameplayAbilities",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "1": {
+      "name": "GrantedGameplayEffects",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayEffectApplicationInfoHard"
+    },
+    "2": {
+      "name": "AbilityActivatedByInputKeyTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "3": {
+      "name": "AbilityActivatedByInputTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "4": {
+      "name": "AbilityActivatedByInputCooldownTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "5": {
+      "name": "AbilityActivatedByInputExitBuildModeTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "6": {
+      "name": "AbilitiesActivatedByInput",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AbilityActivatedByInputData"
+    },
+    "7": {
+      "name": "AdditionalItemsToAdd",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortItemDefinition"
+    },
+    "9": {
+      "name": "AnalyticsTags",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    }
+  },
+  "AbilityActivatedByInputData": {
+    "0": {
+      "name": "Ability",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "ActivationTagQuery",
+      "type": "StructProperty",
+      "structType": "GameplayTagQuery"
+    }
+  },
+  "GameplayTagQuery": {
+    "0": {
+      "name": "TokenStreamVersion",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "TagDictionary",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "2": {
+      "name": "QueryTokenStream",
+      "type": "ArrayProperty",
+      "innerType": "ByteProperty"
+    },
+    "3": {
+      "name": "UserDescription",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "AutoDescription",
+      "type": "StrProperty"
+    }
+  },
+  "FortAwardItemDefinition": {
+    "0": {
+      "name": "bSingleSharedDetector",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bCanEarnMultipleTimes",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "DetectorClass",
+      "type": "ObjectProperty"
+    },
+    "27": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "44": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortBannerTokenType": {
+    "1": {
+      "name": "BannerIconTemplateName",
+      "type": "StructProperty",
+      "structType": "String"
+    },
+    "26": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "27": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "28": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "31": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "42": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "44": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
+    "46": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "47": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "48": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
+    }
   }
 }
