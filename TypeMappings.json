@@ -4045,6 +4045,16 @@
       "name": "WeaponDefinition",
       "type": "ObjectProperty"
     },
+    "1": {
+      "name": "PickaxeImpactFXPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "2": {
+      "name": "PickaxeDualWieldPreviewOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
     "5": {
       "name": "PickaxeImpactFXPreviewOffset",
       "type": "StructProperty",
@@ -4100,6 +4110,10 @@
     "34": {
       "name": "UnlockRequirements",
       "type": "TextProperty"
+    },
+    "36": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
     },
     "40": {
       "name": "ItemPreviewHero",
@@ -4177,6 +4191,140 @@
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
+    }
+  },
+  "FortCosmeticMeshVariant": {
+    "0": {
+      "name": "MeshOptions",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MeshVariantDef"
+    },
+    "1": {
+      "name": "VariantChannelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "2": {
+      "name": "VariantChannelName",
+      "type": "TextProperty"
+    }
+  },
+  "MeshVariantDef": {
+    "0": {
+      "name": "VariantMeshes",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VariantMeshes"
+    },
+    "1": {
+      "name": "VariantMaterials",
+      "type": "ArrayProperty"
+    },
+    "2": {
+      "name": "VariantMaterialParams",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialParamterDef"
+    },
+    "3": {
+      "name": "InitialParticleSystemData",
+      "type": "ArrayProperty"
+    },
+    "4": {
+      "name": "VariantParticles",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ParticleVariant"
+    },
+    "5": {
+      "name": "VariantParticleParams",
+      "type": "ArrayProperty"
+    },
+    "6": {
+      "name": "SocketTransforms",
+      "type": "ArrayProperty"
+    },
+    "7": {
+      "name": "VariantSounds",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundVariant"
+    },
+    "8": {
+      "name": "VariantFoley",
+      "type": "ArrayProperty"
+    },
+    "9": {
+      "name": "VariantActions",
+      "type": "ArrayProperty"
+    },
+    "10": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "CosmeticMetaTagContainer"
+    },
+    "11": {
+      "name": "bStartUnlocked",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bIsDefault",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bHideIfNotOwned",
+      "type": "BoolProperty",
+      "bool": false
+    },
+    "14": {
+      "name": "CustomizationVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "15": {
+      "name": "VariantName",
+      "type": "TextProperty"
+    },
+    "16": {
+      "name": "PreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "17": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "18": {
+      "name": "UnlockingItemDef",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "VariantMeshes": {
+    "0": {
+      "name": "MeshToSwap",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ComponentToOverride",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "OverrideMesh",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "SoundVariant": {
+    "0": {
+      "name": "SoundToSwap",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "ComponentToOverride",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "OverrideSound",
+      "type": "SoftObjectProperty"
     }
   },
   "FortHardcoreModifierItemDefinition": {
