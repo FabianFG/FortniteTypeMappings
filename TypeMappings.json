@@ -3861,6 +3861,10 @@
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
+    "80": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
     "86": {
       "name": "DisplayName",
       "type": "TextProperty"
