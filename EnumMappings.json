@@ -495,5 +495,175 @@
     "2": "ReloadBasedOnAmmoCostPerFire",
     "3": "ReloadBasedOnCartridgePerFire",
     "4": "EFortWeaponReloadType_MAX"
+  },
+  "EChallengeBundleQuestUnlockType": {
+    "0": "Manually",
+    "1": "GrantWithBundle",
+    "2": "RequiresBattlePass",
+    "3": "DaysFromEventStart",
+    "4": "ChallengesCompletedToUnlock",
+    "5": "BundleLevelup",
+    "6": "EChallengeBundleQuestUnlockType_MAX"
+  },
+  "EXPEventPriorityType": {
+    "0": "NearReticle",
+    "1": "XPBarOnly",
+    "2": "TopCenter",
+    "3": "Feed",
+    "4": "EXPEventPriorityType_MAX"
+  },
+  "ERewardPlacementBonusType": {
+    "0": "Solo",
+    "1": "Duo",
+    "2": "Squad",
+    "3": "LargeTeam",
+    "4": "None",
+    "5": "TwoTeam",
+    "6": "MediumTeam",
+    "7": "QuickSolo",
+    "8": "QuickDuo",
+    "9": "QuickSquad",
+    "10": "QuickLargeTeam",
+    "11": "QuickTwoTeam",
+    "12": "QuickMediumTeam",
+    "13": "SinglePlacement",
+    "14": "ERewardPlacementBonusType_MAX"
+  },
+  "EUIExtensionSlot": {
+    "0": "Primary",
+    "1": "TopRightCorner",
+    "2": "GameInfoBox",
+    "3": "Quickbar",
+    "4": "UpperCenter",
+    "5": "CrosshairRight",
+    "6": "UnderSquadInfo",
+    "7": "FullScreenMap",
+    "8": "BelowRespawnWidget",
+    "9": "BelowCompass",
+    "10": "UnderTeammateStatus",
+    "11": "ControllerBindingCallout",
+    "12": "AboveStormMessageSlot",
+    "13": "CustomMinigameCallouts",
+    "14": "UnderLocalPlayerInfo",
+    "15": "InventoryScreenReplacement",
+    "16": "Reticle",
+    "17": "KillfeedSlot",
+    "18": "PrioritizedContextualSlot",
+    "19": "MobileHUDBottomRight",
+    "20": "EUIExtensionSlot_MAX"
+  },
+  "EAthenaWinCondition": {
+    "0": "LastManStanding",
+    "1": "LastManStandingIncludingAllies",
+    "2": "TimedTeamFinalFight",
+    "3": "FirstToGoalScore",
+    "4": "TimedLastMenStanding",
+    "5": "MutatorControlled",
+    "6": "MutatorControlledGoalScore",
+    "7": "MutatorControlledChinaSupported",
+    "8": "EAthenaWinCondition_MAX"
+  },
+  "EAirCraftBehavior": {
+    "0": "Default",
+    "1": "OpposingAirCraftForEachTeam",
+    "2": "FlyTowardFirstCircleCenter",
+    "3": "NoAircraft",
+    "4": "EAirCraftBehavior_MAX"
+  },
+  "EFortGameType": {
+    "0": "BR",
+    "1": "Creative",
+    "2": "CreativeLTM",
+    "3": "Playground",
+    "4": "STW",
+    "5": "BRArena",
+    "6": "BRLTM",
+    "7": "Social",
+    "8": "MAX"
+  },
+  "ESafeZoneStartUp": {
+    "0": "UseDefaultGameBehavior",
+    "1": "StartsWithWarmUp",
+    "2": "StartsWithAirCraft",
+    "3": "StartsWithNoAirCraft",
+    "4": "ESafeZoneStartUp_MAX"
+  },
+  "ERewardTimePlayedType": {
+    "0": "Default",
+    "1": "NoReward",
+    "2": "FlatValue",
+    "3": "ERewardTimePlayedType_MAX"
+  },
+  "EAthenaRespawnType": {
+    "0": "None",
+    "1": "InfiniteRespawn",
+    "2": "InfiniteRespawnExceptStorm",
+    "3": "EAthenaRespawnType_MAX"
+  },
+  "EDBNOType": {
+    "0": "On",
+    "1": "Off",
+    "2": "NotWhenRespawning",
+    "3": "EDBNOType_MAX"
+  },
+  "EFortLeaderboardMetric": {
+    "0": "Score",
+    "1": "Kills",
+    "2": "TeamScore",
+    "3": "EFortLeaderboardMetric_MAX"
+  },
+  "EForceKickAfterDeathMode": {
+    "0": "Disabled",
+    "1": "KickAll",
+    "2": "KickPrivate",
+    "3": "EForceKickAfterDeathMode_MAX"
+  },
+  "EAthenaGamePhase": {
+    "0": "None",
+    "1": "Setup",
+    "2": "Warmup",
+    "3": "Aircraft",
+    "4": "SafeZones",
+    "5": "EndGame",
+    "6": "Count",
+    "7": "EAthenaGamePhase_MAX"
+  },
+  "ERichCurveExtrapolation": {
+    "0": "RCCE_Cycle",
+    "1": "RCCE_CycleWithOffset",
+    "2": "RCCE_Oscillate",
+    "3": "RCCE_Linear",
+    "4": "RCCE_Constant",
+    "5": "RCCE_None"
+  },
+  "ERichCurveInterpMode": {
+    "0": "RCIM_Linear",
+    "1": "RCIM_Constant",
+    "2": "RCIM_Cubic",
+    "3": "RCIM_None"
+  },
+  "EAthenaRewardItemType": {
+    "0": "Normal",
+    "1": "HiddenReward",
+    "2": "GiftboxHiddenReward",
+    "3": "NonExportedFakeReward",
+    "4": "EAthenaRewardItemType_MAX"
+  },
+  "EAthenaRewardVisualImportanceType": {
+    "0": "Normal",
+    "1": "Hot",
+    "2": "CrazyHot",
+    "3": "Crazy",
+    "4": "EAthenaRewardVisualImportanceType"
+  },
+  "EMontageVisibilityRule": {
+    "0": "RequiredItem",
+    "1": "ForbiddenItem",
+    "2": "EMontageVisibilityRule_MAX"
+  },
+  "ELoadoutVariantInsertType": {
+    "0": "StartOfArray",
+    "1": "EndOfArray",
+    "2": "ELoadoutVariantInsertType_MAX"
   }
 }
