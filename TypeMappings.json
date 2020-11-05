@@ -12396,5 +12396,301 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "FortTrapStats": {
+    "0": {
+      "name": "ArmTime",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "FireDelay",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "DamageDelay",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "PlacementScore",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "ActivationScore",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "BaseLevel",
+      "type": "IntProperty"
+    },
+    "6": {
+      "name": "NamedWeightRow",
+      "type": "NameProperty"
+    },
+    "7": {
+      "name": "DmgPB",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "DmgMid",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "DmgLong",
+      "type": "FloatProperty"
+    },
+    "10": {
+      "name": "DmgMaxRange",
+      "type": "FloatProperty"
+    },
+    "11": {
+      "name": "EnvDmgPB",
+      "type": "FloatProperty"
+    },
+    "12": {
+      "name": "EnvDmgMid",
+      "type": "FloatProperty"
+    },
+    "13": {
+      "name": "EnvDmgLong",
+      "type": "FloatProperty"
+    },
+    "14": {
+      "name": "EnvDmgMaxRange",
+      "type": "FloatProperty"
+    },
+    "15": {
+      "name": "ImpactDmgPB",
+      "type": "FloatProperty"
+    },
+    "16": {
+      "name": "ImpactDmgMid",
+      "type": "FloatProperty"
+    },
+    "17": {
+      "name": "ImpactDmgLong",
+      "type": "FloatProperty"
+    },
+    "18": {
+      "name": "ImpactDmgMaxRange",
+      "type": "FloatProperty"
+    },
+    "19": {
+      "name": "bForceControl",
+      "type": "BoolProperty"
+    },
+    "20": {
+      "name": "RngPB",
+      "type": "FloatProperty"
+    },
+    "21": {
+      "name": "RngMid",
+      "type": "FloatProperty"
+    },
+    "22": {
+      "name": "RngLong",
+      "type": "FloatProperty"
+    },
+    "23": {
+      "name": "RngMax",
+      "type": "FloatProperty"
+    },
+    "24": {
+      "name": "DmgScaleTable",
+      "type": "ObjectProperty"
+    },
+    "25": {
+      "name": "DmgScaleTableRow",
+      "type": "NameProperty"
+    },
+    "26": {
+      "name": "DmgScale",
+      "type": "FloatProperty"
+    },
+    "27": {
+      "name": "EnvDmgScaleTable",
+      "type": "ObjectProperty"
+    },
+    "28": {
+      "name": "EnvDmgScaleTableRow",
+      "type": "NameProperty"
+    },
+    "29": {
+      "name": "EnvDmgScale",
+      "type": "FloatProperty"
+    },
+    "30": {
+      "name": "ImpactDmgScaleTable",
+      "type": "ObjectProperty"
+    },
+    "31": {
+      "name": "ImpactDmgScaleTableRow",
+      "type": "NameProperty"
+    },
+    "32": {
+      "name": "ImpactDmgScale",
+      "type": "FloatProperty"
+    },
+    "33": {
+      "name": "SurfaceRatioRowName",
+      "type": "NameProperty"
+    },
+    "34": {
+      "name": "DamageZone_Light",
+      "type": "FloatProperty"
+    },
+    "35": {
+      "name": "DamageZone_Normal",
+      "type": "FloatProperty"
+    },
+    "36": {
+      "name": "DamageZone_Critical",
+      "type": "FloatProperty"
+    },
+    "37": {
+      "name": "DamageZone_Vulnerability",
+      "type": "FloatProperty"
+    },
+    "38": {
+      "name": "KnockbackMagnitude",
+      "type": "FloatProperty"
+    },
+    "39": {
+      "name": "MidRangeKnockbackMagnitude",
+      "type": "FloatProperty"
+    },
+    "40": {
+      "name": "LongRangeKnockbackMagnitude",
+      "type": "FloatProperty"
+    },
+    "41": {
+      "name": "KnockbackZAngle",
+      "type": "FloatProperty"
+    },
+    "42": {
+      "name": "StunTime",
+      "type": "FloatProperty"
+    },
+    "43": {
+      "name": "StunScale",
+      "type": "FloatProperty"
+    },
+    "44": {
+      "name": "Durability",
+      "type": "ObjectProperty"
+    },
+    "45": {
+      "name": "DurabilityRowName",
+      "type": "NameProperty"
+    },
+    "46": {
+      "name": "DurabilityScale",
+      "type": "FloatProperty"
+    },
+    "47": {
+      "name": "DurabilityPerUse",
+      "type": "FloatProperty"
+    },
+    "48": {
+      "name": "FullChargeDurabilityPerUse",
+      "type": "FloatProperty"
+    },
+    "49": {
+      "name": "DiceCritChance",
+      "type": "FloatProperty"
+    },
+    "50": {
+      "name": "DiceCritDamageMultiplier",
+      "type": "FloatProperty"
+    },
+    "51": {
+      "name": "ReloadTime",
+      "type": "FloatProperty"
+    },
+    "52": {
+      "name": "ReloadScale",
+      "type": "FloatProperty"
+    },
+    "53": {
+      "name": "ReloadType",
+      "type": "EnumProperty",
+      "enumName": "EFortWeaponReloadType"
+    },
+    "54": {
+      "name": "bAllowReloadInterrupt",
+      "type": "BoolProperty"
+    },
+    "55": {
+      "name": "bReloadInterruptIsImmediate",
+      "type": "BoolProperty"
+    },
+    "56": {
+      "name": "NumIndividualBulletsToReload",
+      "type": "IntProperty"
+    },
+    "57": {
+      "name": "ClipSize",
+      "type": "IntProperty"
+    },
+    "58": {
+      "name": "ClipScale",
+      "type": "FloatProperty"
+    },
+    "59": {
+      "name": "InitialClips",
+      "type": "IntProperty"
+    },
+    "60": {
+      "name": "CartridgePerFire",
+      "type": "IntProperty"
+    },
+    "61": {
+      "name": "AmmoCostPerFire",
+      "type": "IntProperty"
+    },
+    "62": {
+      "name": "MaxAmmoCostPerFire",
+      "type": "IntProperty"
+    },
+    "63": {
+      "name": "MinChargeTime",
+      "type": "FloatProperty"
+    },
+    "64": {
+      "name": "MaxChargeTime",
+      "type": "FloatProperty"
+    },
+    "65": {
+      "name": "ChargeDownTime",
+      "type": "FloatProperty"
+    },
+    "66": {
+      "name": "bAutoDischarge",
+      "type": "BoolProperty",
+      "bool": "True"
+    },
+    "67": {
+      "name": "MaxChargeTimeUntilDischarge",
+      "type": "FloatProperty"
+    },
+    "68": {
+      "name": "MinChargeDamageMultiplier",
+      "type": "FloatProperty"
+    },
+    "69": {
+      "name": "MaxChargeDamageMultiplier",
+      "type": "FloatProperty"
+    },
+    "70": {
+      "name": "ChargeDamageMultiplierCurve",
+      "type": "ObjectProperty"
+    },
+    "71": {
+      "name": "EquipAnimRate",
+      "type": "FloatProperty"
+    },
+    "72": {
+      "name": "QuickBarSlotCooldownDuration",
+      "type": "FloatProperty"
+    }
   }
 }
