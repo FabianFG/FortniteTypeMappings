@@ -665,5 +665,195 @@
     "0": "StartOfArray",
     "1": "EndOfArray",
     "2": "ELoadoutVariantInsertType_MAX"
+  },
+  "EFortTemplateAccess": {
+    "0": "Normal",
+    "1": "Trusted",
+    "2": "Private",
+    "3": "EFortTemplateAccess_MAX"
+  },
+  "EFortReplenishmentType": {
+    "0": "Restricted",
+    "1": "ClampMin",
+    "2": "Add",
+    "3": "Ability",
+    "4": "EFortReplenishmentType_MAX"
+  },
+  "EFortAccoladeType": {
+    "0": "Acknowledgement",
+    "1": "Accolade",
+    "2": "Medal",
+    "3": "EFortAccoladeType_MAX"
+  },
+  "EFortAccoladeSubtype": {
+    "0": "NotSet",
+    "1": "Action",
+    "2": "Discovery",
+    "3": "XpToken",
+    "4": "EFortAccoladeSubtype_MAX"
+  },
+  "EChallengeScheduleUnlockType": {
+    "0": "Manually",
+    "1": "OnScheduleGranted",
+    "2": "DaysSinceEventStart",
+    "3": "EChallengeScheduleUnlockType_MAX"
+  },
+  "EMaxConcurrentResolutionRule": {
+    "0": "PreventNew",
+    "1": "StopOldest",
+    "2": "StopFarthestThenPreventNew",
+    "3": "StopFarthestThenOldest",
+    "4": "StopLowestPriority",
+    "5": "StopQuietest",
+    "6": "StopLowestPriorityThenPreventNew"
+  },
+  "EAthenaChallengeTabVisibility": {
+    "0": "Hide",
+    "1": "ShowAlways",
+    "2": "EAthenaChallengeTabVisibility_MAX"
+  },
+  "EFortCustomBodyType": {
+    "0": "NONE",
+    "1": "Small",
+    "2": "Medium",
+    "3": "MediumAndSmall",
+    "4": "Large",
+    "5": "LargeAndSmall",
+    "6": "LargeAndMedium",
+    "7": "All",
+    "8": "Deprecated",
+    "9": "EFortCustomBodyType_MAX"
+  },
+  "EFortDisplayTier": {
+    "0": "Invalid",
+    "1": "Handmade",
+    "2": "Copper",
+    "3": "Silver",
+    "4": "Malachite",
+    "5": "Obsidian",
+    "6": "Brightcore",
+    "7": "Spectrolite",
+    "8": "Shadowshard",
+    "9": "Sunbeam",
+    "10": "Moonglow",
+    "11": "EFortDisplayTier_MAX"
+  },
+  "EDetailMode": {
+    "0": "DM_Low",
+    "1": "DM_Medium",
+    "2": "DM_High",
+    "3": "DM_MAX"
+  },
+  "EWeaponSelectionPreservationType": {
+    "0": "KeepSelectionWhenRespawning",
+    "1": "NeverKeepSelection",
+    "2": "EWeaponSelectionPreservationType_MAX"
+  },
+  "EFortQuestType": {
+    "0": "Task",
+    "1": "Optional",
+    "2": "DailyQuest",
+    "3": "TransientQuest",
+    "4": "SurvivorQuest",
+    "5": "Achievement",
+    "6": "Onboarding",
+    "7": "StreamBroadcaster",
+    "8": "StreamViewer",
+    "9": "StreamSubscriber",
+    "10": "Athena",
+    "11": "AthenaDailyQuest",
+    "12": "AthenaEvent",
+    "13": "AthenaChallengeBundleQuest",
+    "14": "All",
+    "15": "EFortQuestType_MAX"
+  },
+  "EFortQuestSubtype": {
+    "0": "None",
+    "1": "WeeklyChallenge",
+    "2": "PunchCard",
+    "3": "QuickChallenge",
+    "4": "EFortQuestSubtype_MAX"
+  },
+  "EFortResourceType": {
+    "0": "Wood",
+    "1": "Stone",
+    "2": "Metal",
+    "3": "Permanite",
+    "4": "GoldCurrency",
+    "5": "None",
+    "6": "EFortResourceType_MAX"
+  },
+  "EPlacementType": {
+    "0": "Free",
+    "1": "Grid",
+    "2": "None",
+    "3": "EPlacementType_MAX"
+  },
+  "EFortStatType": {
+    "0": "Fortitude",
+    "1": "Offense",
+    "2": "Resistance",
+    "3": "Technology",
+    "4": "Fortitude_Team",
+    "5": "Offense_Team",
+    "6": "Resistance_Team",
+    "7": "Technology_Team",
+    "8": "Invalid",
+    "9": "EFortStatType_MAX"
+  },
+  "ESubGame": {
+    "0": "Campaign",
+    "1": "Athena",
+    "2": "Invalid",
+    "3": "Count",
+    "4": "Creative",
+    "5": "ESubGame_MAX"
+  },
+  "EFortGiftWrapType": {
+    "0": "System",
+    "1": "UserFree",
+    "2": "UserUnlock",
+    "3": "UserConsumable",
+    "4": "Message",
+    "5": "Ungift",
+    "6": "EFortGiftWrapType_MAX"
+  },
+  "EFortReplicatedStat": {
+    "0": "MonsterKills",
+    "1": "MonsterDamagePoints",
+    "2": "PlayerKills",
+    "3": "WoodGathered",
+    "4": "StoneGathered",
+    "5": "MetalGathered",
+    "6": "Deaths",
+    "7": "BluGloActivity",
+    "8": "BuildingsBuilt",
+    "9": "BuildingsBuilt_Wood",
+    "10": "BuildingsBuilt_Stone",
+    "11": "BuildingsBuilt_Metal",
+    "12": "BuildingsUpgraded_Wood2",
+    "13": "BuildingsUpgraded_Wood3",
+    "14": "BuildingsUpgraded_Stone2",
+    "15": "BuildingsUpgraded_Stone3",
+    "16": "BuildingsUpgraded_Metal2",
+    "17": "BuildingsUpgraded_Metal3",
+    "18": "BuildingsDestroyed",
+    "19": "Repair_Wood",
+    "20": "Repair_Stone",
+    "21": "Repair_Metal",
+    "22": "FlagsCaptured",
+    "23": "FlagsReturned",
+    "24": "ContainersLooted",
+    "25": "CraftingPoints",
+    "26": "TrapPlacementPoints",
+    "27": "TrapActivationPoints",
+    "28": "TotalScore",
+    "29": "OldTotalScore",
+    "30": "CombatScore",
+    "31": "BuildingScore",
+    "32": "UtilityScore",
+    "33": "BadgesScore",
+    "34": "None",
+    "35": "MAX"
   }
 }
