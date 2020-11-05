@@ -4287,8 +4287,7 @@
     "2": {
       "name": "AllowedPlatforms",
       "type": "ArrayProperty",
-      "innerType": "EnumProperty",
-      "enumName": "ECodeTokenPlatform"
+      "innerType": "NameProperty"
     },
     "3": {
       "name": "ProfileType",
