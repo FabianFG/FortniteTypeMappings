@@ -5769,6 +5769,10 @@
       "type": "EnumProperty",
       "enumName": "EFortWeaponTriggerType"
     },
+    "38": {
+      "name": "bUsesPhantomReserveAmmo",
+      "type": "BoolProperty"
+    },
     "39": {
       "name": "bUsesCustomAmmoType",
       "type": "BoolProperty"
@@ -5795,6 +5799,10 @@
     },
     "48": {
       "name": "bPreventDefaultPreload",
+      "type": "BoolProperty"
+    },
+    "49": {
+      "name": "bRequestClientPreload",
       "type": "BoolProperty"
     },
     "50": {
@@ -6718,6 +6726,10 @@
       "name": "MaxTeamScoreAllowedForBackfill",
       "type": "IntProperty"
     },
+    "26": {
+      "name": "MaxTeamScoreDiscrepancyPercent",
+      "type": "FloatProperty"
+    },
     "27": {
       "name": "bUsePlayerRating",
       "type": "BoolProperty"
@@ -6729,6 +6741,10 @@
     "29": {
       "name": "RatingType",
       "type": "StrProperty"
+    },
+    "30": {
+      "name": "bRequireCrossplayEnabled",
+      "type": "BoolProperty"
     },
     "31": {
       "name": "bLimitedPoolMatchmakingEnabled",
@@ -6746,606 +6762,594 @@
       "name": "bAllowBotsInHumanTeams",
       "type": "BoolProperty"
     },
-    "37": {
+    "38": {
       "name": "WinConditionType",
       "type": "EnumProperty",
       "enumName": "EAthenaWinCondition"
     },
-    "38": {
+    "39": {
       "name": "TimedWinConditionTime",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "39": {
+    "40": {
       "name": "FinalWinConditionTime",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "42": {
+    "41": {
+      "name": "ScoringData",
+      "type": "StructProperty",
+      "structType": "WinConditionScoreData"
+    },
+    "43": {
       "name": "WinConditionPlayersRemaining",
       "type": "IntProperty"
     },
-    "43": {
+    "44": {
       "name": "NumWinningTeamsCN",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "44": {
+    "45": {
       "name": "bIsLargeTeamGame",
       "type": "BoolProperty"
     },
-    "45": {
+    "46": {
       "name": "bShouldSpreadTeams",
       "type": "BoolProperty"
     },
-    "46": {
+    "47": {
       "name": "bIgnoreDefaultQuests",
       "type": "BoolProperty"
     },
-    "50": {
+    "51": {
       "name": "ForceKickAfterDeathTime",
       "type": "FloatProperty"
     },
-    "51": {
+    "52": {
       "name": "ForceKickAfterDeathMode",
       "type": "EnumProperty",
       "enumName": "EForceKickAfterDeathMode"
     },
-    "52": {
-      "name": "QuickbarSelectionPreservationMode",
-      "type": "EnumProperty",
-      "enumName": "EWeaponSelectionPreservationType"
-    },
-    "53": {
-      "name": "AlwaysAllowedNativeActions",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
-    },
-    "54": {
+    "55": {
       "name": "PawnForcedCullDistance",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "57": {
+    "58": {
       "name": "bRequirePickaxeInStartingInventory",
       "type": "BoolProperty"
     },
-    "62": {
+    "63": {
       "name": "MaximumAspectRatio",
       "type": "FloatProperty"
     },
-    "63": {
-      "name": "bVehiclesDestroyAllBuildingSMActorsOnContact",
-      "type": "BoolProperty"
-    },
-    "64": {
+    "65": {
       "name": "VehicleBoundsXYSplineClass",
       "type": "ObjectProperty"
     },
-    "66": {
+    "67": {
       "name": "SoundMix",
       "type": "ObjectProperty"
     },
-    "67": {
+    "68": {
       "name": "bAllowHardcoreModifiers",
       "type": "BoolProperty"
     },
-    "68": {
+    "69": {
       "name": "bForceCameraFadeOnRespawn",
       "type": "BoolProperty"
     },
-    "69": {
+    "70": {
       "name": "MinTimeBeforeRespawnCameraFade",
       "type": "FloatProperty"
     },
-    "70": {
+    "71": {
       "name": "RespawnType",
       "type": "EnumProperty",
       "enumName": "EAthenaRespawnType"
     },
-    "71": {
+    "72": {
       "name": "RespawnHeight",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "72": {
+    "73": {
       "name": "MaxRespawnHeight",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "73": {
+    "74": {
       "name": "RespawnTime",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "74": {
+    "75": {
       "name": "bRespawnInAir",
       "type": "BoolProperty"
     },
-    "75": {
+    "76": {
       "name": "RespawnLevelStreamDistanceToForceSceenFade",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "76": {
+    "77": {
       "name": "bSkipWarmup",
       "type": "BoolProperty"
     },
-    "77": {
+    "78": {
       "name": "bSkipAircraft",
       "type": "BoolProperty"
     },
-    "79": {
+    "80": {
       "name": "AirCraftBehavior",
       "type": "EnumProperty",
       "enumName": "EAirCraftBehavior"
     },
-    "80": {
+    "81": {
       "name": "bUseCustomAircraftPathSelection",
       "type": "BoolProperty"
     },
-    "82": {
+    "83": {
       "name": "bAircraftDropOnlyWithinSafeZone",
       "type": "BoolProperty"
     },
-    "83": {
+    "84": {
       "name": "AircraftSafetyMarginPct",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "86": {
+    "87": {
       "name": "AircraftPathMidpointSelectionRadiusMin",
       "type": "FloatProperty"
     },
-    "87": {
+    "88": {
       "name": "AircraftPathMidpointSelectionRadiusMax",
       "type": "FloatProperty"
     },
-    "91": {
+    "92": {
       "name": "NonRenderedCharacterAnimationScale",
       "type": "FloatProperty"
     },
-    "92": {
+    "93": {
       "name": "PlaylistMissionGen",
       "type": "ObjectProperty"
     },
-    "93": {
+    "94": {
       "name": "bForceLTMLoadingScreenBackground",
       "type": "BoolProperty"
     },
-    "94": {
+    "95": {
       "name": "LoadingScreenWidget",
       "type": "SoftObjectProperty"
     },
-    "95": {
+    "96": {
       "name": "UIExtensions",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "UIExtension"
     },
-    "96": {
+    "97": {
       "name": "PlaylistUIData",
       "type": "SoftObjectProperty"
     },
-    "97": {
+    "98": {
       "name": "MissionIcon",
       "type": "ObjectProperty"
     },
-    "98": {
+    "99": {
       "name": "UIDisplaySubName",
       "type": "TextProperty"
     },
-    "99": {
+    "100": {
       "name": "bLimitedTimeMode",
       "type": "BoolProperty"
     },
-    "100": {
+    "101": {
       "name": "bDisplayScoreInHUD",
       "type": "BoolProperty"
     },
-    "101": {
+    "102": {
       "name": "bDisplayRespawnWidget",
       "type": "BoolProperty"
     },
-    "102": {
+    "103": {
       "name": "bDisableMatchStatsDisplay",
       "type": "BoolProperty"
     },
-    "103": {
+    "104": {
       "name": "SpecialActorInputActionDataTableRow",
       "type": "StructProperty",
       "structType": "DataTableRowHandle"
     },
-    "104": {
+    "105": {
       "name": "bEnforceFullSquadInUI",
       "type": "BoolProperty"
     },
-    "105": {
+    "106": {
       "name": "bShowEliminationIndicatorForSquadmates",
       "type": "BoolProperty"
     },
-    "106": {
+    "107": {
       "name": "bShowEliminationIndicatorForTeammates",
       "type": "BoolProperty"
     },
-    "108": {
+    "109": {
       "name": "bLeaderboardDisplaysIndividuals",
       "type": "BoolProperty"
     },
-    "110": {
+    "111": {
       "name": "TypeOfLeaderboard",
       "type": "EnumProperty",
       "enumName": "EFortLeaderboardMetric"
     },
-    "111": {
+    "112": {
       "name": "OnlyRespectsGlobalSettingForReplayRecording",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "112": {
+    "113": {
       "name": "DisableReplays",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "116": {
+    "117": {
       "name": "ShouldRecommendCustomGameChannel",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "120": {
+    "121": {
       "name": "MapManagerClass",
       "type": "SoftObjectProperty"
     },
-    "122": {
-      "name": "bWarmUpInStorm",
-      "type": "BoolProperty"
-    },
-    "125": {
-      "name": "bDrawLineToStormCircleIfOutside",
-      "type": "BoolProperty"
-    },
-    "126": {
-      "name": "LastSafeZoneIndex",
-      "type": "IntProperty"
-    },
-    "127": {
-      "name": "SafeZoneLocationBlacklist",
-      "type": "SoftObjectProperty"
-    },
-    "121": {
+    "123": {
       "name": "SafeZoneStartUp",
       "type": "EnumProperty",
       "enumName": "ESafeZoneStartUp"
     },
-    "123": {
+    "124": {
+      "name": "bWarmUpInStorm",
+      "type": "BoolProperty"
+    },
+    "125": {
       "name": "StormEffectDelay",
       "type": "FloatProperty"
     },
-    "124": {
+    "126": {
       "name": "bDisplayFinalStormPosition",
       "type": "BoolProperty"
     },
-    "131": {
+    "127": {
+      "name": "bDrawLineToStormCircleIfOutside",
+      "type": "BoolProperty"
+    },
+    "128": {
+      "name": "LastSafeZoneIndex",
+      "type": "IntProperty"
+    },
+    "129": {
+      "name": "SafeZoneLocationBlacklist",
+      "type": "SoftObjectProperty"
+    },
+    "133": {
       "name": "bUseDefaultSupplyDrops",
       "type": "BoolProperty"
     },
-    "132": {
+    "134": {
       "name": "SupplyDropModifierList",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "SupplyDropModifierData"
     },
-    "133": {
+    "135": {
       "name": "SupplyDropInfoList",
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
-    "135": {
-      "name": "QueryNameToLootCountScaleTables",
-      "type": "ArrayProperty",
-      "innerType": "IDK"
-    },
-    "136": {
+    "138": {
       "name": "ExitCraftInfo",
       "type": "SoftObjectProperty"
     },
-    "137": {
+    "139": {
       "name": "bPlaylistUsesCustomCharacterParts",
       "type": "BoolProperty"
     },
-    "138": {
+    "140": {
       "name": "CharactersToPreload",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "CharacterPreloadBlock"
     },
-    "142": {
+    "143": {
+      "name": "SpawnActorInfoList",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "144": {
       "name": "NetActorDiscoveryBudgetInKBytesPerSec",
       "type": "IntProperty"
     },
-    "143": {
+    "146": {
       "name": "bEnableCreativeMode",
       "type": "BoolProperty"
     },
-    "144": {
+    "147": {
       "name": "bEnableSpawningStartup",
       "type": "BoolProperty"
     },
-    "145": {
+    "148": {
       "name": "bAllowTeamSwitching",
       "type": "BoolProperty"
     },
-    "146": {
+    "149": {
       "name": "bShowTeamSelectButton",
       "type": "BoolProperty"
     },
-    "147": {
+    "150": {
       "name": "bAllowLayoutRequirementsFeature",
       "type": "BoolProperty"
     },
-    "148": {
+    "151": {
       "name": "bUseCreativeStarterIsland",
       "type": "BoolProperty"
     },
-    "150": {
+    "153": {
       "name": "bUsesAnimationSharing",
       "type": "BoolProperty"
     },
-    "151": {
-      "name": "AnimationSharingSetup",
+    "154": {
+      "name": "AnimationSharing",
       "type": "SoftObjectProperty"
     },
-    "153": {
+    "156": {
       "name": "bAllowSpectateAPartyMember",
       "type": "BoolProperty"
     },
-    "154": {
+    "157": {
       "name": "bActivateCurie",
       "type": "BoolProperty"
     },
-    "155": {
+    "159": {
       "name": "PlaylistStatId",
       "type": "IntProperty"
     },
-    "156": {
+    "160": {
       "name": "bAccumulateToProfileStats",
       "type": "BoolProperty"
     },
-    "157": {
+    "161": {
       "name": "bSaveToRecentGameList",
       "type": "BoolProperty"
     },
-    "158": {
+    "162": {
       "name": "bEnableStatsV2Stats",
       "type": "BoolProperty"
     },
-    "159": {
+    "163": {
       "name": "AISettings",
       "type": "ObjectProperty"
     },
-    "160": {
+    "164": {
       "name": "ServerBotManagerClass",
       "type": "ObjectProperty"
     },
-    "162": {
+    "166": {
       "name": "PlaylistId",
       "type": "IntProperty"
     },
-    "163": {
+    "167": {
       "name": "PlaylistName",
       "type": "NameProperty"
     },
-    "164": {
+    "168": {
       "name": "GameType",
       "type": "EnumProperty",
       "enumName": "EFortGameType",
       "enumType": "IntProperty"
     },
-    "165": {
+    "169": {
       "name": "MinPlayers",
       "type": "IntProperty"
     },
-    "166": {
+    "170": {
       "name": "MaxPlayers",
       "type": "IntProperty"
     },
-    "167": {
+    "171": {
       "name": "bUnderfillMatchmaking",
       "type": "BoolProperty"
     },
-    "168": {
+    "172": {
       "name": "UnderfilledMaxPlayers",
       "type": "IntProperty"
     },
-    "169": {
+    "173": {
       "name": "bOverrideMaxPlayers",
       "type": "BoolProperty"
     },
-    "170": {
+    "174": {
       "name": "MaxHumanAndBotParticipants",
       "type": "IntProperty"
     },
-    "171": {
+    "175": {
       "name": "MaxTeamCount",
       "type": "IntProperty"
     },
-    "172": {
+    "176": {
       "name": "MaxTeamSize",
       "type": "IntProperty"
     },
-    "173": {
+    "177": {
       "name": "MaxSocialPartySize",
       "type": "IntProperty"
     },
-    "174": {
+    "178": {
       "name": "MaxSquadSize",
       "type": "IntProperty"
     },
-    "175": {
+    "179": {
       "name": "MaxSquads",
       "type": "IntProperty"
     },
-    "176": {
+    "180": {
       "name": "EnforceSquadFill",
       "type": "BoolProperty"
     },
-    "177": {
+    "181": {
       "name": "bAllowSquadFillOption",
       "type": "BoolProperty"
     },
-    "178": {
+    "182": {
       "name": "bShouldFillWhenNoSquadFillOption",
       "type": "BoolProperty"
     },
-    "179": {
+    "183": {
       "name": "bAllowJoinInProgress",
       "type": "BoolProperty"
     },
-    "180": {
+    "184": {
       "name": "JoinInProgressMatchType",
       "type": "TextProperty"
     },
-    "181": {
-      "name": "EndOfMatchXpFirstElim",
-      "type": "IntProperty"
-    },
-    "182": {
+    "186": {
       "name": "EndOfMatchXpMultiplier",
       "type": "IntProperty"
     },
-    "183": {
+    "187": {
       "name": "UserOptions",
       "type": "ObjectProperty"
     },
-    "184": {
+    "188": {
       "name": "bEnableBackfillDuringWarmupPhase",
       "type": "BoolProperty"
     },
-    "186": {
+    "190": {
       "name": "RichPresenceAssetName",
       "type": "NameProperty"
     },
-    "188": {
+    "192": {
       "name": "AdditionalLevels",
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
-    "190": {
+    "193": {
+      "name": "AdditionalLevelsServerOnly",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "194": {
       "name": "BuiltInGameFeaturePluginsToLoad",
       "type": "ArrayProperty",
       "innerType": "StrProperty"
     },
-    "191": {
+    "195": {
       "name": "DownloadGameFeaturePluginToLoad",
       "type": "StrProperty"
     },
-    "193": {
+    "197": {
       "name": "DefaultLastTeam",
       "type": "ByteProperty"
     },
-    "194": {
+    "198": {
       "name": "GameplayTagContainer",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "196": {
-      "name": "bUseFriendlyFireAimAssist",
+    "200": {
+      "name": "bUserFriendlyFireAimAssist",
       "type": "BoolProperty"
     },
-    "197": {
+    "201": {
       "name": "LootLevel",
       "type": "IntProperty"
     },
-    "198": {
-      "name": "LootTagQuery",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
-    },
-    "200": {
+    "204": {
       "name": "DBNOType",
       "type": "EnumProperty",
       "enumName": "EDBNOType"
     },
-    "203": {
+    "205": {
+      "name": "SpawnImmunityTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "207": {
       "name": "ModifierList",
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
-    "204": {
+    "208": {
       "name": "TimeOfDayManager",
       "type": "SoftObjectProperty"
     },
-    "205": {
+    "209": {
       "name": "bIgnoreWeatherEvents",
       "type": "BoolProperty"
     },
-    "206": {
+    "210": {
       "name": "ItemsToFullyLoad",
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
-    "207": {
+    "211": {
       "name": "SharedAssetGroup",
       "type": "ObjectProperty"
     },
-    "208": {
+    "212": {
       "name": "ConditionalAssetGroup",
       "type": "ObjectProperty"
     },
-    "209": {
+    "213": {
       "name": "bIsDefaultPlaylist",
       "type": "BoolProperty"
     },
-    "210": {
+    "214": {
       "name": "UIDisplayName",
       "type": "TextProperty"
     },
-    "211": {
+    "215": {
       "name": "UIDescription",
       "type": "TextProperty"
     },
-    "212": {
+    "216": {
       "name": "HUDElementsToHide",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "213": {
+    "217": {
       "name": "LootTierData",
       "type": "SoftObjectProperty"
     },
-    "214": {
+    "218": {
       "name": "LootPackages",
       "type": "SoftObjectProperty"
     },
-    "215": {
+    "219": {
       "name": "RangedWeapons",
       "type": "SoftObjectProperty"
     },
-    "216": {
+    "220": {
       "name": "GameData",
       "type": "SoftObjectProperty"
     },
-    "217": {
+    "221": {
       "name": "ResourceRates",
       "type": "SoftObjectProperty"
     },
-    "218": {
+    "222": {
       "name": "SkydiveMusic",
       "type": "SoftObjectProperty"
     },
-    "219": {
+    "223": {
       "name": "SkydiveMusicOutroStinger",
       "type": "SoftObjectProperty"
     },
-    "220": {
-      "name": "RespawnStinger",
-      "type": "SoftObjectProperty"
-    },
-    "221": {
+    "225": {
       "name": "GarbageCollectionFrequency",
       "type": "FloatProperty"
     },
-    "222": {
+    "226": {
       "name": "ServerPerformanceEventFrequency",
       "type": "FloatProperty"
     }
@@ -10140,6 +10144,10 @@
       "name": "bCanBeDropped",
       "type": "BoolProperty"
     },
+    "93": {
+      "name": "bCanBeReplacedByPickup",
+      "type": "BoolProperty"
+    },
     "94": {
       "name": "bItemCanBeStolen",
       "type": "BoolProperty"
@@ -12691,6 +12699,53 @@
     "72": {
       "name": "QuickBarSlotCooldownDuration",
       "type": "FloatProperty"
+    }
+  },
+  "WinConditionScoreData": {
+    "0": {
+      "name": "GoalScore",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "1": {
+      "name": "BigScoreThreshold",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "2": {
+      "name": "ScoreDataList",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaScoreData"
+    }
+  },
+  "AthenaScoreData": {
+    "0": {
+      "name": "ScoringEvent",
+      "type": "EnumProperty",
+      "enumName": "EAthenaScoringEvent"
+    },
+    "1": {
+      "name": "ScoreNameText",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "EventInclusionTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "3": {
+      "name": "NumOccurrencesForScore",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "NumOccurrencesPermitted",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "ScoreAwarded",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
     }
   }
 }

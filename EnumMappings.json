@@ -855,5 +855,20 @@
     "33": "BadgesScore",
     "34": "None",
     "35": "MAX"
+  },
+  "EAthenaScoringEvent": {
+    "0": "None",
+    "1": "Elimination",
+    "2": "ChestOpened",
+    "3": "AmmoCanOpened",
+    "4": "SupplyDropOpened",
+    "5": "SupplyLlamaOpened",
+    "6": "ForagedItemConsumed",
+    "7": "SurvivalInMinutes",
+    "8": "CollectedCoinBronze",
+    "9": "CollectedCoinSilver",
+    "10": "CollectedCoinGold",
+    "11": "AIKilled",
+    "12": "EAthenaScoringEvent_MAX"
   }
 }
