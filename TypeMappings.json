@@ -1433,6 +1433,43 @@
       "bool": true
     }
   },
+  "TextureRenderTarget2D": {
+    "0": {
+      "name": "SizeX",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "SizeY",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "ClearColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "3": {
+      "name": "AddressX",
+      "type": "ByteProperty"
+    },
+    "4": {
+      "name": "AddressY",
+      "type": "ByteProperty"
+    },
+    "8": {
+      "name": "RenderTargetFormat",
+      "type": "ByteProperty"
+    },
+    "15": {
+      "name": "LightingGuid",
+      "type": "StructProperty",
+      "structType": "Guid"
+    },
+    "23": {
+      "name": "SRGB",
+      "type": "BoolProperty",
+      "bool": true
+    }
+  },
   "AthenaCharacterItemDefinition": {
     "0": {
       "name": "RequestedDataStores",
