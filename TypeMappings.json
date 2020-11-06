@@ -9799,137 +9799,137 @@
       "name": "BaseCosmeticAlteration",
       "type": "SoftObjectProperty"
     },
-    "25": {
+    "26": {
       "name": "PrimaryFireAbility",
       "type": "SoftObjectProperty"
     },
-    "32": {
+    "33": {
       "name": "AmmoData",
       "type": "SoftObjectProperty"
     },
-    "48": {
+    "49": {
       "name": "bPreventDefaultPreload",
       "type": "BoolProperty"
     },
-    "51": {
+    "52": {
       "name": "ReticleImage",
       "type": "SoftObjectProperty"
     },
-    "52": {
+    "53": {
       "name": "ReticleCornerAngles",
       "type": "ArrayProperty",
       "innerType": "FloatProperty"
     },
-    "59": {
+    "60": {
       "name": "ActualAnalyticFNames",
       "type": "ArrayProperty",
       "innerType": "NameProperty"
     },
-    "60": {
+    "61": {
       "name": "CreativeTagsHelper",
       "type": "StructProperty",
       "structType": "FortCreativeTagsHelper"
     },
-    "75": {
+    "76": {
       "name": "bShowDirectionalArrowWhenFarOff",
       "type": "BoolProperty"
     },
-    "78": {
+    "79": {
       "name": "bItemCanBeStolen",
       "type": "BoolProperty"
     },
-    "80": {
+    "81": {
       "name": "bItemHasDurability",
       "type": "BoolProperty"
     },
-    "82": {
+    "83": {
       "name": "bOverridePickupMeshTransform",
       "type": "BoolProperty"
     },
-    "84": {
+    "85": {
       "name": "bDropOnDeath",
       "type": "BoolProperty"
     },
-    "90": {
+    "91": {
       "name": "MiniMapViewableDistance",
       "type": "FloatProperty"
     },
-    "91": {
+    "92": {
       "name": "MiniMapIconBrush",
       "type": "StructProperty",
       "structType": "SlateBrush"
     },
-    "94": {
+    "95": {
       "name": "PickupMeshTransform",
       "type": "StructProperty",
       "structType": "Transform"
     },
-    "107": {
+    "108": {
       "name": "PickupSkeletalMesh",
       "type": "SoftObjectProperty"
     },
-    "109": {
+    "110": {
       "name": "PickupSound",
       "type": "SoftObjectProperty"
     },
-    "118": {
+    "119": {
       "name": "MinLevel",
       "type": "IntProperty"
     },
-    "119": {
+    "120": {
       "name": "MaxLevel",
       "type": "IntProperty"
     },
-    "122": {
+    "123": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "123": {
+    "124": {
       "name": "ItemType",
       "type": "EnumProperty",
       "enumName": "EFortItemType"
     },
-    "125": {
+    "126": {
       "name": "FilterOverride",
       "type": "EnumProperty",
       "enumName": "EFortInventoryFilter"
     },
-    "130": {
+    "131": {
       "name": "bNeverPersisted",
       "type": "BoolProperty"
     },
-    "136": {
+    "137": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "137": {
+    "138": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "138": {
+    "139": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "141": {
+    "142": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "145": {
+    "146": {
       "name": "MaxStackSize",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "149": {
+    "150": {
       "name": "StatList",
       "type": "SoftObjectProperty"
     },
-    "152": {
+    "153": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "153": {
+    "154": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
