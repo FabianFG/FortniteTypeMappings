@@ -1390,11 +1390,13 @@
   "Texture2D": {
     "3": {
       "name": "AddressX",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "ETextureAddress"
     },
     "4": {
       "name": "AddressY",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "ETextureAddress"
     },
     "5": {
       "name": "ImportedSize",
@@ -1412,15 +1414,28 @@
     },
     "8": {
       "name": "CompressionSettings",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "ETextureCompressionSettings"
+    },
+    "9": {
+      "name": "Filter",
+      "type": "EnumProperty",
+      "enumName": "ETextureFilter"
     },
     "10": {
       "name": "MipLoadOptions",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "ETextureMipLoadOptions"
     },
     "11": {
       "name": "LODGroup",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "ETextureGroup"
+    },
+    "12": {
+      "name": "Downscale",
+      "type": "StructProperty",
+      "structType": "PerPlatformFloat"
     },
     "14": {
       "name": "SRGB",
@@ -1431,6 +1446,12 @@
       "name": "NeverStream",
       "type": "BoolProperty",
       "bool": true
+    }
+  },
+  "PerPlatformFloat": {
+    "0": {
+      "name": "Default",
+      "type": "FloatProperty"
     }
   },
   "TextureRenderTarget2D": {
@@ -2261,7 +2282,8 @@
     },
     "22": {
       "name": "Gender",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
     },
     "30": {
       "name": "LevelToXpHandle",
@@ -2299,11 +2321,13 @@
     },
     "44": {
       "name": "Tier",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
     },
     "45": {
       "name": "MaxTier",
-      "type": "ByteProperty"
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
     },
     "48": {
       "name": "bNeverPersisted",
@@ -10821,6 +10845,11 @@
       "name": "RewardsTable",
       "type": "ObjectProperty"
     },
+    "27": {
+      "name": "HiddenRewards",
+      "type": "StructProperty",
+      "structType": "FortHiddenRewardQuantityPair"
+    },
     "30": {
       "name": "Objectives",
       "type": "ArrayProperty",
@@ -11125,6 +11154,10 @@
   "FortFeatItemDefinition": {
     "2": {
       "name": "bShouldDisplayOverallQuestInformation",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bAthenaUpdateObjectiveOncePerMatch",
       "type": "BoolProperty"
     },
     "4": {
@@ -12834,6 +12867,146 @@
       "name": "ScoreAwarded",
       "type": "StructProperty",
       "structType": "ScalableFloat"
+    }
+  },
+  "FortPlayerPerksItemDefinition": {
+    "0": {
+      "name": "SecondaryXpSource",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "1": {
+      "name": "XpCurve",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "PlayerPerkLevels",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PlayerPerkLevel"
+    },
+    "3": {
+      "name": "LevelCaps",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "TechCurrentLevelCap"
+    },
+    "11": {
+      "name": "MaxLevel",
+      "type": "IntProperty"
+    },
+    "28": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    }
+  },
+  "TechCurrentLevelCap": {
+    "0": {
+      "name": "CalendarEvent",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "EventFlag",
+      "type": "StrProperty"
+    },
+    "2": {
+      "name": "LevelCap",
+      "type": "IntProperty"
+    }
+  },
+  "PlayerPerkLevel": {
+    "0": {
+      "name": "PlayerPerks",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "FortHomebaseNodeItemDefinition": {
+    "0": {
+      "name": "LevelData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "HomebaseNodeLevel"
+    },
+    "1": {
+      "name": "DisplayType",
+      "type": "EnumProperty",
+      "enumName": "EHomebaseNodeType"
+    },
+    "26": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "42": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "HomebaseNodeLevel": {
+    "0": {
+      "name": "DisplayDataId",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "MinCommanderLevel",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "Cost",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortItemQuantityPair"
+    },
+    "3": {
+      "name": "GameplayEffectRowNames",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "4": {
+      "name": "AbilityKit",
+      "type": "SoftObjectProperty"
+    },
+    "5": {
+      "name": "UnlockedSquadSlots",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "HomebaseSquadSlotId"
+    }
+  },
+  "HomebaseSquadSlotId": {
+    "0": {
+      "name": "SquadId",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "SquadSlotIndex",
+      "type": "IntProperty"
+    }
+  },
+  "RadioContentSourceItemDefinition": {
+    "0": {
+      "name": "ResourceID",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "MediaSource",
+      "type": "ObjectProperty"
+    },
+    "26": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "42": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
     }
   }
 }
