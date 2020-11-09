@@ -983,5 +983,20 @@
     "1": "PlayerBuildable",
     "2": "NonPlayerBuildable",
     "3": "EFortDeliveryInfoBuildingActorSpecification_MAX"
+  },
+  "ERealEstateOffsetType": {
+    "0": "CustomOffsetFromCorner",
+    "1": "Center",
+    "2": "ERealEstateOffsetType_MAX"
+  },
+  "EUFortMatchmakingKnobsDataSource": {
+    "0": "None",
+    "1": "Playlist",
+    "2": "Mutator",
+    "3": "GameMode",
+    "4": "Permissions",
+    "5": "UISettings",
+    "6": "CreativeGlobalOption",
+    "7": "Max"
   }
 }

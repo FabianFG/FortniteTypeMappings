@@ -13198,5 +13198,641 @@
       "name": "bApplyToGlobalEnvironmentAbilityActor",
       "type": "BoolProperty"
     }
+  },
+  "FortConsumableAccountItemDefinition": {
+    "0": {
+      "name": "bCanActivateOnSelf",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bCanActivateOnOthers",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bIsAutomaticallyConsumed",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "17": {
+      "name": "FilterOverride",
+      "type": "EnumProperty",
+      "enumName": "EFortInventoryFilter"
+    },
+    "28": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "30": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "39": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "40": {
+      "name": "TooltipClass",
+      "type": "SoftObjectProperty"
+    },
+    "44": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "45": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "48": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "49": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "50": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortConversionControlItemDefinition": {
+    "0": {
+      "name": "LootTierGroup",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "ConversionPointsToTierCosts",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
+    "2": {
+      "name": "bConsumedOnConversion",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "RewardName",
+      "type": "TextProperty"
+    },
+    "14": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "23": {
+      "name": "bAllowMultipleStacks",
+      "type": "BoolProperty"
+    },
+    "28": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "30": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "37": {
+      "name": "MaxStackSize",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "39": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "44": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "45": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "48": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "49": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "50": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortEmoteItemDefinition": {
+    "0": {
+      "name": "CommandName",
+      "type": "TextProperty"
+    },
+    "1": {
+      "name": "Animation",
+      "type": "SoftObjectProperty"
+    },
+    "77": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    }
+  },
+  "FortCampaignHeroLoadoutItemDefinition": {
+    "0": {
+      "name": "CrewSlots",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortCrewSlotInformation"
+    },
+    "1": {
+      "name": "CommanderSlotQuery",
+      "type": "StructProperty",
+      "structType": "GameplayTagQuery"
+    },
+    "2": {
+      "name": "SupportHeroSlotQuery",
+      "type": "StructProperty",
+      "structType": "GameplayTagQuery"
+    },
+    "3": {
+      "name": "GadgetSlotsAllowed",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "SlotUnlockSquadName",
+      "type": "NameProperty"
+    },
+    "5": {
+      "name": "TeamPerkUnlockNode",
+      "type": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "26": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "40": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "41": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortCrewSlotInformation": {
+    "0": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "1": {
+      "name": "SlotName",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "SlotTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "3": {
+      "name": "SlotStatContribution",
+      "type": "FloatProperty"
+    }
+  },
+  "FortCreativeRealEstatePlotItemDefinition": {
+    "0": {
+      "name": "UIDisplayName",
+      "type": "TextProperty"
+    },
+    "1": {
+      "name": "UIDisplayDescription",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "BasePlayset",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "InitialSaveFileName",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "SizeX",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "SizeY",
+      "type": "IntProperty"
+    },
+    "8": {
+      "name": "OffsetType",
+      "type": "EnumProperty",
+      "enumName": "ERealEstateOffsetType"
+    },
+    "9": {
+      "name": "MapImage",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "10": {
+      "name": "SortIndex",
+      "type": "IntProperty"
+    },
+    "11": {
+      "name": "bIsAvailableToUsers",
+      "type": "BoolProperty"
+    },
+    "35": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "41": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "42": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "57": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "58": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "PlaylistUserOptionIntEnum": {
+    "0": {
+      "name": "OptionValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PlaylistOptionIntValue"
+    },
+    "1": {
+      "name": "DefaultValueIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "OptionScope",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "5": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "6": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "7": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "8": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionIntRange": {
+    "0": {
+      "name": "Min",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "Max",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "DefaultValue",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "6": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "7": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "8": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "9": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "10": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "11": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionEnum": {
+    "0": {
+      "name": "OptionValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PlaylistOptionValue"
+    },
+    "1": {
+      "name": "DefaultValueIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "OptionScope",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "5": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "6": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "7": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "8": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionBool": {
+    "0": {
+      "name": "bDefaultValue",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "OptionOnText",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "OptionOffText",
+      "type": "TextProperty"
+    },
+    "3": {
+      "name": "OptionScope",
+      "type": "SoftObjectProperty"
+    },
+    "4": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "5": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "6": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "7": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "8": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "9": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "10": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionFloatEnum": {
+    "0": {
+      "name": "OptionValues",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PlaylistOptionFloatValue"
+    },
+    "1": {
+      "name": "DefaultValueIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "OptionScope",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "4": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "5": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "6": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "7": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "8": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionFloatRange": {
+    "1": {
+      "name": "Max",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "DefaultValue",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "IncrementValue",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "OptionScope",
+      "type": "SoftObjectProperty"
+    },
+    "6": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "7": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "8": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "9": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "10": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "11": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptionString": {
+    "0": {
+      "name": "EntryCharLimit",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "OptionKey",
+      "type": "StrProperty"
+    },
+    "5": {
+      "name": "OptionDisplayName",
+      "type": "TextProperty"
+    },
+    "6": {
+      "name": "OptionDescription",
+      "type": "TextProperty"
+    },
+    "7": {
+      "name": "Tags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "8": {
+      "name": "OptionMaterial",
+      "type": "ObjectProperty"
+    },
+    "9": {
+      "name": "bCanHaveNoOverride",
+      "type": "BoolProperty"
+    },
+    "10": {
+      "name": "MenuListType",
+      "type": "EnumProperty",
+      "enumName": "EUFortMatchmakingKnobsDataSource"
+    }
+  },
+  "PlaylistUserOptions": {
+    "0": {
+      "name": "bSupportNoOverride",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "Options",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "PlaylistOptionValue": {
+    "0": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "1": {
+      "name": "OptionValueName",
+      "type": "StrProperty"
+    }
+  },
+  "PlaylistOptionIntValue": {
+    "0": {
+      "name": "Value",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "OptionValueName",
+      "type": "StrProperty"
+    }
+  },
+  "PlaylistOptionFloatValue": {
+    "0": {
+      "name": "Value",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "1": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "OptionValueName",
+      "type": "StrProperty"
+    }
   }
 }
