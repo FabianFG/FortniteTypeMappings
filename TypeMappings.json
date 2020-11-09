@@ -2283,7 +2283,7 @@
     "22": {
       "name": "Gender",
       "type": "EnumProperty",
-      "enumName": "EFortRarity"
+      "enumName": "EFortCustomGender"
     },
     "30": {
       "name": "LevelToXpHandle",
