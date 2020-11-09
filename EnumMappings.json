@@ -963,5 +963,25 @@
     "1": "Utility",
     "2": "Hidden",
     "3": "EHomebaseNodeType_MAX"
+  },
+  "EFortTeam": {
+    "0": "Spectator",
+    "1": "HumanCampaign",
+    "2": "Monster",
+    "3": "HumanPvP_Team1",
+    "4": "HumanPvP_Team2",
+    "5": "MAX"
+  },
+  "EFortTeamAffiliation": {
+    "0": "Friendly",
+    "1": "Neutral",
+    "2": "Hostile",
+    "3": "EFortTeamAffiliation_MAX"
+  },
+  "EFortDeliveryInfoBuildingActorSpecification": {
+    "0": "All",
+    "1": "PlayerBuildable",
+    "2": "NonPlayerBuildable",
+    "3": "EFortDeliveryInfoBuildingActorSpecification_MAX"
   }
 }

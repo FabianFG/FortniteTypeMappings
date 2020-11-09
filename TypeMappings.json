@@ -13008,5 +13008,195 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "FortPersonalVehicleItemDefinition": {
+    "0": {
+      "name": "PersonalVehicleAbility",
+      "type": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "MountTime",
+      "type": "FloatProperty"
+    },
+    "16": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "19": {
+      "name": "FilterOverride",
+      "type": "EnumProperty",
+      "enumName": "EFortInventoryFilter"
+    },
+    "30": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "32": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "46": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "47": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "50": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "51": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "52": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortGameplayModifierItemDefinition": {
+    "0": {
+      "name": "PersistentGameplayEffects",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortGameplayEffectDeliveryInfo"
+    },
+    "1": {
+      "name": "PersistentAbilitySets",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortAbilitySetDeliveryInfo"
+    },
+    "2": {
+      "name": "Mutators",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "bHiddenInUI",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "24": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "30": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "31": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "32": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "46": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "47": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortAbilitySetDeliveryInfo": {
+    "0": {
+      "name": "DeliveryRequirements",
+      "type": "StructProperty",
+      "structType": "FortDeliveryInfoRequirementsFilter"
+    },
+    "1": {
+      "name": "AbilitySets",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    }
+  },
+  "FortGameplayEffectDeliveryInfo": {
+    "0": {
+      "name": "DeliveryRequirements",
+      "type": "StructProperty",
+      "structType": "FortDeliveryInfoRequirementsFilter"
+    },
+    "1": {
+      "name": "GameplayEffect",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayEffectApplicationInfo"
+    }
+  },
+  "GameplayTagRequirements": {
+    "0": {
+      "name": "RequireTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "1": {
+      "name": "IgnoreTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    }
+  },
+  "FortDeliveryInfoRequirementsFilter": {
+    "0": {
+      "name": "SourceTagRequirements",
+      "type": "StructProperty",
+      "structType": "GameplayTagRequirements"
+    },
+    "1": {
+      "name": "TargetTagRequirements",
+      "type": "StructProperty",
+      "structType": "GameplayTagRequirements"
+    },
+    "2": {
+      "name": "ApplicableTeamAffiliation",
+      "type": "EnumProperty",
+      "enumName": "EFortTeamAffiliation"
+    },
+    "3": {
+      "name": "bConsiderTeamAffiliationToInstigator",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "ApplicableTeam",
+      "type": "EnumProperty",
+      "enumName": "EFortTeam"
+    },
+    "5": {
+      "name": "bConsiderTeam",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bApplyToPlayerPawns",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bApplyToAIPawns",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "bApplyToBuildingActors",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "BuildingActorSpecification",
+      "type": "EnumProperty",
+      "enumName": "EFortDeliveryInfoBuildingActorSpecification"
+    },
+    "10": {
+      "name": "bApplyToGlobalEnvironmentAbilityActor",
+      "type": "BoolProperty"
+    }
   }
 }
