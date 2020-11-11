@@ -4253,6 +4253,10 @@
       "name": "TrailParticles",
       "type": "SoftObjectProperty"
     },
+    "9": {
+      "name": "OwnerTrailParticles",
+      "type": "SoftObjectProperty"
+    },
     "10": {
       "name": "TrailParamName",
       "type": "StructProperty",
@@ -4266,9 +4270,33 @@
       "name": "TrailEffect",
       "type": "SoftObjectProperty"
     },
+    "14": {
+      "name": "TrailEffectNiagara",
+      "type": "SoftObjectProperty"
+    },
     "15": {
       "name": "TrailEffect2",
       "type": "SoftObjectProperty"
+    },
+    "16": {
+      "name": "TrailEffectNiagara2",
+      "type": "SoftObjectProperty"
+    },
+    "17": {
+      "name": "bAutoActivate",
+      "type": "BoolProperty"
+    },
+    "18": {
+      "name": "DeployEffectTagName",
+      "type": "NameProperty"
+    },
+    "19": {
+      "name": "CleanUpDeployEffect",
+      "type": "BoolProperty"
+    },
+    "20": {
+      "name": "UserSkeletonParameterName",
+      "type": "NameProperty"
     },
     "21": {
       "name": "OpenSound",
@@ -9580,6 +9608,10 @@
       "type": "StructProperty",
       "structType": "AttenuationOverrides"
     },
+    "6": {
+      "name": "bOverrideAttenuation",
+      "type": "BoolProperty"
+    },
     "9": {
       "name": "bHasPlayWhenSilent",
       "type": "BoolProperty"
@@ -9720,6 +9752,14 @@
     }
   },
   "AttenuationOverrides": {
+    "0": {
+      "name": "bAttenuate",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bSpatialize",
+      "type": "BoolProperty"
+    },
     "59": {
       "name": "AttenuationShapeExtents",
       "type": "StructProperty",
