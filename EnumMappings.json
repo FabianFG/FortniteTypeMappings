@@ -998,5 +998,11 @@
     "5": "UISettings",
     "6": "CreativeGlobalOption",
     "7": "Max"
+  },
+  "EAthenaSeasonShopVisibility": {
+    "0": "Hide",
+    "1": "ShowIfOffersAvailable",
+    "2": "ShowAlways",
+    "3": "EAthenaSeasonShopVisibility_MAX"
   }
 }
