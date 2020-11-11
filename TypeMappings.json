@@ -4275,9 +4275,29 @@
       "name": "TrailEffect",
       "type": "SoftObjectProperty"
     },
+    "14": {
+      "name": "TrailEffectNiagara",
+      "type": "SoftObjectProperty"
+    },
     "15": {
       "name": "TrailEffect2",
       "type": "SoftObjectProperty"
+    },
+    "16": {
+      "name": "TrailEffectNiagara2",
+      "type": "SoftObjectProperty"
+    },
+    "17": {
+      "name": "bAutoActivate",
+      "type": "BoolProperty"
+    },
+    "18": {
+      "name": "DeployEffectTagName",
+      "type": "NameProperty"
+    },
+    "19": {
+      "name": "CleanUpDeployEffect",
+      "type": "BoolProperty"
     },
     "20": {
       "name": "UserSkeletonParameterName",
@@ -9748,10 +9768,6 @@
       "name": "bXpOnlySeason",
       "type": "BoolProperty"
     },
-    "1": {
-      "name": "bUseAccoladePunchCard",
-      "type": "BoolProperty"
-    },
     "2": {
       "name": "SeasonXpOnlyExtendedCurve",
       "type": "ObjectProperty"
@@ -9763,10 +9779,6 @@
     "4": {
       "name": "RepeatableDailiesCard",
       "type": "ObjectProperty"
-    },
-    "5": {
-      "name": "RestedXpDailyGrant",
-      "type": "IntProperty"
     },
     "6": {
       "name": "RestedXpMaxAccrue",
@@ -9796,11 +9808,6 @@
       "name": "NumAdditionalBookLevels",
       "type": "IntProperty"
     },
-    "13": {
-      "name": "SeasonShopVisibility",
-      "type": "EnumProperty",
-      "enumName": "EAthenaSeasonShopVisibility"
-    },
     "14": {
       "name": "ChallengesVisibility",
       "type": "EnumProperty",
@@ -9818,29 +9825,15 @@
       "name": "SeasonStorefront",
       "type": "StrProperty"
     },
-    "18": {
-      "name": "BattlePassOfferId",
-      "type": "StrProperty"
-    },
     "19": {
       "name": "BattlePassOfferIds",
       "type": "ArrayProperty",
       "innerType": "StrProperty"
     },
-    "20": {
-      "name": "BattlePassLevelOfferID",
-      "type": "StrProperty"
-    },
     "21": {
       "name": "BattlePassLevelOfferIDs",
       "type": "ArrayProperty",
       "innerType": "StrProperty"
-    },
-    "22": {
-      "name": "FreeTokenItemPrimaryAssetIds",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "PrimaryAssetId"
     },
     "23": {
       "name": "FreeLevelsThatNavigateToBattlePass",
@@ -9883,11 +9876,95 @@
       "name": "BattlePassFreeItemContentTag",
       "type": "StructProperty",
       "structType": "GameplayTag"
-    }
-  },
-  "RewardEventGraphDefinition": {
-    "1": {
-      "name": "RewardEventGraphDefinition",
+    },
+    "31": {
+      "name": "BookXpSchedulePaid",
+      "type": "StructProperty",
+      "structType": "AthenaRewardSchedule"
+    },
+    "32": {
+      "name": "BattlePassPaidItemContentTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "33": {
+      "name": "AdditionalBookSchedule",
+      "type": "StructProperty",
+      "structType": "AthenaRewardSchedule"
+    },
+    "34": {
+      "name": "BattlePassAdditionalItemContentTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "35": {
+      "name": "SeasonBannerSchedule",
+      "type": "StructProperty",
+      "structType": "AthenaSeasonBannerLevelSchedule"
+    },
+    "40": {
+      "name": "ChallengeSchedulesAlwaysShown",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "41": {
+      "name": "SeasonGrantsToEveryone",
+      "type": "StructProperty",
+      "structType": "AthenaRewardScheduleLevel"
+    },
+    "42": {
+      "name": "SeasonGrantsToEveryoneItemContentTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "43": {
+      "name": "SeasonFirstWinRewards",
+      "type": "StructProperty",
+      "structType": "AthenaRewardScheduleLevel"
+    },
+    "44": {
+      "name": "SeasonFirstWinItemContentTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "46": {
+      "name": "XpDisplayOverride",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "XpDisplayConversion"
+    },
+    "47": {
+      "name": "XpItemDef",
+      "type": "SoftObjectProperty"
+    },
+    "48": {
+      "name": "ExpiringRewardTypes",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "49": {
+      "name": "TokensToRemoveAtSeasonEnd",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "52": {
+      "name": "NoBattleBundleToken",
+      "type": "SoftObjectProperty"
+    },
+    "78": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "79": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "80": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "100": {
+      "name": "FrontendPreviewMeshOverride",
       "type": "SoftObjectProperty"
     }
   },
