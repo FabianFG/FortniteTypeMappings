@@ -3651,10 +3651,10 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
-	"81": {
-	  "name": "DisplayAssetPath",
-	  "type": "SoftObjectProperty"
-	},
+    "81": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
     "82": {
       "name": "Series",
       "type": "ObjectProperty"
@@ -4008,11 +4008,11 @@
       "name": "bIsShuffleTile",
       "type": "BoolProperty"
     },
-	"17": {
-	  "name": "ObservedPlayerStats",
-	  "type": "StructProperty",
-	  "structType": "GameplayTagContainer"
-	},
+    "17": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "26": {
       "name": "ItemPreviewActorClass",
       "type": "SoftObjectProperty"
