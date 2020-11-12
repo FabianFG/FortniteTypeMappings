@@ -4194,6 +4194,10 @@
       "name": "bCreateGiftbox",
       "type": "BoolProperty"
     },
+    "8": {
+      "name": "CustomGiftbox",
+      "type": "StrProperty"
+    },
     "19": {
       "name": "Rarity",
       "type": "EnumProperty",
