@@ -1004,5 +1004,10 @@
     "1": "ShowIfOffersAvailable",
     "2": "ShowAlways",
     "3": "EAthenaSeasonShopVisibility_MAX"
+  },
+  "EVariantUnlockType": {
+    "0": "UnlockAll",
+    "1": "ExclusiveChoice",
+    "2": "EVariantUnlockType_MAX"
   }
 }

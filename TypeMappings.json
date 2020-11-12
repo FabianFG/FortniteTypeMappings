@@ -1501,17 +1501,27 @@
     "1": {
       "name": "AuthoredVFXData_ByPart",
       "type": "MapProperty",
-      "innerType": "EnumProperty",
+      "innerType": "ByteProperty",
       "valueType": "ObjectProperty"
     },
     "2": {
       "name": "HeroDefinition",
       "type": "ObjectProperty"
     },
+    "16": {
+      "name": "VariantUnlockType",
+      "type": "EnumProperty",
+      "enumName": "EVariantUnlockType"
+    },
     "18": {
       "name": "FoleyLibraries",
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
+    },
+    "20": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
     },
     "23": {
       "name": "ObservedPlayerStats",
@@ -14188,6 +14198,20 @@
       "name": "FloatCurve",
       "type": "StructProperty",
       "structType": "RichCurve"
+    }
+  },
+  "CustomPartScalarParameter": {
+    "0": {
+      "name": "MaterialIndexForScalarParameter",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "ScalarParameterNameForMaterial",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "ScalarOverride",
+      "type": "FloatProperty"
     }
   }
 }
