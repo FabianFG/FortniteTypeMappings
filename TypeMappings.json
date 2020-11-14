@@ -14217,5 +14217,34 @@
       "name": "ScalarOverride",
       "type": "FloatProperty"
     }
+  },
+  "FortMusicAsset": {
+    "1": {
+      "name": "Sections",
+      "type": "StructProperty",
+      "structType": "FortMusicSection"
+    }
+  },
+  "FortMusicSection": {
+    "0": {
+      "name": "Sound",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "FadeInTime",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "FadeOutTime",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "InitialOffset",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "Duration",
+      "type": "FloatProperty"
+    }
   }
 }
