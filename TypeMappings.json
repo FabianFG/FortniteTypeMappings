@@ -14268,5 +14268,47 @@
       "name": "ScalarOverride",
       "type": "FloatProperty"
     }
+  },
+  "CustomCharacterBackpackData": {
+    "1": {
+      "name": "AttachSocketName",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "AttachmentOverrideData",
+      "type": "ObjectProperty"
+    },
+    "5": {
+      "name": "AnimClass",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "CustomCharacterPart": {
+    "0": {
+      "name": "GenderPeritted",
+      "type": "EnumProperty",
+      "enumName": "FortCustomGender"
+    },
+    "2": {
+      "name": "CharacterPartType",
+      "type": "EnumProperty",
+      "enumName": "FortCustomPartType"
+    },
+    "6": {
+      "name": "bAttachToSocket",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "PartModifierBlueprint",
+      "type": "SoftObjectProperty"
+    },
+    "9": {
+      "name": "AdditionalData",
+      "type": "ObjectProperty"
+    },
+    "14": {
+      "name": "SkeletalMesh",
+      "type": "SoftObjectProperty"
+    }
   }
 }

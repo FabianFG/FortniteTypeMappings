@@ -338,6 +338,16 @@
     "3": "Both",
     "4": "EFortCustomGender_MAX"
   },
+  "FortCustomPartType": {
+    "0": "Head",
+    "1": "Body",
+    "2": "Hat",
+    "3": "Backpack",
+    "4": "Charm",
+    "5": "Face",
+    "6": "NumTypes",
+    "7": "EFortCustomPartType_MAX"
+  },
   "EFortWeaponTriggerType": {
     "0": "OnPress",
     "1": "Automatic",
