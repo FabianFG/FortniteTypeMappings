@@ -1034,19 +1034,6 @@
     "1": "ExclusiveChoice",
     "2": "EVariantUnlockType_MAX"
   },
-  "ECommonPlatformType": {
-    "0": "PC",
-    "1": "Mac",
-    "2": "PS4",
-    "3": "XBox",
-    "4": "IOS",
-    "5": "Android",
-    "6": "Switch",
-    "7": "XSX",
-    "8": "PS5",
-    "9": "Count",
-    "10": "ECommonPlatformType_MAX"
-  },
   "EFortMusicSectionStopBehavior": {
     "0": "Crossfade",
     "1": "AllowFadeOut",
