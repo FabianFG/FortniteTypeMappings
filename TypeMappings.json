@@ -1448,6 +1448,57 @@
       "bool": true
     }
   },
+  "BuildingTextureData": {
+    "0": {
+      "name": "Diffuse",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "Normal",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "Specular",
+      "type": "ObjectProperty"
+    },
+    "3": {
+      "name": "OverrideMaterial",
+      "type": "ObjectProperty"
+    },
+    "4": {
+      "name": "Type",
+      "type": "ByteProperty"
+    },
+    "5": {
+      "name": "ResourceType",
+      "type": "EnumProperty",
+      "enumName": "EFortResourceType"
+    },
+    "6": {
+      "name": "ResourceCost",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "ResourceCost_NK01",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "ResourceCost_NK02",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "ResourceCost_NK03",
+      "type": "FloatProperty"
+    },
+    "10": {
+      "name": "ResourceCost_NK04",
+      "type": "FloatProperty"
+    },
+    "11": {
+      "name": "ResourceCost_NK05",
+      "type": "FloatProperty"
+    }
+  },
   "PerPlatformFloat": {
     "0": {
       "name": "Default",
@@ -14216,6 +14267,48 @@
     "2": {
       "name": "ScalarOverride",
       "type": "FloatProperty"
+    }
+  },
+  "CustomCharacterBackpackData": {
+    "1": {
+      "name": "AttachSocketName",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "AttachmentOverrideData",
+      "type": "ObjectProperty"
+    },
+    "5": {
+      "name": "AnimClass",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "CustomCharacterPart": {
+    "0": {
+      "name": "GenderPeritted",
+      "type": "EnumProperty",
+      "enumName": "FortCustomGender"
+    },
+    "2": {
+      "name": "CharacterPartType",
+      "type": "EnumProperty",
+      "enumName": "FortCustomPartType"
+    },
+    "6": {
+      "name": "bAttachToSocket",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "PartModifierBlueprint",
+      "type": "SoftObjectProperty"
+    },
+    "9": {
+      "name": "AdditionalData",
+      "type": "ObjectProperty"
+    },
+    "14": {
+      "name": "SkeletalMesh",
+      "type": "SoftObjectProperty"
     }
   },
   "FortMusicAsset": {

@@ -5,6 +5,20 @@
     "2": "TA_Mirror",
     "3": "TA_MAX"
   },
+  "EFortTextureDataType": {
+    "0": "Any",
+    "1": "OuterWall",
+    "2": "InnerWall",
+    "3": "Corner",
+    "4": "Floor",
+    "5": "Ceiling",
+    "6": "Trim",
+    "7": "Roof",
+    "8": "Pillar",
+    "9": "Shingle",
+    "10": "None",
+    "11": "EFortTextureDataType_MAX"
+  },
   "ETextureCompressionSettings": {
     "0": "TC_Default",
     "1": "TC_Normalmap",
@@ -323,6 +337,16 @@
     "2": "Female",
     "3": "Both",
     "4": "EFortCustomGender_MAX"
+  },
+  "FortCustomPartType": {
+    "0": "Head",
+    "1": "Body",
+    "2": "Hat",
+    "3": "Backpack",
+    "4": "Charm",
+    "5": "Face",
+    "6": "NumTypes",
+    "7": "EFortCustomPartType_MAX"
   },
   "EFortWeaponTriggerType": {
     "0": "OnPress",
