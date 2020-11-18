@@ -13885,5 +13885,227 @@
       "name": "Duration",
       "type": "FloatProperty"
     }
+  },
+  "FortGameDeathPenalty": {
+    "16": {
+      "name": "RespawnDelayOverTime",
+      "type": "ObjectProperty"
+    },
+    "18": {
+      "name": "MinSelfResurrectDelay",
+      "type": "FloatProperty"
+    },
+    "21": {
+      "name": "PercentShieldOnRespawn",
+      "type": "FloatProperty"
+    }
+  },
+  "AthenaMapPreloadData": {
+    "0": {
+      "name": "PackageNames",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "1": {
+      "name": "MemoryLookup",
+      "type": "ArrayProperty",
+      "innerType": "Int16Property"
+    },
+    "2": {
+      "name": "MemoryIncrementMB",
+      "type": "IntProperty"
+    }
+  },
+  "GameplayTagTableRow": {
+    "0": {
+      "name": "Tag",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "DevComment",
+      "type": "StrProperty"
+    }
+  },
+  "CurveLinearColor": {
+    "0": {
+      "name": "FloatCurves",
+      "type": "StructProperty",
+      "structType": "RichCurve"
+    },
+    "1": {
+      "name": "FloatCurves",
+      "type": "StructProperty",
+      "structType": "RichCurve"
+    },
+    "2": {
+      "name": "FloatCurves",
+      "type": "StructProperty",
+      "structType": "RichCurve"
+    },
+    "3": {
+      "name": "FloatCurves",
+      "type": "StructProperty",
+      "structType": "RichCurve"
+    }
+  },
+  "AthenaAISettings": {
+    "0": {
+      "name": "bAllowAIDirector",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bAllowAIGoalManager",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bForceRVOUse",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "MaxPlayerSpeedScaleFootstepSounds",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "MinFootstepHearingRange",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "MaxFootstepHearingRange",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "DamagedHearingRange",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "CrouchHearingModifier",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "MaxNPCHearingRange",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "MaxPerceptualStimuliAge",
+      "type": "FloatProperty"
+    },
+    "10": {
+      "name": "DeAggroRange",
+      "type": "FloatProperty"
+    },
+    "11": {
+      "name": "ReducedDeAggroRange",
+      "type": "FloatProperty"
+    },
+    "12": {
+      "name": "DurationReduceAggroLimits",
+      "type": "FloatProperty"
+    },
+    "14": {
+      "name": "AIDIrectorLOD",
+      "type": "SoftObjectProperty"
+    },
+    "15": {
+      "name": "AIServices",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "BehaviorTree": {
+    "0": {
+      "name": "RootNode",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "BlackboardAsset",
+      "type": "ObjectProperty"
+    }
+  },
+  "BTComposite_Selector": {
+    "0": {
+      "name": "Children",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "BTCompositeChild"
+    },
+    "4": {
+      "name": "Services",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "5": {
+      "name": "TreeAsset",
+      "type": "ObjectProperty"
+    }
+  },
+  "BTCompositeChild": {
+    "0": {
+      "name": "ChildComposite",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "ChildTask",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "Decorators",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "3": {
+      "name": "DecoratorOps",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "BTDecoratorLogic"
+    }
+  },
+  "BTDecoratorLogic": {
+    "0": {
+      "name": "Operation",
+      "type": "ByteProperty"
+    },
+    "1": {
+      "name": "Number",
+      "type": "UInt16Property"
+    }
+  },
+  "BlackboardKeySelector": {
+    "0": {
+      "name": "SelectedKeyName",
+      "type": "NameProperty"
+    }
+  },
+  "EQSParametrizedQueryExecutionRequest": {
+    "0": {
+      "name": "QueryTemplate",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "RunMode",
+      "type": "ByteProperty"
+    }
+  },
+  "DistanceToTargetComparison": {
+    "0": {
+      "name": "bUseOverriddenValue",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "OverriddenValue",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "DistanceDataTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "3": {
+      "name": "Operator",
+      "type": "ByteProperty"
+    },
+    "4": {
+      "name": "ComparisonType",
+      "type": "ByteProperty"
+    }
   }
 }
