@@ -3352,6 +3352,19 @@
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
+    "1": {
+      "name": "bIsShuffleTile",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bIsOwnedByCampaignHero",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "19": {
       "name": "ObservedPlayerStats",
       "type": "StructProperty",
@@ -3368,10 +3381,39 @@
       "innerType": "StructProperty",
       "structType": "FortCosmeticVariantPreview"
     },
+    "26": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "28": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "32": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
+    },
+    "35": {
+      "name": "ExclusiveRequiresOutfitTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "36": {
+      "name": "CustomExclusiveCallout",
+      "type": "TextProperty"
+    },
+    "38": {
+      "name": "ExclusiveIcon",
+      "type": "SoftObjectProperty"
+    },
     "49": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
+    },
+    "57": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
     },
     "63": {
       "name": "DisplayName",
@@ -3398,9 +3440,27 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
+    "81": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
     "82": {
       "name": "Series",
       "type": "ObjectProperty"
+    },
+    "83": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "84": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "85": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
     }
   },
   "AthenaMusicPackItemDefinition": {
@@ -14106,6 +14166,38 @@
     "4": {
       "name": "ComparisonType",
       "type": "ByteProperty"
+    }
+  },
+  "FortCosmeticFloatSliderVariant": {
+    "0": {
+      "name": "DefaultStartingValue",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "MinParamValue",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "MaxParamValue",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "MaterialParamName",
+      "type": "NameProperty"
+    },
+    "4": {
+      "name": "MaterialsToAlter",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "5": {
+      "name": "VariantChannelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "6": {
+      "name": "VariantChannelName",
+      "type": "TextProperty"
     }
   }
 }
