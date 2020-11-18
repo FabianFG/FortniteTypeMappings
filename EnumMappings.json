@@ -1038,5 +1038,10 @@
     "0": "Crossfade",
     "1": "AllowFadeOut",
     "2": "EFortMusicSectionStopBehavior_MAX"
+  },
+  "EFriendlyFireType": {
+    "0": "Off",
+    "1": "On",
+    "2": "EFriendlyFireType_MAX"
   }
 }

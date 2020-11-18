@@ -1559,10 +1559,19 @@
       "name": "HeroDefinition",
       "type": "ObjectProperty"
     },
+    "8": {
+      "name": "bIsShuffleTile",
+      "type": "BoolProperty"
+    },
     "21": {
       "name": "FoleyLibraries",
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
+    },
+    "23": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
     },
     "27": {
       "name": "BuiltInEmotes",
@@ -1580,10 +1589,18 @@
       "innerType": "StructProperty",
       "structType": "FortCosmeticVariantPreview"
     },
+    "35": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
+    },
     "56": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
+    },
+    "64": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
     },
     "70": {
       "name": "DisplayName",
@@ -1602,6 +1619,14 @@
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
+    "86": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "87": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
     "88": {
       "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
@@ -1609,6 +1634,20 @@
     "89": {
       "name": "Series",
       "type": "ObjectProperty"
+    },
+    "90": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "91": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "92": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
     }
   },
   "AthenaCosmeticMaterialOverride": {
@@ -3048,16 +3087,49 @@
     }
   },
   "AthenaDanceItemDefinition": {
+    "18": {
+      "name": "FrontEndAnimation",
+      "type": "SoftObjectProperty"
+    },
+    "20": {
+      "name": "CustomDanceAbility",
+      "type": "SoftObjectProperty"
+    },
     "22": {
       "name": "Animation",
       "type": "SoftObjectProperty"
+    },
+    "23": {
+      "name": "AnimationFemaleOverride",
+      "type": "SoftObjectProperty"
+    },
+    "24": {
+      "name": "AnimationOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortEmoteMapping"
     },
     "27": {
       "name": "EmoteCooldownSecs",
       "type": "FloatProperty"
     },
+    "34": {
+      "name": "AccessData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MontageItemAccessData"
+    },
+    "36": {
+      "name": "EmoteWheelExclusiveTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "37": {
       "name": "RequiredEmoteParent",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "ExclusiveIcon",
       "type": "SoftObjectProperty"
     },
     "87": {
@@ -3086,6 +3158,10 @@
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
+    "112": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
     "117": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
@@ -3097,6 +3173,11 @@
     "120": {
       "name": "Series",
       "type": "ObjectProperty"
+    },
+    "121": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
     }
   },
   "SectionNameAndWeight": {
@@ -3528,93 +3609,53 @@
       "name": "BackgroundImage",
       "type": "SoftObjectProperty"
     },
-    "1": {
-      "name": "BackgroundMaterialOrTexture",
-      "type": "SoftObjectProperty"
-    },
-    "2": {
-      "name": "BackgroundWidget",
-      "type": "SoftObjectProperty"
-    },
-    "3": {
-      "name": "BackgroundDesiredSize",
-      "type": "StructProperty",
-      "structType": "Vector2D"
-    },
     "4": {
       "name": "BackgroundColor",
       "type": "StructProperty",
       "structType": "LinearColor"
     },
-    "5": {
-      "name": "bIsShuffleTile",
-      "type": "BoolProperty",
-      "bool": true
-    },
-    "29": {
-      "name": "ItemPreviewActorClass",
-      "type": "SoftObjectProperty"
-    },
-    "50": {
-      "name": "Rarity",
-      "type": "EnumProperty",
-      "enumName": "EFortRarity"
-    },
-    "64": {
+    "67": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "65": {
+    "68": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "66": {
+    "69": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "69": {
+    "72": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "75": {
+    "78": {
       "name": "FrontendPreviewScale",
       "type": "FloatProperty"
     },
-    "79": {
-      "name": "WidePreviewImage",
-      "type": "SoftObjectProperty"
-    },
-    "80": {
+    "83": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "81": {
+    "84": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
-    "82": {
-      "name": "DisplayAssetPath",
-      "type": "StructProperty",
-      "structType": "SoftObjectPath"
-    },
-    "83": {
+    "86": {
       "name": "Series",
       "type": "ObjectProperty"
     },
-    "84": {
+    "87": {
       "name": "FrontendPreviewPivotOffset",
       "type": "StructProperty",
       "structType": "Vector"
     },
-    "85": {
+    "88": {
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
-    },
-    "86": {
-      "name": "FrontendPreviewMeshOverride",
-      "type": "SoftObjectProperty"
     }
   },
   "AthenaSprayItemDefinition": {
@@ -3911,6 +3952,10 @@
     },
     "132": {
       "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "133": {
+      "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
   },
@@ -6407,6 +6452,10 @@
     },
     "57": {
       "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "58": {
+      "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
     },
     "60": {
