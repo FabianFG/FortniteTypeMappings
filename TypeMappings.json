@@ -6672,10 +6672,117 @@
       "type": "EnumProperty",
       "enumName": "ERewardTimePlayedType"
     },
+    "6": {
+      "name": "RewardTimePlayedXPPerMinute",
+      "type": "IntProperty"
+    },
+    "7": {
+      "name": "RewardTimePlayedXPFlatValue",
+      "type": "IntProperty"
+    },
     "8": {
       "name": "InMatchXPRewardScalar",
       "type": "StructProperty",
       "structType": "ScalableFloat"
+    },
+    "10": {
+      "name": "FirstWinRewards",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "12": {
+      "name": "bAllowSinglePartyMatches",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bRequeueAfterFailedSessionAssignment",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "bIsTournament",
+      "type": "BoolProperty"
+    },
+    "15": {
+      "name": "bUseMultidivisionQueues",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "CompetitivePointClamp",
+      "type": "IntProperty"
+    },
+    "17": {
+      "name": "Strategy",
+      "type": "StrProperty"
+    },
+    "18": {
+      "name": "BotVersionPlaylistName",
+      "type": "NameProperty"
+    },
+    "19": {
+      "name": "MaxBucketCapacity",
+      "type": "IntProperty"
+    },
+    "20": {
+      "name": "MaxPendingMatches",
+      "type": "IntProperty"
+    },
+    "21": {
+      "name": "PriorityRatingExpansion",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "RatingExpansion"
+    },
+    "22": {
+      "name": "bUseInputRules",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "bAllowBackfill",
+      "type": "BoolProperty"
+    },
+    "24": {
+      "name": "MinBackfillMatchPlayers",
+      "type": "IntProperty"
+    },
+    "25": {
+      "name": "MaxTeamScoreAllowedForBackfill",
+      "type": "IntProperty"
+    },
+    "26": {
+      "name": "MaxTeamScoreDiscrepancyPercent",
+      "type": "FloatProperty"
+    },
+    "27": {
+      "name": "bUsePlayerRating",
+      "type": "BoolProperty"
+    },
+    "28": {
+      "name": "bEnableDynamicBotBackfill",
+      "type": "BoolProperty"
+    },
+    "29": {
+      "name": "RatingType",
+      "type": "StrProperty"
+    },
+    "30": {
+      "name": "bRequireCrossplayEnabled",
+      "type": "BoolProperty"
+    },
+    "31": {
+      "name": "bLimitedPoolMatchmakingEnabled",
+      "type": "BoolProperty"
+    },
+    "32": {
+      "name": "bAllowedInLeto",
+      "type": "BoolProperty"
+    },
+    "33": {
+      "name": "bAllowInGameMatchMaking",
+      "type": "BoolProperty"
+    },
+    "35": {
+      "name": "bAllowBotsInHumanTeams",
+      "type": "BoolProperty"
     },
     "38": {
       "name": "WinConditionType",
@@ -6692,9 +6799,78 @@
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
+    "41": {
+      "name": "ScoringData",
+      "type": "StructProperty",
+      "structType": "WinConditionScoreData"
+    },
+    "43": {
+      "name": "WinConditionPlayersRemaining",
+      "type": "IntProperty"
+    },
+    "44": {
+      "name": "NumWinningTeamsCN",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
     "45": {
       "name": "bIsLargeTeamGame",
       "type": "BoolProperty"
+    },
+    "46": {
+      "name": "bShouldSpreadTeams",
+      "type": "BoolProperty"
+    },
+    "47": {
+      "name": "bIgnoreDefaultQuests",
+      "type": "BoolProperty"
+    },
+    "51": {
+      "name": "ForceKickAfterDeathTime",
+      "type": "FloatProperty"
+    },
+    "52": {
+      "name": "ForceKickAfterDeathMode",
+      "type": "EnumProperty",
+      "enumName": "EForceKickAfterDeathMode"
+    },
+    "55": {
+      "name": "PawnForcedCullDistance",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "58": {
+      "name": "bRequirePickaxeInStartingInventory",
+      "type": "BoolProperty"
+    },
+    "63": {
+      "name": "MaximumAspectRatio",
+      "type": "FloatProperty"
+    },
+    "65": {
+      "name": "VehicleBoundsXYSplineClass",
+      "type": "ObjectProperty"
+    },
+    "67": {
+      "name": "SoundMix",
+      "type": "ObjectProperty"
+    },
+    "68": {
+      "name": "bAllowHardcoreModifiers",
+      "type": "BoolProperty"
+    },
+    "69": {
+      "name": "bForceCameraFadeOnRespawn",
+      "type": "BoolProperty"
+    },
+    "70": {
+      "name": "MinTimeBeforeRespawnCameraFade",
+      "type": "FloatProperty"
+    },
+    "71": {
+      "name": "RespawnType",
+      "type": "EnumProperty",
+      "enumName": "EAthenaRespawnType"
     },
     "72": {
       "name": "RespawnHeight",
@@ -6710,6 +6886,23 @@
       "name": "RespawnTime",
       "type": "StructProperty",
       "structType": "ScalableFloat"
+    },
+    "75": {
+      "name": "bRespawnInAir",
+      "type": "BoolProperty"
+    },
+    "76": {
+      "name": "RespawnLevelStreamDistanceToForceSceenFade",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "77": {
+      "name": "bSkipWarmup",
+      "type": "BoolProperty"
+    },
+    "78": {
+      "name": "bSkipAircraft",
+      "type": "BoolProperty"
     },
     "80": {
       "name": "AirCraftBehavior",
@@ -6759,12 +6952,72 @@
       "innerType": "StructProperty",
       "structType": "UIExtension"
     },
+    "97": {
+      "name": "PlaylistUIData",
+      "type": "SoftObjectProperty"
+    },
     "98": {
       "name": "MissionIcon",
       "type": "ObjectProperty"
     },
+    "99": {
+      "name": "UIDisplaySubName",
+      "type": "TextProperty"
+    },
+    "100": {
+      "name": "bLimitedTimeMode",
+      "type": "BoolProperty"
+    },
+    "101": {
+      "name": "bDisplayScoreInHUD",
+      "type": "BoolProperty"
+    },
+    "102": {
+      "name": "bDisplayRespawnWidget",
+      "type": "BoolProperty"
+    },
+    "103": {
+      "name": "bDisableMatchStatsDisplay",
+      "type": "BoolProperty"
+    },
+    "104": {
+      "name": "SpecialActorInputActionDataTableRow",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
+    "105": {
+      "name": "bEnforceFullSquadInUI",
+      "type": "BoolProperty"
+    },
+    "106": {
+      "name": "bShowEliminationIndicatorForSquadmates",
+      "type": "BoolProperty"
+    },
+    "107": {
+      "name": "bShowEliminationIndicatorForTeammates",
+      "type": "BoolProperty"
+    },
+    "109": {
+      "name": "bLeaderboardDisplaysIndividuals",
+      "type": "BoolProperty"
+    },
+    "111": {
+      "name": "TypeOfLeaderboard",
+      "type": "EnumProperty",
+      "enumName": "EFortLeaderboardMetric"
+    },
     "112": {
       "name": "OnlyRespectsGlobalSettingForReplayRecording",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "113": {
+      "name": "DisableReplays",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "117": {
+      "name": "ShouldRecommendCustomGameChannel",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
@@ -6772,16 +7025,119 @@
       "name": "MapManagerClass",
       "type": "SoftObjectProperty"
     },
+    "123": {
+      "name": "SafeZoneStartUp",
+      "type": "EnumProperty",
+      "enumName": "ESafeZoneStartUp"
+    },
+    "124": {
+      "name": "bWarmUpInStorm",
+      "type": "BoolProperty"
+    },
+    "125": {
+      "name": "StormEffectDelay",
+      "type": "FloatProperty"
+    },
     "126": {
       "name": "bDisplayFinalStormPosition",
+      "type": "BoolProperty"
+    },
+    "127": {
+      "name": "bDrawLineToStormCircleIfOutside",
       "type": "BoolProperty"
     },
     "128": {
       "name": "LastSafeZoneIndex",
       "type": "IntProperty"
     },
+    "129": {
+      "name": "SafeZoneLocationBlacklist",
+      "type": "SoftObjectProperty"
+    },
     "133": {
       "name": "bUseDefaultSupplyDrops",
+      "type": "BoolProperty"
+    },
+    "134": {
+      "name": "SupplyDropModifierList",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SupplyDropModifierData"
+    },
+    "135": {
+      "name": "SupplyDropInfoList",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "138": {
+      "name": "ExitCraftInfo",
+      "type": "SoftObjectProperty"
+    },
+    "139": {
+      "name": "bPlaylistUsesCustomCharacterParts",
+      "type": "BoolProperty"
+    },
+    "140": {
+      "name": "CharactersToPreload",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "CharacterPreloadBlock"
+    },
+    "143": {
+      "name": "SpawnActorInfoList",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "144": {
+      "name": "NetActorDiscoveryBudgetInKBytesPerSec",
+      "type": "IntProperty"
+    },
+    "146": {
+      "name": "bEnableCreativeMode",
+      "type": "BoolProperty"
+    },
+    "147": {
+      "name": "bEnableSpawningStartup",
+      "type": "BoolProperty"
+    },
+    "148": {
+      "name": "bAllowTeamSwitching",
+      "type": "BoolProperty"
+    },
+    "149": {
+      "name": "bShowTeamSelectButton",
+      "type": "BoolProperty"
+    },
+    "150": {
+      "name": "bAllowLayoutRequirementsFeature",
+      "type": "BoolProperty"
+    },
+    "151": {
+      "name": "bUseCreativeStarterIsland",
+      "type": "BoolProperty"
+    },
+    "153": {
+      "name": "bUsesAnimationSharing",
+      "type": "BoolProperty"
+    },
+    "154": {
+      "name": "AnimationSharing",
+      "type": "SoftObjectProperty"
+    },
+    "156": {
+      "name": "bAllowSpectateAPartyMember",
+      "type": "BoolProperty"
+    },
+    "157": {
+      "name": "bActivateCurie",
+      "type": "BoolProperty"
+    },
+    "159": {
+      "name": "PlaylistStatId",
+      "type": "IntProperty"
+    },
+    "160": {
+      "name": "bAccumulateToProfileStats",
       "type": "BoolProperty"
     },
     "161": {
@@ -6791,6 +7147,14 @@
     "162": {
       "name": "bEnableStatsV2Stats",
       "type": "BoolProperty"
+    },
+    "163": {
+      "name": "AISettings",
+      "type": "ObjectProperty"
+    },
+    "164": {
+      "name": "ServerBotManagerClass",
+      "type": "ObjectProperty"
     },
     "166": {
       "name": "PlaylistId",
@@ -6814,6 +7178,22 @@
       "name": "MaxPlayers",
       "type": "IntProperty"
     },
+    "171": {
+      "name": "bUnderfillMatchmaking",
+      "type": "BoolProperty"
+    },
+    "172": {
+      "name": "UnderfilledMaxPlayers",
+      "type": "IntProperty"
+    },
+    "173": {
+      "name": "bOverrideMaxPlayers",
+      "type": "BoolProperty"
+    },
+    "174": {
+      "name": "MaxHumanAndBotParticipants",
+      "type": "IntProperty"
+    },
     "175": {
       "name": "MaxTeamCount",
       "type": "IntProperty"
@@ -6822,9 +7202,53 @@
       "name": "MaxTeamSize",
       "type": "IntProperty"
     },
+    "177": {
+      "name": "MaxSocialPartySize",
+      "type": "IntProperty"
+    },
     "178": {
       "name": "MaxSquadSize",
       "type": "IntProperty"
+    },
+    "179": {
+      "name": "MaxSquads",
+      "type": "IntProperty"
+    },
+    "180": {
+      "name": "EnforceSquadFill",
+      "type": "BoolProperty"
+    },
+    "181": {
+      "name": "bAllowSquadFillOption",
+      "type": "BoolProperty"
+    },
+    "182": {
+      "name": "bShouldFillWhenNoSquadFillOption",
+      "type": "BoolProperty"
+    },
+    "183": {
+      "name": "bAllowJoinInProgress",
+      "type": "BoolProperty"
+    },
+    "184": {
+      "name": "JoinInProgressMatchType",
+      "type": "TextProperty"
+    },
+    "186": {
+      "name": "EndOfMatchXpMultiplier",
+      "type": "IntProperty"
+    },
+    "187": {
+      "name": "UserOptions",
+      "type": "ObjectProperty"
+    },
+    "188": {
+      "name": "bEnableBackfillDuringWarmupPhase",
+      "type": "BoolProperty"
+    },
+    "190": {
+      "name": "RichPresenceAssetName",
+      "type": "NameProperty"
     },
     "199": {
       "name": "GameplayTagContainer",
@@ -6840,6 +7264,10 @@
       "name": "ModifierList",
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
+    },
+    "209": {
+      "name": "TimeOfDayManager",
+      "type": "SoftObjectProperty"
     },
     "210": {
       "name": "bIgnoreWeatherEvents",
@@ -6873,6 +7301,10 @@
     "222": {
       "name": "ResourceRates",
       "type": "SoftObjectProperty"
+    },
+    "227": {
+      "name": "ServerPerformanceEventFrequency",
+      "type": "FloatProperty"
     }
   },
   "UIExtension": {
