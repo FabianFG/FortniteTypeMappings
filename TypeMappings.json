@@ -2045,6 +2045,20 @@
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "ParticlVariantDef"
+    },
+    "1": {
+      "name": "VariantChannelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "2": {
+      "name": "VariantChannelName",
+      "type": "TextProperty"
+    },
+    "3": {
+      "name": "ActiveVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
     }
   },
   "VariantParticleSystemInitializerData": {
@@ -3049,6 +3063,39 @@
       "name": "MetaTags",
       "type": "StructProperty",
       "structType": "CosmeticMetaTagContainer"
+    },
+    "7": {
+      "name": "bStartUnlocked",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "bIsDefault",
+      "type": "BoolProperty"
+    },
+    "9": {
+      "name": "bHideIfNotOwned",
+      "type": "BoolProperty"
+    },
+    "10": {
+      "name": "CustomizationVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "11": {
+      "name": "VariantName",
+      "type": "TextProperty"
+    },
+    "12": {
+      "name": "PreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "13": {
+      "name": "UnlockRequirements",
+      "type": "TextProperty"
+    },
+    "14": {
+      "name": "UnlockingItemDef",
+      "type": "SoftObjectProperty"
     }
   },
   "BaseVariantDef": {
@@ -4481,55 +4528,48 @@
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
-    "17": {
-      "name": "MaterialOverrides",
-      "type": "ArrayProperty",
-      "innerType": "StructProperty",
-      "structType": "CustomPartMaterialOverrideData"
+    "21": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
     },
-    "20": {
-      "name": "ItemVariants",
-      "type": "ArrayProperty",
-      "innerType": "ObjectProperty"
+    "34": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
     },
-    "48": {
+    "51": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "62": {
+    "65": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "63": {
+    "66": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "64": {
+    "67": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "67": {
+    "70": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "78": {
+    "81": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "79": {
+    "82": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
-    },
-    "80": {
-      "name": "DisplayAssetPath",
-      "type": "SoftObjectProperty"
-    },
-    "81": {
-      "name": "Series",
-      "type": "ObjectProperty"
     }
+  },
+  "FortCosmeticProfileBannerVariant": {
+
   },
   "FortUICameraFrameTargetBounds": {
     "0": {
