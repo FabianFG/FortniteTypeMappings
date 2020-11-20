@@ -4750,6 +4750,11 @@
       "name": "AlterationAbilitySet",
       "type": "SoftObjectProperty"
     },
+    "11": {
+      "name": "UpgradeRarityRecipeHandle",
+      "type": "StructProperty",
+      "structType": "DataTableRowHandle"
+    },
     "16": {
       "name": "Rarity",
       "type": "EnumProperty",
@@ -7409,9 +7414,33 @@
       "name": "CachedReferencedTextures",
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
+    },
+    "24": {
+      "name": "TextureStreamingData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PhysicalMaterialMask"
+    }
+  },
+  "PhysicalMaterialMask": {
+    "0": {
+      "name": "SamplingScale",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "UVChannelIndex",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "TextureName",
+      "type": "NameProperty"
     }
   },
   "MaterialInstanceBasePropertyOverrides": {
+    "6": {
+      "name": "TwoSided",
+      "type": "BoolProperty"
+    },
     "9": {
       "name": "BlendMode",
       "type": "ByteProperty"
@@ -14218,6 +14247,192 @@
     "6": {
       "name": "VariantChannelName",
       "type": "TextProperty"
+    }
+  },
+  "FortPhoenixLevelRewardData": {
+    "0": {
+      "name": "TotalRequiredXP",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "bIsMajorReward",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "VisibleReward",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortRewardQuantityPair"
+    },
+    "3": {
+      "name": "HiddenRewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortRewardQuantityPair"
+    },
+    "4": {
+      "name": "EventTag",
+      "type": "StrProperty"
+    }
+  },
+  "FortRewardQuantityPair": {
+    "0": {
+      "name": "TemplateId",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "Quantity",
+      "type": "IntProperty"
+    }
+  },
+  "FortPostMaxPhoenixLevelRewardData": {
+    "0": {
+      "name": "bIsMajorReward",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "VisibleReward",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortRewardQuantityPair"
+    },
+    "2": {
+      "name": "EventTag",
+      "type": "StrProperty"
+    }
+  },
+  "AlterationGroup": {
+    "0": {
+      "name": "RarityMapping",
+      "type": "MapProperty",
+      "innerType": "NameProperty",
+      "valueType": "StructProperty",
+      "structType": "AlterationWeightSet"
+    }
+  },
+  "AlterationWeightSet": {
+    "0": {
+      "name": "WeightData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AlterationWeightData"
+    }
+  },
+  "AlterationWeightData": {
+    "0": {
+      "name": "AID",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "InitialRollWeight",
+      "type": "IntProperty"
+    },
+    "2": {
+      "name": "ExclusionNames",
+      "type": "ArrayProperty",
+      "innerType": "StrProperty"
+    }
+  },
+  "AlterationIntrinsicMapping": {
+    "0": {
+      "name": "NewAlteration",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "AdditionalAlteration",
+      "type": "StrProperty"
+    }
+  },
+  "AlterationMapping": {
+    "0": {
+      "name": "NewAlteration",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "AdditionalAlteration",
+      "type": "StrProperty"
+    }
+  },
+  "AlterationNamedExclusions": {
+    "0": {
+      "name": "ExclusionNames",
+      "type": "ArrayProperty",
+      "innerType": "StrProperty"
+    }
+  },
+  "AlterationSlotDefinition": {
+    "0": {
+      "name": "InitTierGroup",
+      "type": "NameProperty"
+    },
+    "1": {
+      "name": "BaseRespecCosts",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortItemQuantityPair"
+    }
+  },
+  "AlterationSlotsLoadout": {
+    "0": {
+      "name": "AlterationSlots",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AlterationSlot"
+    }
+  },
+  "AlterationSlot": {
+    "0": {
+      "name": "UnlockLevel",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "UnlockRarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "2": {
+      "name": "SlotDefinitionRow",
+      "type": "NameProperty"
+    },
+    "3": {
+      "name": "bRespeccable",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "SlotRarityInitRow",
+      "type": "NameProperty"
+    },
+    "5": {
+      "name": "SlotInitMin",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "6": {
+      "name": "SlotInitMax",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "7": {
+      "name": "SlotInitIndex",
+      "type": "IntProperty"
+    }
+  },
+  "FortWeaponAlterationRarityMappingData": {
+    "0": {
+      "name": "SlotRarityValues",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "LowSlotRarityValues",
+      "type": "StrProperty"
+    }
+  },
+  "UserDefinedEnum": {
+    "0": {
+      "name": "DisplayNameMap",
+      "type": "MapProperty",
+      "innerType": "NameProperty",
+      "valueType": "TextProperty"
     }
   }
 }
