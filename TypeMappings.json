@@ -2789,11 +2789,11 @@
   "FortMtxDetailsAttribute": {
     "0": {
       "name": "Name",
-      "type": "NameProperty"
+      "type": "TextProperty"
     },
     "1": {
       "name": "Value",
-      "type": "NameProperty"
+      "type": "TextProperty"
     }
   },
   "FortItemQuantityPair": {
@@ -4164,6 +4164,12 @@
       "name": "ItemVariants",
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
+    },
+    "49": {
+      "name": "ItemVariantPreviews",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ItemVariantPreviews"
     },
     "54": {
       "name": "ItemPreviewActorClass",
