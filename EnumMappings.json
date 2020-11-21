@@ -1043,5 +1043,10 @@
     "0": "Off",
     "1": "On",
     "2": "EFriendlyFireType_MAX"
+  },
+  "EFortGliderType": {
+    "0": "Glider",
+    "1": "Umbrella",
+    "2": "EFortGliderType_MAX"
   }
 }
