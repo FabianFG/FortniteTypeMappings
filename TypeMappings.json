@@ -2788,7 +2788,7 @@
     },
     "18": {
       "name": "bUseBaseColors",
-      "type": "TextProperty"
+      "type": "BoolProperty"
     },
     "19": {
       "name": "DisplaySize",
