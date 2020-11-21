@@ -4661,34 +4661,34 @@
       "name": "PetSoundBank",
       "type": "SoftObjectProperty"
     },
-    "19": {
+    "22": {
       "name": "MaterialOverrides",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "CustomPartMaterialOverrideData"
+      "structType": "AthenaCosmeticMaterialOverride"
     },
-    "50": {
+    "53": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "58": {
+    "61": {
       "name": "bNeverPersisted",
       "type": "BoolProperty"
     },
-    "64": {
+    "67": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "65": {
+    "68": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "66": {
+    "69": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "69": {
+    "72": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
