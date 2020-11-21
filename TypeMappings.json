@@ -4569,7 +4569,6 @@
     }
   },
   "FortCosmeticProfileBannerVariant": {
-
   },
   "FortUICameraFrameTargetBounds": {
     "0": {
@@ -4616,6 +4615,102 @@
       "type": "StructProperty",
       "structType": "Vector"
     },
+    "12": {
+      "name": "bIsShuffleTile",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bIsOwnedByCampaignHero",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "bHasMoreThanOneCharacterPartVariant",
+      "type": "BoolProperty"
+    },
+    "15": {
+      "name": "bHideIfNotOwned",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "bInitializedConfiguredDynamicInstallBundles",
+      "type": "BoolProperty"
+    },
+    "17": {
+      "name": "bDynamicInstallBundlesError",
+      "type": "BoolProperty"
+    },
+    "18": {
+      "name": "bDynamicInstallBundlesComplete",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "DynamicInstallBundlesUpdateStartTime",
+      "type": "DoubleProperty"
+    },
+    "20": {
+      "name": "VariantUnlockType",
+      "type": "EnumProperty",
+      "enumName": "EVariantUnlockType"
+    },
+    "21": {
+      "name": "PreviewPawnRotationOffset",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "22": {
+      "name": "FoleyLibraries",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "23": {
+      "name": "DisallowedCosmeticTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "24": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "25": {
+      "name": "VariantChannelsToNeverSendToMCP",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "26": {
+      "name": "AthenaCosmeticMaterialOverride",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "27": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "29": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "39": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "43": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
+    },
+    "46": {
+      "name": "ExclusiveRequiresOutfitTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "47": {
+      "name": "CustomExclusiveCallout",
+      "type": "TextProperty"
+    },
     "60": {
       "name": "Rarity",
       "type": "EnumProperty",
@@ -4642,9 +4737,21 @@
       "name": "FrontendPreviewScale",
       "type": "FloatProperty"
     },
+    "90": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "91": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
     "92": {
       "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
+    },
+    "93": {
+      "name": "Series",
+      "type": "ObjectProperty"
     },
     "94": {
       "name": "FrontendPreviewPivotOffset",
@@ -4655,6 +4762,10 @@
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
+    },
+    "96": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
     }
   },
   "FortHardcoreModifierItemDefinition": {
