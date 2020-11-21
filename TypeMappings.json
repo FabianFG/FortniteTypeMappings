@@ -1387,6 +1387,28 @@
       "type": "TextProperty"
     }
   },
+  "CosmeticMarkupTagDataRow": {
+    "0": {
+      "name": "Tag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "1": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "2": {
+      "name": "HelpText",
+      "type": "TextProperty"
+    }
+  },
+  "RichTextStyleRow": {
+    "0": {
+      "name": "TextStyle",
+      "type": "StructProperty",
+      "structType": "TextBlockStyle"
+    }
+  },
   "Texture2D": {
     "3": {
       "name": "AddressX",
@@ -3134,8 +3156,75 @@
     }
   },
   "AthenaDanceItemDefinition": {
+    "0": {
+      "name": "bMovingEmote",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bMoveForwardOnly",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bGroupEmote",
+      "type": "BoolProperty"
+    },
+    "5": {
+      "name": "bUseHighPreviewCamera",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "bGroupAnimationSync",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "WalkForwardSpeed",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "GroupEmoteToStartLeader",
+      "type": "ObjectProperty"
+    },
+    "9": {
+      "name": "GroupEmoteToStartFollower",
+      "type": "ObjectProperty"
+    },
+    "10": {
+      "name": "GroupEmoteToStartLeaderIfBothOwn",
+      "type": "ObjectProperty"
+    },
+    "11": {
+      "name": "GroupEmoteToStartFollowerIfBothOwn",
+      "type": "ObjectProperty"
+    },
+    "12": {
+      "name": "MotageSelectionGroups",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VariantSwapMontageData"
+    },
+    "13": {
+      "name": "GroupEmotePositionOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "15": {
+      "name": "bLockGroupEmoteLeaderRotation",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "GroupEmoteLeaderRotationYawOffset",
+      "type": "FloatProperty"
+    },
+    "17": {
+      "name": "GroupEmoteFollowerRotationYawOffset",
+      "type": "FloatProperty"
+    },
     "18": {
       "name": "FrontEndAnimation",
+      "type": "SoftObjectProperty"
+    },
+    "19": {
+      "name": "FrontEndAnimationFemaleOverride",
       "type": "SoftObjectProperty"
     },
     "20": {
@@ -3156,15 +3245,51 @@
       "innerType": "StructProperty",
       "structType": "FortEmoteMapping"
     },
+    "25": {
+      "name": "PreviewLoops",
+      "type": "IntProperty"
+    },
+    "26": {
+      "name": "PreviewLength",
+      "type": "FloatProperty"
+    },
     "27": {
       "name": "EmoteCooldownSecs",
       "type": "FloatProperty"
+    },
+    "29": {
+      "name": "bPlayRandomSection",
+      "type": "BoolProperty"
+    },
+    "30": {
+      "name": "PlayRandomSectionByName",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SectionNameAndWeight"
+    },
+    "31": {
+      "name": "bSwitchToHarvestingToolOnUse",
+      "type": "BoolProperty"
+    },
+    "32": {
+      "name": "bHolsterWeapon",
+      "type": "BoolProperty"
+    },
+    "33": {
+      "name": "bHolsterWeaponIfDualWieldPickaxe",
+      "type": "BoolProperty"
     },
     "34": {
       "name": "AccessData",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "MontageItemAccessData"
+    },
+    "35": {
+      "name": "VisibilityData",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MontageVisibilityData"
     },
     "36": {
       "name": "EmoteWheelExclusiveTags",
@@ -3173,6 +3298,34 @@
     },
     "37": {
       "name": "RequiredEmoteParent",
+      "type": "SoftObjectProperty"
+    },
+    "38": {
+      "name": "TagsWhichIndicateEmoteParent",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "51": {
+      "name": "PreviewPawnRotationOffset",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "54": {
+      "name": "MetaTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "59": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "66": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "70": {
+      "name": "ItemPreviewHero",
       "type": "SoftObjectProperty"
     },
     "76": {
@@ -3215,6 +3368,10 @@
     },
     "118": {
       "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "119": {
+      "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
     },
     "120": {
@@ -3932,10 +4089,27 @@
       "name": "ItemWrapMaterial",
       "type": "SoftObjectProperty"
     },
+    "2": {
+      "name": "bIsShuffleTile",
+      "type": "BoolProperty"
+    },
+    "20": {
+      "name": "ObservedPlayerStats",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "29": {
+      "name": "ItemPreviewActorClass",
+      "type": "SoftObjectProperty"
+    },
     "50": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
+    },
+    "58": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
     },
     "64": {
       "name": "DisplayName",
@@ -3961,9 +4135,32 @@
     "82": {
       "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
+    },
+    "83": {
+      "name": "Series",
+      "type": "ObjectProperty"
+    },
+    "84": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "85": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
+    },
+    "86": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
     }
   },
   "AthenaEmojiItemDefinition": {
+    "0": {
+      "name": "EmojiGameplayCueTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
     "1": {
       "name": "PreviewAnimation",
       "type": "SoftObjectProperty"
@@ -3972,13 +4169,36 @@
       "name": "SpriteSheet",
       "type": "SoftObjectProperty"
     },
+    "3": {
+      "name": "SheetDimensions",
+      "type": "StructProperty",
+      "structType": "IntPoint"
+    },
+    "4": {
+      "name": "FrameIndex",
+      "type": "IntProperty"
+    },
+    "5": {
+      "name": "FrameCount",
+      "type": "IntProperty"
+    },
     "6": {
       "name": "BaseMaterial",
       "type": "ObjectProperty"
     },
+    "8": {
+      "name": "InitialColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
     "37": {
       "name": "Animation",
       "type": "SoftObjectProperty"
+    },
+    "102": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
     },
     "116": {
       "name": "DisplayName",
@@ -4004,6 +4224,10 @@
     "133": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
+    },
+    "135": {
+      "name": "Series",
+      "type": "ObjectProperty"
     }
   },
   "FortVariantTokenType": {
@@ -4499,14 +4723,16 @@
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
-    "21": {
-      "name": "ObservedPlayerStats",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
+    "20": {
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "AthenaCosmeticMaterialOverride"
     },
-    "34": {
-      "name": "ItemPreviewHero",
-      "type": "SoftObjectProperty"
+    "23": {
+      "name": "ItemVariants",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
     },
     "51": {
       "name": "Rarity",
@@ -4537,9 +4763,52 @@
     "82": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
+    },
+    "83": {
+      "name": "DisplayAssetPath",
+      "type": "SoftObjectProperty"
+    },
+    "84": {
+      "name": "Series",
+      "type": "ObjectProperty"
     }
   },
   "FortCosmeticProfileBannerVariant": {
+    "0": {
+      "name": "MaterialsToAlter",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "1": {
+      "name": "BannerIconParamName",
+      "type": "NameProperty"
+    },
+    "2": {
+      "name": "BannerPrimaryColorParamName",
+      "type": "NameProperty"
+    },
+    "3": {
+      "name": "BannerSecondaryColorParamName",
+      "type": "NameProperty"
+    },
+    "4": {
+      "name": "CC_PrimaryColorParamName",
+      "type": "NameProperty"
+    },
+    "5": {
+      "name": "VariantChannelTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "6": {
+      "name": "VariantChannelName",
+      "type": "TextProperty"
+    },
+    "7": {
+      "name": "ActiveVariantTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    }
   },
   "FortUICameraFrameTargetBounds": {
     "0": {
@@ -14515,6 +14784,125 @@
       "type": "MapProperty",
       "innerType": "NameProperty",
       "valueType": "TextProperty"
+    }
+  },
+  "TextBlockStyle": {
+    "0": {
+      "name": "Font",
+      "type": "StructProperty",
+      "structType": "SlateFontInfo"
+    },
+    "1": {
+      "name": "ColorAndOpacity",
+      "type": "StructProperty",
+      "structType": "SlateColor"
+    },
+    "2": {
+      "name": "ShadowOffset",
+      "type": "StructProperty",
+      "structType": "Vector2D"
+    },
+    "3": {
+      "name": "ShadowColorAndOpacity",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "4": {
+      "name": "SelectedBackgroundColor",
+      "type": "StructProperty",
+      "structType": "SlateColor"
+    },
+    "5": {
+      "name": "HighlightColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
+    "6": {
+      "name": "HighlightShape",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "7": {
+      "name": "StrikeBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "8": {
+      "name": "UnderlineBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    }
+  },
+  "SlateFontInfo": {
+    "0": {
+      "name": "FontObject",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "FontMaterial",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "OutlineSettings",
+      "type": "StructProperty",
+      "structType": "FontOutlineSettings"
+    },
+    "3": {
+      "name": "TypefaceFontName",
+      "type": "NameProperty"
+    },
+    "4": {
+      "name": "Size",
+      "type": "IntProperty"
+    }
+  },
+  "FontOutlineSettings": {
+    "0": {
+      "name": "OutlineSize",
+      "type": "IntProperty"
+    },
+    "1": {
+      "name": "bSeparateFillAlpha",
+      "type": "BoolProperty"
+    },
+    "2": {
+      "name": "bApplyOutlineToDropShadows",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "OutlineMaterial",
+      "type": "ObjectProperty"
+    },
+    "4": {
+      "name": "OutlineColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    }
+  },
+  "FortCosmeticItemFilterTable": {
+    "0": {
+      "name": "FilterTagTables",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "FortCosmeticItemMarkupTable": {
+    "0": {
+      "name": "SetDescriptions",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "1": {
+      "name": "MarkupTagDescriptions",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "CosmeticFilterTagDataRow": {
+    "0": {
+      "name": "SearchQueries",
+      "type": "ArrayProperty",
+      "innerType": "TextProperty"
     }
   }
 }
