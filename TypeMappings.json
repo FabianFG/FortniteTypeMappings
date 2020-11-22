@@ -5101,6 +5101,12 @@
       "name": "AlterationAbilitySet",
       "type": "SoftObjectProperty"
     },
+    "5": {
+      "name": "AdditionalRespecCosts",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortItemQuantityPair"
+    },
     "11": {
       "name": "UpgradeRarityRecipeHandle",
       "type": "StructProperty",
@@ -6531,6 +6537,11 @@
       "name": "bTriggersFeedbackLines",
       "type": "BoolProperty"
     },
+    "3": {
+      "name": "RegenCooldown",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
     "4": {
       "name": "AmmoIconBrush",
       "type": "StructProperty",
@@ -6582,6 +6593,10 @@
       "name": "bCanBeDropped",
       "type": "BoolProperty"
     },
+    "25": {
+      "name": "bCanBeReplacedByPickup",
+      "type": "BoolProperty"
+    },
     "27": {
       "name": "bCanBeDepositedInStorageVault",
       "type": "BoolProperty"
@@ -6619,6 +6634,18 @@
     "57": {
       "name": "PickupSound",
       "type": "SoftObjectProperty"
+    },
+    "59": {
+      "name": "DropSound",
+      "type": "SoftObjectProperty"
+    },
+    "66": {
+      "name": "MinLevel",
+      "type": "IntProperty"
+    },
+    "67": {
+      "name": "MaxLevel",
+      "type": "IntProperty"
     },
     "70": {
       "name": "Rarity",
@@ -6681,6 +6708,10 @@
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
+    },
+    "106": {
+      "name": "FrontendPreviewMeshOverride",
+      "type": "SoftObjectProperty"
     }
   },
   "FortSchematicItemDefinition": {
