@@ -3845,6 +3845,10 @@
       "name": "DecalMaterial",
       "type": "SoftObjectProperty"
     },
+    "2": {
+      "name": "bUseBannerAsTexture",
+      "type": "BoolProperty"
+    },
     "3": {
       "name": "DecalTexture",
       "type": "SoftObjectProperty"
@@ -3921,43 +3925,43 @@
       "name": "bHolsterWeaponIfDualWieldPickaxe",
       "type": "BoolProperty"
     },
-    "56": {
+    "59": {
       "name": "MaterialOverrides",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "AthenaCosmeticMaterialOverride"
     },
-    "87": {
+    "90": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "101": {
+    "104": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "102": {
+    "105": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "103": {
+    "106": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "106": {
+    "109": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "117": {
+    "120": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "118": {
+    "121": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
-    "122": {
+    "125": {
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
@@ -3968,24 +3972,24 @@
       "name": "Animation",
       "type": "SoftObjectProperty"
     },
-    "76": {
+    "79": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "77": {
+    "80": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "81": {
+    "84": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "92": {
+    "95": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "93": {
+    "96": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
@@ -4037,28 +4041,28 @@
       "name": "Animation",
       "type": "SoftObjectProperty"
     },
-    "76": {
+    "79": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "77": {
+    "80": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "78": {
+    "81": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "81": {
+    "84": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "92": {
+    "95": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "93": {
+    "96": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
