@@ -4921,6 +4921,19 @@
       "name": "ItemPreviewActorClass",
       "type": "SoftObjectProperty"
     },
+    "43": {
+      "name": "ItemPreviewHero",
+      "type": "SoftObjectProperty"
+    },
+    "46": {
+      "name": "ExclusiveRequiresOutfitTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "47": {
+      "name": "CustomExclusiveCallout",
+      "type": "TextProperty"
+    },
     "60": {
       "name": "Rarity",
       "type": "EnumProperty",
