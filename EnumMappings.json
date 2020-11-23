@@ -1048,5 +1048,59 @@
     "0": "Glider",
     "1": "Umbrella",
     "2": "EFortGliderType_MAX"
+  },
+  "ESubmixSendStage": {
+    "0": "PostDistanceAttenuation",
+    "1": "PreDistanceAttenuation",
+    "2": "ESubmixSendStage_MAX"
+  },
+  "ESendLevelControlMethod": {
+    "0": "Linear",
+    "1": "CustomCurve",
+    "2": "Manual",
+    "3": "ESendLevelControlMethod_MAX"
+  },
+  "EAttachmentRule": {
+    "0": "KeepRelative",
+    "1": "KeepWorld",
+    "2": "SnapToTarget",
+    "3": "EAttachmentRule_MAX"
+  },
+  "ESoundWaveLoadingBehavior": {
+    "0": "Inherited",
+    "1": "RetainOnLoad",
+    "2": "PrimeOnLoad",
+    "3": "LoadOnDemand",
+    "4": "ForceInline",
+    "5": "Uninitialized",
+    "6": "ESoundWaveLoadingBehavior_MAX"
+  },
+  "ESoundGroup": {
+    "0": "SOUNDGROUP_Default",
+    "1": "SOUNDGROUP_Effects",
+    "2": "SOUNDGROUP_UI",
+    "3": "SOUNDGROUP_Music",
+    "4": "SOUNDGROUP_Voice",
+    "5": "SOUNDGROUP_GameSoundGroup1",
+    "6": "SOUNDGROUP_GameSoundGroup2",
+    "7": "SOUNDGROUP_GameSoundGroup3",
+    "8": "SOUNDGROUP_GameSoundGroup4",
+    "9": "SOUNDGROUP_GameSoundGroup5",
+    "10": "SOUNDGROUP_GameSoundGroup6",
+    "11": "SOUNDGROUP_GameSoundGroup7",
+    "12": "SOUNDGROUP_GameSoundGroup8",
+    "13": "SOUNDGROUP_GameSoundGroup9",
+    "14": "SOUNDGROUP_GameSoundGroup10",
+    "15": "SOUNDGROUP_GameSoundGroup11",
+    "16": "SOUNDGROUP_GameSoundGroup12",
+    "17": "SOUNDGROUP_GameSoundGroup13",
+    "18": "SOUNDGROUP_GameSoundGroup14",
+    "19": "SOUNDGROUP_GameSoundGroup15",
+    "20": "SOUNDGROUP_GameSoundGroup16",
+    "21": "SOUNDGROUP_GameSoundGroup17",
+    "22": "SOUNDGROUP_GameSoundGroup18",
+    "23": "SOUNDGROUP_GameSoundGroup19",
+    "24": "SOUNDGROUP_GameSoundGroup20",
+    "25": "SOUNDGROUP_MAX"
   }
 }

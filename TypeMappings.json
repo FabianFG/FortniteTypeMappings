@@ -2102,15 +2102,18 @@
     },
     "4": {
       "name": "LocationRule",
-      "type": "EnumProperty"
+      "type": "EnumProperty",
+      "enumName": "EAttachmentRule"
     },
     "5": {
       "name": "RotationRule",
-      "type": "EnumProperty"
+      "type": "EnumProperty",
+      "enumName": "EAttachmentRule"
     },
     "6": {
       "name": "ScaleRule",
-      "type": "EnumProperty"
+      "type": "EnumProperty",
+      "enumName": "EAttachmentRule"
     },
     "7": {
       "name": "bWeldSimulatedBodies",
@@ -2680,23 +2683,19 @@
   "Margin": {
     "0": {
       "name": "Left",
-      "type": "StructProperty",
-      "structType": "FloatProperty"
+      "type": "FloatProperty"
     },
     "1": {
       "name": "Top",
-      "type": "StructProperty",
-      "structType": "FloatProperty"
+      "type": "FloatProperty"
     },
     "2": {
       "name": "Right",
-      "type": "StructProperty",
-      "structType": "FloatProperty"
+      "type": "FloatProperty"
     },
     "3": {
       "name": "Bottom",
-      "type": "StructProperty",
-      "structType": "FloatProperty"
+      "type": "FloatProperty"
     }
   },
   "FortMtxOfferData": {
@@ -8168,7 +8167,7 @@
     "26": {
       "name": "MaterialAttributes",
       "type": "StructProperty",
-      "structType": "MaterialAttributesInput"
+      "structType": "ExpressionInput"
     },
     "29": {
       "name": "bEnableSeparateTranslucency",
@@ -8430,11 +8429,13 @@
       "name": "VariantMeshes",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
-      "structType": "VariantMeshes"
+      "structType": "MeshVariant"
     },
     "1": {
       "name": "VariantMaterials",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialVariants"
     },
     "2": {
       "name": "VariantMaterialParams",
@@ -8444,7 +8445,9 @@
     },
     "3": {
       "name": "InitialParticleSystemData",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VariantParticleSystemInitializerData"
     },
     "4": {
       "name": "VariantParticles",
@@ -8454,11 +8457,15 @@
     },
     "5": {
       "name": "VariantParticleParams",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ParticleParamterVariant"
     },
     "6": {
       "name": "SocketTransforms",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SocketTransformVariant"
     },
     "7": {
       "name": "VariantSounds",
@@ -8468,11 +8475,15 @@
     },
     "8": {
       "name": "VariantFoley",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FoleySoundVariant"
     },
     "9": {
       "name": "VariantActions",
-      "type": "ArrayProperty"
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "ScriptedActionVariant"
     },
     "10": {
       "name": "MetaTags",
@@ -14314,7 +14325,7 @@
     "0": {
       "name": "GenderPeritted",
       "type": "EnumProperty",
-      "enumName": "FortCustomGender"
+      "enumName": "EFortCustomGender"
     },
     "2": {
       "name": "CharacterPartType",
@@ -14924,6 +14935,36 @@
       "name": "SearchQueries",
       "type": "ArrayProperty",
       "innerType": "TextProperty"
+    }
+  },
+  "BoxSphereBounds": {
+    "0": {
+      "name": "Origin",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "1": {
+      "name": "BoxExtent",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "2": {
+      "name": "SphereRadius",
+      "type": "FloatProperty"
+    }
+  },
+  "GameplayAttribute": {
+    "0": {
+      "name": "AttributeName",
+      "type": "StrProperty"
+    },
+    "1": {
+      "name": "Attribute",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "AttributeOwner",
+      "type": "ObjectProperty"
     }
   }
 }
