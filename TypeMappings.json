@@ -609,7 +609,7 @@
     "92": {
       "name": "bCoolOverheatWhileCharging",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "93": {
       "name": "FortHomingTurnSpeedMin",
@@ -682,7 +682,7 @@
     "110": {
       "name": "bForceControl",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "111": {
       "name": "RngPB",
@@ -824,12 +824,12 @@
     "145": {
       "name": "bAllowReloadInterrupt",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "146": {
       "name": "bReloadInterruptIsImmediate",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "147": {
       "name": "NumIndividualBulletsToReload",
@@ -874,7 +874,7 @@
     "157": {
       "name": "bAutoDischarge",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "158": {
       "name": "MaxChargeTimeUntilDischarge",
@@ -1001,7 +1001,7 @@
     "24": {
       "name": "bForceControl",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "25": {
       "name": "RngPB",
@@ -1143,12 +1143,12 @@
     "59": {
       "name": "bAllowReloadInterrupt",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "60": {
       "name": "bReloadInterruptIsImmediate",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "61": {
       "name": "NumIndividualBulletsToReload",
@@ -1193,7 +1193,7 @@
     "71": {
       "name": "bAutoDischarge",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "72": {
       "name": "MaxChargeTimeUntilDischarge",
@@ -8489,8 +8489,7 @@
     },
     "13": {
       "name": "bHideIfNotOwned",
-      "type": "BoolProperty",
-      "bool": false
+      "type": "BoolProperty"
     },
     "14": {
       "name": "CustomizationVariantTag",
@@ -13220,7 +13219,7 @@
     "66": {
       "name": "bAutoDischarge",
       "type": "BoolProperty",
-      "bool": "True"
+      "bool": true
     },
     "67": {
       "name": "MaxChargeTimeUntilDischarge",
