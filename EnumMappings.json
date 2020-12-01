@@ -5,6 +5,17 @@
     "2": "TA_Mirror",
     "3": "TA_MAX"
   },
+  "EDecompressionType": {
+    "0": "DTYPE_Setup",
+    "1": "DTYPE_Invalid",
+    "2": "DTYPE_Preview",
+    "3": "DTYPE_Native",
+    "4": "DTYPE_RealTime",
+    "5": "DTYPE_Procedural",
+    "6": "DTYPE_Xenon",
+    "7": "DTYPE_Streaming",
+    "8": "DTYPE_MAX"
+  },
   "EFortTextureDataType": {
     "0": "Any",
     "1": "OuterWall",
@@ -1048,5 +1059,10 @@
     "0": "Glider",
     "1": "Umbrella",
     "2": "EFortGliderType_MAX"
+  },
+  "ECustomGameVoiceChannel": {
+    "0": "Squad",
+    "1": "FullTeam",
+    "2": "ECustomGameVoiceChannel_MAX"
   }
 }

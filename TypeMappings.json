@@ -156,6 +156,16 @@
       "type": "EnumProperty",
       "enumName": "EVirtualizationMode"
     },
+    "33": {
+      "name": "ConcurrencySet",
+      "type": "SetProperty",
+      "innerType": "ObjectProperty"
+    },
+    "34": {
+      "name": "ConcurrencyOverrides",
+      "type": "StructProperty",
+      "structType": "SoundConcurrencySettings"
+    },
     "35": {
       "name": "Duration",
       "type": "FloatProperty"
@@ -171,6 +181,110 @@
     "38": {
       "name": "Priority",
       "type": "FloatProperty"
+    },
+    "39": {
+      "name": "AttenuationSettings",
+      "type": "ObjectProperty"
+    },
+    "40": {
+      "name": "VolumeModulationDestination",
+      "type": "StructProperty",
+      "structType": "SoundModulationDestinationSettings"
+    },
+    "41": {
+      "name": "PitchModulationDestination",
+      "type": "StructProperty",
+      "structType": "SoundModulationDestinationSettings"
+    },
+    "42": {
+      "name": "HighpassModulationDestination",
+      "type": "StructProperty",
+      "structType": "SoundModulationDestinationSettings"
+    },
+    "43": {
+      "name": "LowpassModulationDestination",
+      "type": "StructProperty",
+      "structType": "SoundModulationDestinationSettings"
+    },
+    "44": {
+      "name": "SoundSubmixObject",
+      "type": "ObjectProperty"
+    },
+    "45": {
+      "name": "SoundSubmixSends",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundSubmixSendInfo"
+    },
+    "46": {
+      "name": "SourceEffectChain",
+      "type": "ObjectProperty"
+    },
+    "47": {
+      "name": "BusSends",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundSourceBusSendInfo"
+    },
+    "48": {
+      "name": "PreEffectBusSends",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundSourceBusSendInfo"
+    }
+  },
+  "SoundSourceBusSendInfo": {
+    "0": {
+      "name": "SourceBusSendLevelControlMethod",
+      "type": "EnumProperty",
+      "enumName": "ESourceBusSendLevelControlMethod"
+    },
+    "1": {
+      "name": "SoundSourceBus",
+      "type": "ObjectProperty"
+    },
+    "2": {
+      "name": "AudioBus",
+      "type": "ObjectProperty"
+    },
+    "3": {
+      "name": "SendLevel",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "MinSendLevel",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "MinSendLevel",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "MaxSendLevel",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "MinSendDistance",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "MaxSendDistance",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "CustomSendLevelCurve",
+      "type": "StructProperty",
+      "structType": "RuntimeFloatCurve"
+    }
+  },
+  "SoundModulationDestinationSettings": {
+    "0": {
+      "name": "Value",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "Modulator",
+      "type": "ObjectProperty"
     }
   },
   "SubtitleCue": {
@@ -2942,12 +3056,27 @@
       "name": "ContrailEffect",
       "type": "SoftObjectProperty"
     },
+    "1": {
+      "name": "FrontEndContrailEffect",
+      "type": "SoftObjectProperty"
+    },
     "2": {
       "name": "NiagaraContrailEffect",
       "type": "SoftObjectProperty"
     },
     "6": {
-      "name": "VectorParameters",
+      "name": "VectorParams",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "VectorParamVariant"
+    },
+    "8": {
+      "name": "bIsShuffleTile",
+      "type": "BoolProperty",
+      "bool": true
+    },
+    "7": {
+      "name": "FloatParams",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "VectorParticleParameter"
@@ -4252,6 +4381,10 @@
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
+    },
+    "27": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
     },
     "33": {
       "name": "DisplayName",
@@ -7198,6 +7331,10 @@
       "name": "bAllowInGameMatchMaking",
       "type": "BoolProperty"
     },
+    "34": {
+      "name": "bAllowReturnToMatchmakingOriginOnMatchEnd",
+      "type": "BoolProperty"
+    },
     "35": {
       "name": "bAllowBotsInHumanTeams",
       "type": "BoolProperty"
@@ -7322,6 +7459,10 @@
       "name": "bSkipAircraft",
       "type": "BoolProperty"
     },
+    "79": {
+      "name": "WarmupEarlyRequiredPlayerPercent",
+      "type": "FloatProperty"
+    },
     "80": {
       "name": "AirCraftBehavior",
       "type": "EnumProperty",
@@ -7434,6 +7575,15 @@
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
+    "114": {
+      "name": "ShouldUseCustomGameChannel",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "116": {
+      "name": "CustomGameChannel",
+      "type": "EnumProperty"
+    },
     "117": {
       "name": "ShouldRecommendCustomGameChannel",
       "type": "StructProperty",
@@ -7534,13 +7684,21 @@
       "name": "bUseCreativeStarterIsland",
       "type": "BoolProperty"
     },
+    "152": {
+      "name": "bForceCustomMinigame",
+      "type": "BoolProperty"
+    },
     "153": {
       "name": "bUsesAnimationSharing",
       "type": "BoolProperty"
     },
     "154": {
-      "name": "AnimationSharing",
+      "name": "AnimationSharingSetup",
       "type": "SoftObjectProperty"
+    },
+    "155": {
+      "name": "bAllowBroadcasting",
+      "type": "BoolProperty"
     },
     "156": {
       "name": "bAllowSpectateAPartyMember",
@@ -7668,15 +7826,56 @@
       "name": "RichPresenceAssetName",
       "type": "NameProperty"
     },
+    "192": {
+      "name": "AdditionalLevels",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "193": {
+      "name": "AdditionalLevelsServerOnly",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "194": {
+      "name": "BuiltInGameFeaturePluginsToLoad",
+      "type": "ArrayProperty",
+      "innerType": "StrProperty"
+    },
+    "195": {
+      "name": "DownloadGameFeaturePluginToLoad",
+      "type": "StrProperty"
+    },
+    "198": {
+      "name": "DefaultLastTeam",
+      "type": "ByteProperty"
+    },
     "199": {
       "name": "GameplayTagContainer",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
+    "201": {
+      "name": "bUseFriendlyFireAimAssist",
+      "type": "BoolProperty"
+    },
+    "202": {
+      "name": "LootLevel",
+      "type": "IntProperty"
+    },
     "205": {
       "name": "DBNOType",
       "type": "EnumProperty",
       "enumName": "EDBNOType"
+    },
+    "206": {
+      "name": "SpawnImmunityTime",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "207": {
+      "name": "SkippedGamePhaseNotification",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
     },
     "208": {
       "name": "ModifierList",
@@ -7696,6 +7895,18 @@
       "type": "ArrayProperty",
       "innerType": "ObjectProperty"
     },
+    "212": {
+      "name": "SharedAssetGroup",
+      "type": "ObjectProperty"
+    },
+    "213": {
+      "name": "ConditionalAssetGroup",
+      "type": "ObjectProperty"
+    },
+    "214": {
+      "name": "bIsDefaultPlaylist",
+      "type": "BoolProperty"
+    },
     "215": {
       "name": "UIDisplayName",
       "type": "TextProperty"
@@ -7704,12 +7915,21 @@
       "name": "UIDescription",
       "type": "TextProperty"
     },
+    "217": {
+      "name": "HUDElementsToHide",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "218": {
       "name": "LootTierData",
       "type": "SoftObjectProperty"
     },
     "219": {
       "name": "LootPackages",
+      "type": "SoftObjectProperty"
+    },
+    "220": {
+      "name": "RangedWeapons",
       "type": "SoftObjectProperty"
     },
     "221": {
@@ -7720,9 +7940,25 @@
       "name": "ResourceRates",
       "type": "SoftObjectProperty"
     },
+    "223": {
+      "name": "SkydiveMusic",
+      "type": "SoftObjectProperty"
+    },
+    "224": {
+      "name": "SkydiveMusicOutroStinger",
+      "type": "SoftObjectProperty"
+    },
+    "226": {
+      "name": "GarbageCollectionFrequency",
+      "type": "FloatProperty"
+    },
     "227": {
       "name": "ServerPerformanceEventFrequency",
       "type": "FloatProperty"
+    },
+    "229": {
+      "name": "bUseLocalizationService",
+      "type": "BoolProperty"
     }
   },
   "UIExtension": {
@@ -9704,7 +9940,23 @@
     "4": {
       "name": "AttenuationOverrides",
       "type": "StructProperty",
-      "structType": "AttenuationOverrides"
+      "structType": "SoundAttenuationSettings"
+    },
+    "5": {
+      "name": "SubtitlePriority",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "bOverrideAttenuation",
+      "type": "BoolProperty"
+    },
+    "7": {
+      "name": "bExcludeFromRandomNodeBranchCulling",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "CookedQualityIndex",
+      "type": "IntProperty"
     },
     "9": {
       "name": "bHasPlayWhenSilent",
@@ -9716,6 +9968,14 @@
     },
     "12": {
       "name": "bOverrideConcurrency",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bOutputToBusOnly",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "bHasDelayNode",
       "type": "BoolProperty"
     },
     "19": {
@@ -14925,6 +15185,171 @@
       "name": "SearchQueries",
       "type": "ArrayProperty",
       "innerType": "TextProperty"
+    }
+  },
+  "PassiveSoundMixModifier": {
+    "0": {
+      "name": "SoundMix",
+      "type": "ObjectProperty"
+    },
+    "1": {
+      "name": "MinVolumeThreshold",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "MaxVolumeThreshold",
+      "type": "FloatProperty"
+    }
+  },
+  "SoundAttenuationSettings": {
+    "0": {
+      "name": "bAttenuate",
+      "type": "BoolProperty"
+    },
+    "1": {
+      "name": "bSpatialize",
+      "type": "BoolProperty"
+    }
+  },
+  "SoundClassProperties": {
+    "0": {
+      "name": "Volume",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "Pitch",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "LowPassFilterFrequency",
+      "type": "FloatProperty"
+    },
+    "3": {
+      "name": "AttenuationDistanceScale",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "StereoBleed",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "LFEBleed",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "VoiceCenterChannelVolume",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "RadioFilterVolume",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "RadioFilterVolumeThreshold",
+      "type": "FloatProperty"
+    },
+    "9": {
+      "name": "bApplyEffects",
+      "type": "BoolProperty"
+    },
+    "10": {
+      "name": "bAlwaysPlay",
+      "type": "BoolProperty"
+    },
+    "11": {
+      "name": "bIsUISound",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bIsMusic",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bCenterChannelOnly",
+      "type": "BoolProperty"
+    },
+    "14": {
+      "name": "bApplyAmbientVolumes",
+      "type": "BoolProperty"
+    },
+    "15": {
+      "name": "bReverb",
+      "type": "BoolProperty"
+    },
+    "16": {
+      "name": "Default2DReverbSendAmount",
+      "type": "FloatProperty"
+    },
+    "17": {
+      "name": "OutputTarget",
+      "type": "EnumProperty",
+      "enumName": "EAudioOutputTarget"
+    },
+    "18": {
+      "name": "LoadingBehavior",
+      "type": "EnumProperty",
+      "enumName": "ESoundWaveLoadingBehavior"
+    },
+    "19": {
+      "name": "DefaultSubmix",
+      "type": "ObjectProperty"
+    }
+  },
+  "SoundClass": {
+    "0": {
+      "name": "Properties",
+      "type": "StructProperty",
+      "innerType": "SoundClassProperties"
+    },
+    "1": {
+      "name": "ChildClasses",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "2": {
+      "name": "PassiveSoundMixModifiers",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "PassiveSoundMixModifier"
+    },
+    "3": {
+      "name": "ParentClass",
+      "type": "ObjectProperty"
+    }
+  },
+  "SoundNodeDelay": {
+    "0": {
+      "name": "DelayMin",
+      "type": "FloatProperty"
+    },
+    "1": {
+      "name": "DelayMax",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "ChildNodes",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
+  },
+  "CatalogMessaging": {
+    "0": {
+      "name": "StoreToast_Header",
+      "type": "MapProperty",
+      "innerType": "StrProperty",
+      "valueType": "TextProperty"
+    },
+    "1": {
+      "name": "StoreToast_Body",
+      "type": "MapProperty",
+      "innerType": "StrProperty",
+      "valueType": "TextProperty"
+    },
+    "2": {
+      "name": "Banners",
+      "type": "MapProperty",
+      "innerType": "StrProperty",
+      "valueType": "TextProperty"
     }
   }
 }
