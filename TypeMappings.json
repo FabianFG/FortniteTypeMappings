@@ -15817,5 +15817,59 @@
       "name": "SidePanelIcon",
       "type": "SoftObjectProperty"
     }
+  },
+  "FortItemVariantData": {
+    "0": {
+      "name": "Variants",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortVariantData"
+    }
+  },
+  "FortVariantData": {
+    "0": {
+      "name": "VariantName",
+      "type": "TextProperty"
+    },
+    "1": {
+      "name": "OverrideMaterials",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "Weight",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "3": {
+      "name": "ItemFilterTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "4": {
+      "name": "CollectionTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "5": {
+      "name": "AnalyticsTag",
+      "type": "StructProperty",
+      "structType": "GameplayTag"
+    },
+    "6": {
+      "name": "POITags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "7": {
+      "name": "TODTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "8": {
+      "name": "RequiredTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    }
   }
 }
