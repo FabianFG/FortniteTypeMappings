@@ -4187,40 +4187,6 @@
     "37": {
       "name": "Animation",
       "type": "SoftObjectProperty"
-    },
-    "102": {
-      "name": "Rarity",
-      "type": "EnumProperty",
-      "enumName": "EFortRarity"
-    },
-    "116": {
-      "name": "DisplayName",
-      "type": "TextProperty"
-    },
-    "117": {
-      "name": "ShortDescription",
-      "type": "TextProperty"
-    },
-    "118": {
-      "name": "Description",
-      "type": "TextProperty"
-    },
-    "121": {
-      "name": "GameplayTags",
-      "type": "StructProperty",
-      "structType": "GameplayTagContainer"
-    },
-    "132": {
-      "name": "SmallPreviewImage",
-      "type": "SoftObjectProperty"
-    },
-    "133": {
-      "name": "LargePreviewImage",
-      "type": "SoftObjectProperty"
-    },
-    "135": {
-      "name": "Series",
-      "type": "ObjectProperty"
     }
   },
   "FortVariantTokenType": {
@@ -6635,6 +6601,15 @@
       "name": "DisplayStyle",
       "type": "StructProperty",
       "structType": "FortChallengeSetStyle"
+    },
+    "9": {
+      "name": "OverrideRewardItem",
+      "type": "StructProperty",
+      "structType": "AthenaRewardItemReference"
+    },
+    "14": {
+      "name": "bHideFromMapChallenges",
+      "type": "BoolProperty"
     },
     "26": {
       "name": "Rarity",
@@ -11552,6 +11527,11 @@
       "name": "Description",
       "type": "TextProperty"
     },
+    "70": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "76": {
       "name": "FrontendPreviewScale",
       "type": "FloatProperty"
@@ -11563,6 +11543,10 @@
     "82": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
+    },
+    "84": {
+      "name": "Series",
+      "type": "ObjectProperty"
     },
     "85": {
       "name": "FrontendPreviewPivotOffset",
@@ -12295,6 +12279,10 @@
     },
     "5": {
       "name": "Selectable",
+      "type": "BoolProperty"
+    },
+    "6": {
+      "name": "Exportable",
       "type": "BoolProperty"
     }
   },
