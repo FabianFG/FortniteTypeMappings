@@ -886,15 +886,18 @@
     "11": "AthenaDailyQuest",
     "12": "AthenaEvent",
     "13": "AthenaChallengeBundleQuest",
-    "14": "All",
-    "15": "EFortQuestType_MAX"
+    "14": "AthenaTransientQuest",
+    "15": "All",
+    "16": "EFortQuestType_MAX"
   },
   "EFortQuestSubtype": {
     "0": "None",
     "1": "WeeklyChallenge",
     "2": "PunchCard",
     "3": "QuickChallenge",
-    "4": "EFortQuestSubtype_MAX"
+    "4": "Milestone",
+    "5": "UrgentQuest",
+    "6": "EFortQuestSubtype_MAX"
   },
   "EFortResourceType": {
     "0": "Wood",
