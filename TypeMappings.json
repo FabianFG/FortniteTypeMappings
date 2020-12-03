@@ -6589,8 +6589,8 @@
     "5": {
       "name": "BundleLevelRewards",
       "type": "ArrayProperty",
-      "innerType":"StructProperty",
-      "structType":"FortChallengeBundleLevel"
+      "innerType": "StructProperty",
+      "structType": "FortChallengeBundleLevel"
     },
     "7": {
       "name": "CareerQuestBitShifts",
@@ -6609,6 +6609,10 @@
     },
     "14": {
       "name": "bHideFromMapChallenges",
+      "type": "BoolProperty"
+    },
+    "15": {
+      "name": "bHideRewardFromMapChallenges",
       "type": "BoolProperty"
     },
     "26": {
@@ -11369,67 +11373,72 @@
       "name": "bShouldDisplayOverallQuestInformation",
       "type": "BoolProperty"
     },
-    "3": {
-      "name": "bAthenaUpdateObjectiveOncePerMatch",
+    "4": {
+      "name": "bAthenaGrantRarityToken",
       "type": "BoolProperty"
     },
-    "4": {
+    "5": {
       "name": "bAthenaMustCompleteInSingleMatch",
       "type": "BoolProperty"
     },
-    "8": {
+    "9": {
       "name": "bHidden",
       "type": "BoolProperty"
     },
-    "12": {
+    "13": {
       "name": "bIncludedInCategories",
       "type": "BoolProperty"
     },
-    "23": {
+    "24": {
       "name": "ObjectiveCompletionCount",
       "type": "IntProperty"
     },
-    "27": {
+    "29": {
       "name": "HiddenRewards",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "FortHiddenRewardQuantityPair"
     },
-    "30": {
+    "32": {
       "name": "Objectives",
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "FortMcpQuestObjectiveInfo"
     },
-    "43": {
+    "49": {
       "name": "CompletionText",
       "type": "TextProperty"
     },
-    "48": {
+    "54": {
       "name": "QuestAbilitySet",
       "type": "SoftObjectProperty"
     },
-    "57": {
+    "64": {
       "name": "GrantToProfileType",
       "type": "StrProperty"
     },
-    "73": {
+    "80": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "74": {
+    "81": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "75": {
+    "82": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "89": {
+    "85": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "96": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "90": {
+    "97": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
