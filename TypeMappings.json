@@ -12143,63 +12143,63 @@
       "name": "bDropOnLogout",
       "type": "BoolProperty"
     },
-    "119": {
+    "120": {
       "name": "MiniMapIconBrush",
       "type": "StructProperty",
       "structType": "SlateBrush"
     },
-    "135": {
+    "136": {
       "name": "PickupSkeletalMesh",
       "type": "SoftObjectProperty"
     },
-    "145": {
+    "146": {
       "name": "PreferredQuickbarSlot",
       "type": "IntProperty"
     },
-    "150": {
+    "151": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "158": {
+    "159": {
       "name": "bNeverPersisted",
       "type": "BoolProperty"
     },
-    "159": {
+    "160": {
       "name": "bAllowMultipleStacks",
       "type": "BoolProperty"
     },
-    "162": {
+    "163": {
       "name": "bInventorySizeLimited",
       "type": "BoolProperty"
     },
-    "164": {
+    "165": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "166": {
+    "167": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "168": {
+    "169": {
       "name": "SearchTags",
       "type": "TextProperty"
     },
-    "169": {
+    "170": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "173": {
+    "174": {
       "name": "MaxStackSize",
       "type": "StructProperty",
       "structType": "ScalableFloat"
     },
-    "180": {
+    "181": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "181": {
+    "182": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
