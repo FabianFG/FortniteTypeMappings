@@ -11513,113 +11513,113 @@
       "type": "ArrayProperty",
       "innerType": "NameProperty"
     },
-    "111": {
+    "112": {
       "name": "bShowDirectionalArrowWhenFarOff",
       "type": "BoolProperty"
     },
-    "112": {
+    "113": {
       "name": "bCanBeDropped",
       "type": "BoolProperty"
     },
-    "114": {
+    "115": {
       "name": "bItemCanBeStolen",
       "type": "BoolProperty"
     },
-    "115": {
+    "116": {
       "name": "bCanBeDepositedInStorageVault",
       "type": "BoolProperty"
     },
-    "116": {
+    "117": {
       "name": "bItemHasDurability",
       "type": "BoolProperty"
     },
-    "126": {
+    "127": {
       "name": "MiniMapViewableDistance",
       "type": "FloatProperty"
     },
-    "127": {
+    "128": {
       "name": "MiniMapIconBrush",
       "type": "StructProperty",
       "structType": "SlateBrush"
     },
-    "129": {
+    "130": {
       "name": "LootLevelData",
       "type": "StructProperty",
       "structType": "DataTableCategoryHandle"
     },
-    "143": {
+    "144": {
       "name": "PickupSkeletalMesh",
       "type": "SoftObjectProperty"
     },
-    "147": {
+    "148": {
       "name": "DropSound",
       "type": "SoftObjectProperty"
     },
-    "151": {
+    "152": {
       "name": "DisassembleDurabilityDegradeMinLootPercent",
       "type": "FloatProperty"
     },
-    "152": {
+    "153": {
       "name": "DisassembleDurabilityDegradeMaxLootPercent",
       "type": "FloatProperty"
     },
-    "154": {
+    "155": {
       "name": "MinLevel",
       "type": "IntProperty"
     },
-    "155": {
+    "156": {
       "name": "MaxLevel",
       "type": "IntProperty"
     },
-    "158": {
+    "159": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "159": {
+    "160": {
       "name": "ItemType",
       "type": "EnumProperty",
       "enumName": "EFortItemType"
     },
-    "161": {
+    "162": {
       "name": "FilterOverride",
       "type": "EnumProperty",
       "enumName": "EFortInventoryFilter"
     },
-    "166": {
+    "167": {
       "name": "bNeverPersisted",
       "type": "BoolProperty"
     },
-    "167": {
+    "168": {
       "name": "bAllowMultipleStacks",
       "type": "BoolProperty"
     },
-    "170": {
+    "171": {
       "name": "bInventorySizeLimited",
       "type": "BoolProperty"
     },
-    "172": {
+    "173": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "177": {
+    "178": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "188": {
+    "189": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "189": {
+    "190": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
-    "191": {
+    "192": {
       "name": "Series",
       "type": "ObjectProperty"
     },
-    "193": {
+    "194": {
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
