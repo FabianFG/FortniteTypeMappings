@@ -15388,6 +15388,11 @@
       "type": "EnumProperty",
       "enumName": "EFortCustomGender"
     },
+    "1":{
+      "name": "BodyTypesPermitted",
+      "type": "EnumProperty",
+      "enumName": "EFortCustomBodyType"
+    },
     "2": {
       "name": "CharacterPartType",
       "type": "EnumProperty",
@@ -15412,6 +15417,20 @@
     "14": {
       "name": "SkeletalMesh",
       "type": "SoftObjectProperty"
+    },
+    "15":{
+      "name": "MasterSkeletalMeshes",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "19":{
+      "name": "MaterialOverrides",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "24":{
+      "name": "MaterialOverrideFlags",
+      "type": "IntProperty"
     }
   },
   "FortMusicAsset": {
@@ -16287,6 +16306,47 @@
       "name": "RequiredTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
+    }
+  },
+  "FortHeroSpecialization": {
+    "1": {
+      "name": "CharacterParts",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "AlterationType",
+      "type": "EnumProperty",
+      "enumName": "EFortAlteration"
+    }
+  },
+  "CustomCharacterHeadData": {
+    "2": {
+      "name": "SkinColorSwatch",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "HairColorSwatch",
+      "type": "SoftObjectProperty"
+    },
+    "4":{
+      "name": "CapMorphTargets",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "5":{
+      "name": "HelmetMorphTargets",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "7":{
+      "name": "HatMorphTargets",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "8":{
+      "name": "AnimClass",
+      "type" : "SoftObjectProperty"
     }
   }
 }
