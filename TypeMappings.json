@@ -15426,7 +15426,8 @@
     "19":{
       "name": "MaterialOverrides",
       "type": "ArrayProperty",
-      "innerType": "SoftObjectProperty"
+      "innerType": "StructProperty",
+      "structType": "CustomPartMaterialOverrideData"
     },
     "24":{
       "name": "MaterialOverrideFlags",
