@@ -1344,7 +1344,7 @@
       "type": "FloatProperty"
     },
     "2": {
-      "name": "Weight",
+      "name": "QuotaLevel",
       "type": "EnumProperty",
       "enumName": "ELootQuotaLevel"
     },
